@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</managingEditor>
     <webMaster>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</webMaster>
-    <lastBuildDate>Sun, 11 Nov 2018 02:35:49 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 22 Dec 2018 11:25:42 +0700</lastBuildDate>
     
 	<atom:link href="https://erbazz.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>02 - Oracle&#39;s Plan</title>
+      <link>https://erbazz.github.io/writeup/rop/02_oraclesplan/</link>
+      <pubDate>Sat, 22 Dec 2018 11:25:42 +0700</pubDate>
+      <author>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</author>
+      <guid>https://erbazz.github.io/writeup/rop/02_oraclesplan/</guid>
+      <description>Oracle&amp;rsquo;s Plan Challenge Description
+Challenge Name: Oracle&amp;rsquo;s Plan
+Type: Web
+Score: 100 pts</description>
+    </item>
     
     <item>
       <title>Financial Cybersecurity Bootcamp 2018 CTF Writeup</title>

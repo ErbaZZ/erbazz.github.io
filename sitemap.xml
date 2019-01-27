@@ -3,13 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://erbazz.github.io/writeup/rop/02_oraclesplan/</loc>
+    <loc>https://erbazz.github.io/writeup/rop_02_oraclesplan/</loc>
     <lastmod>2018-12-22T11:25:42+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://erbazz.github.io/writeup/rop/</loc>
-    <lastmod>2018-12-22T11:16:53+07:00</lastmod>
   </url>
   
   <url>
@@ -32,12 +27,37 @@
   </url>
   
   <url>
+    <loc>https://erbazz.github.io/tags/fincybersec2018/</loc>
+    <lastmod>2018-11-11T02:35:49+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/tags/rop/</loc>
+    <lastmod>2018-12-22T11:25:42+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://erbazz.github.io/tags/</loc>
+    <lastmod>2018-11-11T02:35:49+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/tags/web/</loc>
+    <lastmod>2018-12-22T11:25:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://erbazz.github.io/</loc>
+    <lastmod>2018-12-22T11:25:42+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/categories/writeup/</loc>
     <lastmod>2018-12-22T11:25:42+07:00</lastmod>
     <priority>0</priority>
   </url>

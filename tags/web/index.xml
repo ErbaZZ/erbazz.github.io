@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Weerawat P.</title>
+    <link>https://erbazz.github.io/tags/web/</link>
+    <description>Recent content in Web on Weerawat P.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</managingEditor>
+    <webMaster>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</webMaster>
+    <lastBuildDate>Sat, 22 Dec 2018 11:25:42 +0700</lastBuildDate>
+    
+	<atom:link href="https://erbazz.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ROP: 02 - Oracle&#39;s Plan</title>
+      <link>https://erbazz.github.io/writeup/rop_02_oraclesplan/</link>
+      <pubDate>Sat, 22 Dec 2018 11:25:42 +0700</pubDate>
+      <author>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</author>
+      <guid>https://erbazz.github.io/writeup/rop_02_oraclesplan/</guid>
+      <description>DISCLAIMER: This is the solution to the challenge, I recommed you to try it yourself first.
+Challenge Name: Oracle&amp;rsquo;s Plan
+Type: Web
+Score: 100 pts
+Link: https://game.rop.sh
+Oracle&amp;rsquo;s Plan challenge description
+The mission provides us a link to a website, which looks like this:
+Webpage of the challenge
+It is a simple page with an image and a line of text. The first thing to do, of course, is to view the page source.</description>
+    </item>
+    
+  </channel>
+</rss>

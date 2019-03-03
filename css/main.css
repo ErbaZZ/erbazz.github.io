@@ -804,3 +804,18 @@ h4.see-also {
  ul.share li:hover .fab {
   transform: scale(1.4)
 }
+
+/* Custom */
+img[src*='#left'] {
+  float: left;
+}
+img[src*='#right'] {
+  float: right;
+}
+img[src*='#center'] {
+  display: block;
+  margin: auto;
+}
+img[src*='#50w'] {
+  width: 50%;
+}

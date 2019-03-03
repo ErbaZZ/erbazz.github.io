@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</managingEditor>
     <webMaster>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</webMaster>
-    <lastBuildDate>Sun, 03 Mar 2019 22:36:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 11 Nov 2018 02:35:49 +0700</lastBuildDate>
     
 	<atom:link href="https://erbazz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,9 +15,18 @@
     <item>
       <title>Fincybersec2018</title>
       <link>https://erbazz.github.io/tags/fincybersec2018/</link>
-      <pubDate>Sun, 03 Mar 2019 22:36:00 +0700</pubDate>
+      <pubDate>Sun, 11 Nov 2018 02:35:49 +0700</pubDate>
       <author>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</author>
       <guid>https://erbazz.github.io/tags/fincybersec2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hackingcontest2019</title>
+      <link>https://erbazz.github.io/tags/hackingcontest2019/</link>
+      <pubDate>Sun, 03 Mar 2019 22:36:00 +0700</pubDate>
+      <author>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</author>
+      <guid>https://erbazz.github.io/tags/hackingcontest2019/</guid>
       <description></description>
     </item>
     

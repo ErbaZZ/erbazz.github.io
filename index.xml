@@ -25,44 +25,6 @@ Qualification Round The qualification round is an 18-hour long competition, from
     </item>
     
     <item>
-      <title>ROP: 05 - Guessing Word</title>
-      <link>https://erbazz.github.io/writeup/rop_05_guessingword/</link>
-      <pubDate>Sun, 23 Dec 2018 08:02:11 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</author>
-      <guid>https://erbazz.github.io/writeup/rop_05_guessingword/</guid>
-      <description>&lt;p&gt;Challenge Name: Guessing Word&lt;/p&gt;
-
-&lt;p&gt;Type: Web&lt;/p&gt;
-
-&lt;p&gt;Score: 200 pts&lt;/p&gt;
-
-&lt;p&gt;Link: &lt;a href=&#34;https://game.rop.sh/task&#34;&gt;https://game.rop.sh&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/rop/05/rop_05_challenge.png&#34; alt=&#34;Challenge Description&#34; /&gt;&lt;center&gt;&lt;em&gt;Guessing Word challenge description&lt;/em&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;DISCLAIMER: This is the solution to the challenge, I recommed you to try it yourself first.&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ROP: 02 - Oracle&#39;s Plan</title>
-      <link>https://erbazz.github.io/writeup/rop_02_oraclesplan/</link>
-      <pubDate>Sat, 22 Dec 2018 11:25:42 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</author>
-      <guid>https://erbazz.github.io/writeup/rop_02_oraclesplan/</guid>
-      <description>&lt;p&gt;Challenge Name: Oracle&amp;rsquo;s Plan&lt;/p&gt;
-
-&lt;p&gt;Type: Web&lt;/p&gt;
-
-&lt;p&gt;Score: 100 pts&lt;/p&gt;
-
-&lt;p&gt;Link: &lt;a href=&#34;https://game.rop.sh/task&#34;&gt;https://game.rop.sh&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/rop/02/rop_02_challenge.png&#34; alt=&#34;Challenge Description&#34; /&gt;&lt;center&gt;&lt;em&gt;Oracle&amp;rsquo;s Plan challenge description&lt;/em&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;DISCLAIMER: This is the solution to the challenge, I recommed you to try it yourself first.&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Financial Cybersecurity Bootcamp 2018 Writeup</title>
       <link>https://erbazz.github.io/writeup/fincybersec2018/</link>
       <pubDate>Sun, 11 Nov 2018 02:35:49 +0700</pubDate>

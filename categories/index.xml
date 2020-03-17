@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Weerawat P.</title>
+    <title>Categories on ErbaZZ&#39;s Blog</title>
     <link>https://erbazz.github.io/categories/</link>
-    <description>Recent content in Categories on Weerawat P.</description>
+    <description>Recent content in Categories on ErbaZZ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</managingEditor>
-    <webMaster>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</webMaster>
+    <managingEditor>weerawat.paw@gmail.com (ErbaZZ)</managingEditor>
+    <webMaster>weerawat.paw@gmail.com (ErbaZZ)</webMaster>
     
 	<atom:link href="https://erbazz.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,8 +14,8 @@
     <item>
       <title>Writeup</title>
       <link>https://erbazz.github.io/categories/writeup/</link>
-      <pubDate>Sun, 03 Mar 2019 22:36:00 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</author>
+      <pubDate>Tue, 17 Mar 2020 22:03:11 +0700</pubDate>
+      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
       <guid>https://erbazz.github.io/categories/writeup/</guid>
       <description></description>
     </item>

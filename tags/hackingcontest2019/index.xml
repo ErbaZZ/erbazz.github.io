@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hackingcontest2019 on Weerawat P.</title>
+    <title>Hackingcontest2019 on ErbaZZ&#39;s Blog</title>
     <link>https://erbazz.github.io/tags/hackingcontest2019/</link>
-    <description>Recent content in Hackingcontest2019 on Weerawat P.</description>
+    <description>Recent content in Hackingcontest2019 on ErbaZZ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</managingEditor>
-    <webMaster>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</webMaster>
+    <managingEditor>weerawat.paw@gmail.com (ErbaZZ)</managingEditor>
+    <webMaster>weerawat.paw@gmail.com (ErbaZZ)</webMaster>
     <lastBuildDate>Sun, 03 Mar 2019 22:36:00 +0700</lastBuildDate>
     
 	<atom:link href="https://erbazz.github.io/tags/hackingcontest2019/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hacking Contest 2019 (Qualification Round) Writeup</title>
+      <title>[Writeup] Hacking Contest 2019 (Qualification Round)</title>
       <link>https://erbazz.github.io/writeup/hackingcontest2019/</link>
       <pubDate>Sun, 03 Mar 2019 22:36:00 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (Weerawat Pawanawiwat)</author>
+      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
       <guid>https://erbazz.github.io/writeup/hackingcontest2019/</guid>
       <description>Yesterday, I got a chance to participate in the qualification round of competition called &amp;ldquo;Hacking Contest 2019&amp;rdquo; held by SOSECURE and MFEC. It is claimed to be a hacking competition with the largest prize pool in Thailand.
 Posters

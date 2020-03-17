@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://erbazz.github.io/writeup/htb_craft/</loc>
+    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/writeup/rop_02_oraclesplan/</loc>
+    <lastmod>2020-03-17T22:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/writeup/rop_05_guessingword/</loc>
+    <lastmod>2020-03-17T22:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://erbazz.github.io/writeup/hackingcontest2019/</loc>
     <lastmod>2019-03-03T22:36:00+07:00</lastmod>
   </url>
@@ -18,11 +33,19 @@
   </url>
   
   <url>
-    <loc>https://erbazz.github.io/about/</loc>
+    <loc>https://erbazz.github.io/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://erbazz.github.io/categories/</loc>
+    <loc>https://erbazz.github.io/tags/craft/</loc>
+    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/</loc>
+    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -39,20 +62,36 @@
   </url>
   
   <url>
-    <loc>https://erbazz.github.io/tags/</loc>
-    <lastmod>2018-11-11T02:35:49+07:00</lastmod>
+    <loc>https://erbazz.github.io/tags/htb/</loc>
+    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://erbazz.github.io/</loc>
-    <lastmod>2019-03-03T22:36:00+07:00</lastmod>
+    <loc>https://erbazz.github.io/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/tags/rop/</loc>
+    <lastmod>2020-03-17T22:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/tags/</loc>
+    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/tags/web/</loc>
+    <lastmod>2020-03-17T22:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://erbazz.github.io/categories/writeup/</loc>
-    <lastmod>2019-03-03T22:36:00+07:00</lastmod>
+    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
     <priority>0</priority>
   </url>
   

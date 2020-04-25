@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Writeup on ErbaZZ&#39;s Blog</title>
+    <title>ErbaZZ&#39;s Blog</title>
     <link>https://erbazz.github.io/writeup/</link>
-    <description>Recent content in Writeup on ErbaZZ&#39;s Blog</description>
+    <description>Recent content on ErbaZZ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>weerawat.paw@gmail.com (ErbaZZ)</managingEditor>
-    <webMaster>weerawat.paw@gmail.com (ErbaZZ)</webMaster>
-    <lastBuildDate>Tue, 18 Dec 2018 02:51:02 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2020 22:03:11 +0700</lastBuildDate>
     
 	<atom:link href="https://erbazz.github.io/writeup/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,7 +14,7 @@
       <title>[Writeup] Hack The Box :: Craft </title>
       <link>https://erbazz.github.io/writeup/htb_craft/</link>
       <pubDate>Tue, 17 Mar 2020 22:03:11 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
+      
       <guid>https://erbazz.github.io/writeup/htb_craft/</guid>
       <description>&lt;p&gt;Hello! It&amp;rsquo;s been ages since I&amp;rsquo;ve updated this blog. This is a writeup for &amp;ldquo;Craft&amp;rdquo; on HTB that I have written since last November, when it was still up and running. I have totally forgotten about it until today, which I have just found out that it has been retired. It&amp;rsquo;s a few months late, and there are writeups on this box everywhere, but here it is.&lt;/p&gt;
 
@@ -27,9 +25,9 @@
       <title>[Writeup] ROP: 02 - Oracle&#39;s Plan</title>
       <link>https://erbazz.github.io/writeup/rop_02_oraclesplan/</link>
       <pubDate>Tue, 17 Mar 2020 22:00:00 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
+      
       <guid>https://erbazz.github.io/writeup/rop_02_oraclesplan/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER: game.rop.sh is discontinued and no longer available.&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER: game.rop.sh was discontinued and is no longer available.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Challenge Name:&lt;/strong&gt; Oracle&amp;rsquo;s Plan&lt;br /&gt;
 &lt;strong&gt;Type:&lt;/strong&gt; Web&lt;br /&gt;
@@ -43,9 +41,9 @@
       <title>[Writeup] ROP: 05 - Guessing Word</title>
       <link>https://erbazz.github.io/writeup/rop_05_guessingword/</link>
       <pubDate>Tue, 17 Mar 2020 22:00:00 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
+      
       <guid>https://erbazz.github.io/writeup/rop_05_guessingword/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER: game.rop.sh is discontinued and no longer available.&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER: game.rop.sh was discontinued and is no longer available.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Challenge Name:&lt;/strong&gt; Guessing Word&lt;br /&gt;
 &lt;strong&gt;Type:&lt;/strong&gt; Web&lt;br /&gt;
@@ -59,7 +57,7 @@
       <title>[Writeup] Hacking Contest 2019 (Qualification Round)</title>
       <link>https://erbazz.github.io/writeup/hackingcontest2019/</link>
       <pubDate>Sun, 03 Mar 2019 22:36:00 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
+      
       <guid>https://erbazz.github.io/writeup/hackingcontest2019/</guid>
       <description>Yesterday, I got a chance to participate in the qualification round of competition called &amp;ldquo;Hacking Contest 2019&amp;rdquo; held by SOSECURE and MFEC. It is claimed to be a hacking competition with the largest prize pool in Thailand.
 Posters
@@ -71,7 +69,7 @@ Qualification Round The qualification round is an 18-hour long competition, from
       <title>[Writeup] Financial Cybersecurity Bootcamp 2018</title>
       <link>https://erbazz.github.io/writeup/fincybersec2018/</link>
       <pubDate>Sun, 11 Nov 2018 02:35:49 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
+      
       <guid>https://erbazz.github.io/writeup/fincybersec2018/</guid>
       <description>&lt;p&gt;In August, I had a chance to participate in an online CTF competition called Financial Cybersecurity Bootcamp 2018, which is a jeopardy style competition with the time limit of 24 hours. Together with my team, !IsCaptured, we solved 4 of the challenges and became eligible to participate in the final round.&lt;/p&gt;</description>
     </item>

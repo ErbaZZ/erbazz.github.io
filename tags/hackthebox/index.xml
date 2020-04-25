@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Htb on ErbaZZ&#39;s Blog</title>
-    <link>https://erbazz.github.io/tags/htb/</link>
-    <description>Recent content in Htb on ErbaZZ&#39;s Blog</description>
+    <title>Hackthebox on ErbaZZ&#39;s Blog</title>
+    <link>https://erbazz.github.io/tags/hackthebox/</link>
+    <description>Recent content in Hackthebox on ErbaZZ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 17 Mar 2020 22:03:11 +0700</lastBuildDate>
     
-	<atom:link href="https://erbazz.github.io/tags/htb/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://erbazz.github.io/tags/hackthebox/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

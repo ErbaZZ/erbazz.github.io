@@ -5,8 +5,6 @@
     <link>https://erbazz.github.io/tags/web/</link>
     <description>Recent content in Web on ErbaZZ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>weerawat.paw@gmail.com (ErbaZZ)</managingEditor>
-    <webMaster>weerawat.paw@gmail.com (ErbaZZ)</webMaster>
     <lastBuildDate>Tue, 17 Mar 2020 22:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://erbazz.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
@@ -16,9 +14,9 @@
       <title>[Writeup] ROP: 02 - Oracle&#39;s Plan</title>
       <link>https://erbazz.github.io/writeup/rop_02_oraclesplan/</link>
       <pubDate>Tue, 17 Mar 2020 22:00:00 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
+      
       <guid>https://erbazz.github.io/writeup/rop_02_oraclesplan/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER: game.rop.sh is discontinued and no longer available.&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER: game.rop.sh was discontinued and is no longer available.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Challenge Name:&lt;/strong&gt; Oracle&amp;rsquo;s Plan&lt;br /&gt;
 &lt;strong&gt;Type:&lt;/strong&gt; Web&lt;br /&gt;
@@ -32,9 +30,9 @@
       <title>[Writeup] ROP: 05 - Guessing Word</title>
       <link>https://erbazz.github.io/writeup/rop_05_guessingword/</link>
       <pubDate>Tue, 17 Mar 2020 22:00:00 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
+      
       <guid>https://erbazz.github.io/writeup/rop_05_guessingword/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER: game.rop.sh is discontinued and no longer available.&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER: game.rop.sh was discontinued and is no longer available.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Challenge Name:&lt;/strong&gt; Guessing Word&lt;br /&gt;
 &lt;strong&gt;Type:&lt;/strong&gt; Web&lt;br /&gt;

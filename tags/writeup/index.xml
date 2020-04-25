@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ErbaZZ&#39;s Blog</title>
-    <link>https://erbazz.github.io/</link>
-    <description>Recent content on ErbaZZ&#39;s Blog</description>
+    <title>Writeup on ErbaZZ&#39;s Blog</title>
+    <link>https://erbazz.github.io/tags/writeup/</link>
+    <description>Recent content in Writeup on ErbaZZ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 17 Mar 2020 22:03:11 +0700</lastBuildDate>
     
-	<atom:link href="https://erbazz.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://erbazz.github.io/tags/writeup/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -72,15 +72,6 @@ Qualification Round The qualification round is an 18-hour long competition, from
       
       <guid>https://erbazz.github.io/writeup/fincybersec2018/</guid>
       <description>&lt;p&gt;In August, I had a chance to participate in an online CTF competition called Financial Cybersecurity Bootcamp 2018, which is a jeopardy style competition with the time limit of 24 hours. Together with my team, !IsCaptured, we solved 4 of the challenges and became eligible to participate in the final round.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Me?</title>
-      <link>https://erbazz.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://erbazz.github.io/about/</guid>
-      <description>ErbaZZ (Weerawat P.) Cybersecurity enthusiast enjoying life as a Penetration Tester.</description>
     </item>
     
   </channel>

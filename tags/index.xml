@@ -5,8 +5,6 @@
     <link>https://erbazz.github.io/tags/</link>
     <description>Recent content in Tags on ErbaZZ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>weerawat.paw@gmail.com (ErbaZZ)</managingEditor>
-    <webMaster>weerawat.paw@gmail.com (ErbaZZ)</webMaster>
     <lastBuildDate>Tue, 17 Mar 2020 22:03:11 +0700</lastBuildDate>
     
 	<atom:link href="https://erbazz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -16,8 +14,17 @@
       <title>Craft</title>
       <link>https://erbazz.github.io/tags/craft/</link>
       <pubDate>Tue, 17 Mar 2020 22:03:11 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
+      
       <guid>https://erbazz.github.io/tags/craft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ctf</title>
+      <link>https://erbazz.github.io/tags/ctf/</link>
+      <pubDate>Tue, 17 Mar 2020 22:00:00 +0700</pubDate>
+      
+      <guid>https://erbazz.github.io/tags/ctf/</guid>
       <description></description>
     </item>
     
@@ -25,7 +32,7 @@
       <title>Fincybersec2018</title>
       <link>https://erbazz.github.io/tags/fincybersec2018/</link>
       <pubDate>Sun, 11 Nov 2018 02:35:49 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
+      
       <guid>https://erbazz.github.io/tags/fincybersec2018/</guid>
       <description></description>
     </item>
@@ -34,8 +41,17 @@
       <title>Hackingcontest2019</title>
       <link>https://erbazz.github.io/tags/hackingcontest2019/</link>
       <pubDate>Sun, 03 Mar 2019 22:36:00 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
+      
       <guid>https://erbazz.github.io/tags/hackingcontest2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hackthebox</title>
+      <link>https://erbazz.github.io/tags/hackthebox/</link>
+      <pubDate>Tue, 17 Mar 2020 22:03:11 +0700</pubDate>
+      
+      <guid>https://erbazz.github.io/tags/hackthebox/</guid>
       <description></description>
     </item>
     
@@ -43,7 +59,7 @@
       <title>Htb</title>
       <link>https://erbazz.github.io/tags/htb/</link>
       <pubDate>Tue, 17 Mar 2020 22:03:11 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
+      
       <guid>https://erbazz.github.io/tags/htb/</guid>
       <description></description>
     </item>
@@ -52,7 +68,7 @@
       <title>Rop</title>
       <link>https://erbazz.github.io/tags/rop/</link>
       <pubDate>Tue, 17 Mar 2020 22:00:00 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
+      
       <guid>https://erbazz.github.io/tags/rop/</guid>
       <description></description>
     </item>
@@ -61,8 +77,17 @@
       <title>Web</title>
       <link>https://erbazz.github.io/tags/web/</link>
       <pubDate>Tue, 17 Mar 2020 22:00:00 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
+      
       <guid>https://erbazz.github.io/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writeup</title>
+      <link>https://erbazz.github.io/tags/writeup/</link>
+      <pubDate>Tue, 17 Mar 2020 22:03:11 +0700</pubDate>
+      
+      <guid>https://erbazz.github.io/tags/writeup/</guid>
       <description></description>
     </item>
     

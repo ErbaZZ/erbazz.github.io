@@ -5,8 +5,6 @@
     <link>https://erbazz.github.io/categories/</link>
     <description>Recent content in Categories on ErbaZZ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>weerawat.paw@gmail.com (ErbaZZ)</managingEditor>
-    <webMaster>weerawat.paw@gmail.com (ErbaZZ)</webMaster>
     
 	<atom:link href="https://erbazz.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +13,7 @@
       <title>Writeup</title>
       <link>https://erbazz.github.io/categories/writeup/</link>
       <pubDate>Tue, 17 Mar 2020 22:03:11 +0700</pubDate>
-      <author>weerawat.paw@gmail.com (ErbaZZ)</author>
+      
       <guid>https://erbazz.github.io/categories/writeup/</guid>
       <description></description>
     </item>

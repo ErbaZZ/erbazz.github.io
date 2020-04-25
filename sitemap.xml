@@ -23,13 +23,13 @@
   </url>
   
   <url>
-    <loc>https://erbazz.github.io/writeup/</loc>
-    <lastmod>2018-12-18T02:51:02+07:00</lastmod>
+    <loc>https://erbazz.github.io/writeup/fincybersec2018/</loc>
+    <lastmod>2018-11-11T02:35:49+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://erbazz.github.io/writeup/fincybersec2018/</loc>
-    <lastmod>2018-11-11T02:35:49+07:00</lastmod>
+    <loc>https://erbazz.github.io/writeup/</loc>
+    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
   </url>
   
   <url>
@@ -40,6 +40,12 @@
   <url>
     <loc>https://erbazz.github.io/tags/craft/</loc>
     <lastmod>2020-03-17T22:03:11+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/tags/ctf/</loc>
+    <lastmod>2020-03-17T22:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -58,6 +64,12 @@
   <url>
     <loc>https://erbazz.github.io/tags/hackingcontest2019/</loc>
     <lastmod>2019-03-03T22:36:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/tags/hackthebox/</loc>
+    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -91,6 +103,12 @@
   
   <url>
     <loc>https://erbazz.github.io/categories/writeup/</loc>
+    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/tags/writeup/</loc>
     <lastmod>2020-03-17T22:03:11+07:00</lastmod>
     <priority>0</priority>
   </url>

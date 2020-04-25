@@ -12,7 +12,7 @@
   
   <meta property="og:title" content="[Writeup] ROP: 05 - Guessing Word" />
   <meta name="twitter:title" content="[Writeup] ROP: 05 - Guessing Word" />
-  <meta name="description" content="DISCLAIMER: game.rop.sh is discontinued and no longer available.
+  <meta name="description" content="DISCLAIMER: game.rop.sh was discontinued and is no longer available.
 
 Challenge Name: Guessing Word
 Type: Web
@@ -20,7 +20,7 @@ Score: 200 pts
 Link: https://game.rop.sh
 
 Guessing Word challenge description">
-  <meta property="og:description" content="DISCLAIMER: game.rop.sh is discontinued and no longer available.
+  <meta property="og:description" content="DISCLAIMER: game.rop.sh was discontinued and is no longer available.
 
 Challenge Name: Guessing Word
 Type: Web
@@ -28,7 +28,7 @@ Score: 200 pts
 Link: https://game.rop.sh
 
 Guessing Word challenge description">
-  <meta name="twitter:description" content="DISCLAIMER: game.rop.sh is discontinued and no longer available.
+  <meta name="twitter:description" content="DISCLAIMER: game.rop.sh was discontinued and is no longer available.
 
 Challenge Name: Guessing Word
 Type: Web
@@ -84,7 +84,7 @@ Guessing Word challenge description">
     "name" : "ErbaZZ"
   },
   "headline": "[Writeup] ROP: 05 - Guessing Word",
-  "description" : "DISCLAIMER: game.rop.sh is discontinued and no longer available.
+  "description" : "DISCLAIMER: game.rop.sh was discontinued and is no longer available.
 Challenge Name: Guessing Word
 Type: Web
 Score: 200 pts
@@ -92,11 +92,11 @@ Link: https://game.rop.sh
 Guessing Word challenge description
 ",
   "inLanguage" : "en",
-  "wordCount": 757,
+  "wordCount": 758,
   "datePublished" : "2020-03-17T22:00:00",
   "dateModified" : "2020-03-17T22:00:00",
   "image" : "https://erbazz.github.io",
-  "keywords" : [ "rop, web" ],
+  "keywords" : [ "rop, web, ctf, writeup" ],
   "mainEntityOfPage" : "https://erbazz.github.io/writeup/rop_05_guessingword/",
   "publisher" : {
     "@type": "Organization",
@@ -112,7 +112,7 @@ Guessing Word challenge description
 </script>
 
 <meta property="og:title" content="[Writeup] ROP: 05 - Guessing Word" />
-<meta property="og:description" content="DISCLAIMER: game.rop.sh is discontinued and no longer available.
+<meta property="og:description" content="DISCLAIMER: game.rop.sh was discontinued and is no longer available.
 
 Challenge Name: Guessing Word
 Type: Web
@@ -124,7 +124,7 @@ Guessing Word challenge description">
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="ErbaZZ&#39;s Blog" />
   <meta name="twitter:title" content="[Writeup] ROP: 05 - Guessing Word" />
-  <meta name="twitter:description" content="DISCLAIMER: game.rop.sh is discontinued and no longer available.
+  <meta name="twitter:description" content="DISCLAIMER: game.rop.sh was discontinued and is no longer available.
 
 Challenge Name: Guessing Word
 Type: Web
@@ -330,7 +330,7 @@ if (!doNotTrack) {
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p><strong>DISCLAIMER: game.rop.sh is discontinued and no longer available.</strong></p>
+        <p><strong>DISCLAIMER: game.rop.sh was discontinued and is no longer available.</strong></p>
 
 <p><strong>Challenge Name:</strong> Guessing Word<br />
 <strong>Type:</strong> Web<br />
@@ -522,7 +522,7 @@ We need to do something with the input of the form, one of the possibilities wou
 
 <span class="n">wrong</span> <span class="o">=</span> <span class="bp">False</span>
 
-<span class="c1"># Different input sizes yield equal processing time, so it is probably made to be easy to crack.</span>
+<span class="c1"># Different input sizes yield equal processing time, so it is probably made to be easy to crack.</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">correct_pass</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="nb">input</span><span class="p">))):</span>
   <span class="k">if</span> <span class="n">correct_pass</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="nb">input</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
     <span class="n">wrong</span> <span class="o">=</span> <span class="bp">True</span>
@@ -638,6 +638,10 @@ We need to do something with the input of the form, one of the possibilities wou
             
               <a href="https://erbazz.github.io/tags/web/">web</a>&nbsp;
             
+              <a href="https://erbazz.github.io/tags/ctf/">ctf</a>&nbsp;
+            
+              <a href="https://erbazz.github.io/tags/writeup/">writeup</a>&nbsp;
+            
           </div>
         
 
@@ -712,6 +716,10 @@ We need to do something with the input of the form, one of the possibilities wou
           
             <li><a href="/writeup/rop_02_oraclesplan/">[Writeup] ROP: 02 - Oracle&#39;s Plan</a></li>
           
+            <li><a href="/writeup/hackingcontest2019/">[Writeup] Hacking Contest 2019 (Qualification Round)</a></li>
+          
+            <li><a href="/writeup/fincybersec2018/">[Writeup] Financial Cybersecurity Bootcamp 2018</a></li>
+          
           </ul>
           
         
@@ -748,14 +756,6 @@ We need to do something with the input of the form, one of the possibilities wou
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
           
-              <li>
-                <a href="mailto:weerawat.paw@gmail.com" title="Email me">
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
               <li>
                 <a href="https://github.com/ErbaZZ" title="GitHub">
                   <span class="fa-stack fa-lg">

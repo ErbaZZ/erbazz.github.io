@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"/>
+<title>Post Encryption Testinggit  - ErbaZZ's Blog</title>
+<meta content="Post Encryption Testinggit " property="og:title"/>
+<meta content="Post Encryption Testinggit " name="twitter:title"/>
+<meta content="Post Encryption Testing
+
+" name="description"/>
+<meta content="Post Encryption Testing
+
+" property="og:description"/>
+<meta content="Post Encryption Testing
+
+" name="twitter:description"/>
+<meta content="ErbaZZ" name="author"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "ErbaZZ&#39;s Blog",
+    
+    "url": "https://erbazz.github.io"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https://erbazz.github.io"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://erbazz.github.io",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://erbazz.github.io/writeup/encrypted/",
+          "name": "Post encryption testinggit "
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "ErbaZZ"
+  },
+  "headline": "Post Encryption Testinggit ",
+  "description" : "Post Encryption Testing
+",
+  "inLanguage" : "en",
+  "wordCount": 688,
+  "datePublished" : "2020-03-17T22:03:11",
+  "dateModified" : "2020-03-17T22:03:11",
+  "image" : "https://erbazz.github.io",
+  "keywords" : [ "writeup, htb, hackthebox, craft" ],
+  "mainEntityOfPage" : "https://erbazz.github.io/writeup/encrypted/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://erbazz.github.io",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://erbazz.github.io",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+<meta content="Post Encryption Testinggit " property="og:title"/>
+<meta content="Post Encryption Testing
+
+" property="og:description"/>
+<meta content="https://erbazz.github.io/writeup/encrypted/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="ErbaZZ's Blog" property="og:site_name"/>
+<meta content="Post Encryption Testinggit " name="twitter:title"/>
+<meta content="Post Encryption Testing
+
+" name="twitter:description"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="https://erbazz.github.io/writeup/encrypted/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="ErbaZZ's Blog" property="og:site_name"/>
+<meta content="Hugo 0.52" name="generator"/>
+<link href="https://erbazz.github.io/index.xml" rel="alternate" title="ErbaZZ's Blog" type="application/rss+xml"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet"/>
+<link href="https://erbazz.github.io/css/main.css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet"/>
+<link href="https://erbazz.github.io/css/highlight.min.css" rel="stylesheet"/><link href="https://erbazz.github.io/css/codeblock.css" rel="stylesheet"/><link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" rel="stylesheet"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-131117344-1"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131117344-1');
+    </script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131117344-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+<div class="container-fluid">
+<div class="navbar-header">
+<button class="navbar-toggle" data-target="#main-navbar" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="https://erbazz.github.io">ErbaZZ's Blog</a>
+</div>
+<div class="collapse navbar-collapse" id="main-navbar">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="/" title="Home">Home</a>
+</li>
+<li>
+<a href="/writeup/" title="Writeup">Writeup</a>
+</li>
+<li>
+<a href="/about/" title="About">About</a>
+</li>
+<li>
+<a data-target="#modalSearch" data-toggle="modal" href="#modalSearch" style="outline: none;">
+<span class="hidden-sm hidden-md hidden-lg">Search</span> <span class="glyphicon glyphicon-search" id="searchGlyph"></span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="modal fade" id="modalSearch" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h4 class="modal-title">Search ErbaZZ's Blog</h4>
+</div>
+<div class="modal-body">
+<gcse:search></gcse:search>
+</div>
+<div class="modal-footer">
+<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+<div class="pswp__bg"></div>
+<div class="pswp__scroll-wrap">
+<div class="pswp__container">
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+</div>
+<div class="pswp__ui pswp__ui--hidden">
+<div class="pswp__top-bar">
+<div class="pswp__counter"></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title="Share"></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+<div class="pswp__preloader">
+<div class="pswp__preloader__icn">
+<div class="pswp__preloader__cut">
+<div class="pswp__preloader__donut"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class="pswp__share-tooltip"></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+</button>
+<div class="pswp__caption">
+<div class="pswp__caption__center"></div>
+</div>
+</div>
+</div>
+</div>
+<header class="header-section">
+<div class="intro-header no-img">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="writeup-heading">
+<h1>Post Encryption Testinggit </h1>
+<hr class="small"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="container" role="main">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<article class="blog-post" role="main">
+<p>Post Encryption Testing</p>
+<p><img alt="" src="/images/htb_craft/craft.png"/></p>
+<p><strong>OS:</strong> Linux<br/>
+<strong>Difficulty:</strong> Medium<br/>
+<strong>Points:</strong> 30<br/>
+<strong>Release:</strong> 13 Jul 2019<br/>
+<strong>IP:</strong> 10.10.10.110<br/>
+<strong>Date Cleared:</strong> 5 Nov 2019</p>
+<div class="hugo-encryptor-container">
+<div class="hugo-encryptor-prompt">
+<p>Part of this article is encrypted with password:</p>
+</div>
+<div class="hugo-encryptor-form">
+<input class="hugo-encryptor-input" placeholder="Please input the password"/>
+<input class="hugo-encryptor-button" onclick="_click_handler(this)" type="button" value="Click to verify"/>
+</div>
+<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
+</div>
+<div class="blog-tags">
+<a href="https://erbazz.github.io/tags/writeup/">writeup</a> 
+            
+              <a href="https://erbazz.github.io/tags/htb/">htb</a> 
+            
+              <a href="https://erbazz.github.io/tags/hackthebox/">hackthebox</a> 
+            
+              <a href="https://erbazz.github.io/tags/craft/">craft</a> 
+            
+          </div>
+<hr/>
+<section id="social-share">
+<div class="list-inline footer-links">
+<div aria-hidden="true" class="share-box">
+<ul class="share">
+<li>
+<a href="//twitter.com/share?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fencrypted%2f&amp;text=Post%20Encryption%20Testinggit%20&amp;via=" target="_blank" title="Share on Twitter">
+<i class="fab fa-twitter"></i>
+</a>
+</li>
+<li>
+<a href="//plus.google.com/share?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fencrypted%2f" target="_blank" title="Share on Google Plus">
+<i class="fab fa-google-plus"></i>
+</a>
+</li>
+<li>
+<a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ferbazz.github.io%2fwriteup%2fencrypted%2f" target="_blank" title="Share on Facebook">
+<i class="fab fa-facebook"></i>
+</a>
+</li>
+<li>
+<a href="//reddit.com/submit?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fencrypted%2f&amp;title=Post%20Encryption%20Testinggit%20" target="_blank" title="Share on Reddit">
+<i class="fab fa-reddit"></i>
+</a>
+</li>
+<li>
+<a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fencrypted%2f&amp;title=Post%20Encryption%20Testinggit%20" target="_blank" title="Share on LinkedIn">
+<i class="fab fa-linkedin"></i>
+</a>
+</li>
+<li>
+<a href="//www.stumbleupon.com/submit?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fencrypted%2f&amp;title=Post%20Encryption%20Testinggit%20" target="_blank" title="Share on StumbleUpon">
+<i class="fab fa-stumbleupon"></i>
+</a>
+</li>
+<li>
+<a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fencrypted%2f&amp;description=Post%20Encryption%20Testinggit%20" target="_blank" title="Share on Pinterest">
+<i class="fab fa-pinterest"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<h4 class="see-also">See also</h4>
+<ul>
+<li><a href="/writeup/htb_craft/">[Writeup] Hack The Box :: Craft</a></li>
+<li><a href="/writeup/rop_05_guessingword/">[Writeup] ROP: 05 - Guessing Word</a></li>
+<li><a href="/writeup/rop_02_oraclesplan/">[Writeup] ROP: 02 - Oracle's Plan</a></li>
+</ul>
+</article>
+<ul class="pager blog-pager">
+<li class="previous">
+<a data-placement="top" data-toggle="tooltip" href="https://erbazz.github.io/writeup/htb_craft/" title="[Writeup] Hack The Box :: Craft">← Previous Post</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<ul class="list-inline text-center footer-links">
+<li>
+<a href="https://github.com/ErbaZZ" title="GitHub">
+<span class="fa-stack fa-lg">
+<i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-github fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a href="https://gitlab.com/ErbaZZ" title="GitLab">
+<span class="fa-stack fa-lg">
+<i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a href="https://linkedin.com/in/weerawatp" title="LinkedIn">
+<span class="fa-stack fa-lg">
+<i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+</ul>
+<p class="credits copyright text-muted">
+          
+            
+              ErbaZZ
+            
+          
+
+           • ©
+          
+            2020
+          
+
+          
+             • 
+            <a href="https://erbazz.github.io">ErbaZZ's Blog</a>
+</p>
+<p class="credits theme-by text-muted">
+<a href="http://gohugo.io">Hugo v0.52</a> powered  •  Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+</p>
+</div>
+</div>
+</div>
+</footer>
+<script crossorigin="anonymous" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://erbazz.github.io/js/main.js"></script>
+<script src="https://erbazz.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script crossorigin="anonymous" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script>
+<script src="https://erbazz.github.io/js/load-photoswipe.js"></script>
+<script>
+  (function() {
+    var cx = '009837321390101256498:tbfrha9ha-g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script>
+const _do_decrypt = function(encrypted, password) {
+  let key = CryptoJS.enc.Utf8.parse(password);
+  let iv = CryptoJS.enc.Utf8.parse(password.substr(16));
+
+  let decrypted_data = CryptoJS.AES.decrypt(encrypted, key, {
+    iv: iv,
+    mode: CryptoJS.mode.CBC,
+    padding: CryptoJS.pad.Pkcs7
+  });
+  return decrypted_data.toString(CryptoJS.enc.Utf8);
+};
+
+const _click_handler = function(element) {
+  let parent = element.parentNode.parentNode;
+  let encrypted = parent.querySelector(
+    ".hugo-encryptor-cipher-text").innerText;
+  let password = parent.querySelector(
+    ".hugo-encryptor-input").value;
+  password = CryptoJS.MD5(password).toString();
+
+  let index = -1;
+  let elements = document.querySelectorAll(
+    ".hugo-encryptor-container");
+  for (index = 0; index < elements.length; ++index) {
+    if (elements[index].isSameNode(parent)) {
+      break;
+    }
+  }
+
+  let decrypted = "";
+  try {
+    decrypted = _do_decrypt(encrypted, password);
+  } catch (err) {
+    console.error(err);
+    alert("Failed to decrypt.");
+    return;
+  }
+
+  if (!decrypted.includes("--- DON'T MODIFY THIS LINE ---")) {
+    alert("Incorrect password.");
+    return;
+  }
+
+  let storage = localStorage;
+
+  let key = location.pathname + ".password." + index;
+  storage.setItem(key, password);
+  parent.innerHTML = decrypted;
+}
+
+window.onload = () => {
+  let index = -1;
+  let elements = document.querySelectorAll(
+    ".hugo-encryptor-container");
+
+  while (1) {
+    ++index;
+
+    let key = location.pathname + ".password." + index;
+    let password = localStorage.getItem(key);
+
+    if (!password) {
+      break;
+
+    } else {
+      console.log("Found password for part " + index);
+
+      let parent = elements[index];
+      let encrypted = parent.querySelector(".hugo-encryptor-cipher-text").innerText;
+      let decrypted = _do_decrypt(encrypted, password);
+      elements[index].innerHTML = decrypted;
+    }
+  }
+};</script></body>
+</html>

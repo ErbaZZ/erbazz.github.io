@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://erbazz.github.io/writeup/encrypted/</loc>
-    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
+    <loc>https://erbazz.github.io/writeup/htb_openadmin/</loc>
+    <lastmod>2020-04-29T23:39:12+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/writeup/htb_openadmin_th/</loc>
+    <lastmod>2020-04-29T23:39:11+07:00</lastmod>
   </url>
   
   <url>
@@ -34,7 +39,7 @@
   
   <url>
     <loc>https://erbazz.github.io/writeup/</loc>
-    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
+    <lastmod>2020-04-29T23:39:12+07:00</lastmod>
   </url>
   
   <url>
@@ -56,7 +61,7 @@
   
   <url>
     <loc>https://erbazz.github.io/</loc>
-    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
+    <lastmod>2020-04-29T23:39:12+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -74,18 +79,24 @@
   
   <url>
     <loc>https://erbazz.github.io/tags/hackthebox/</loc>
-    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
+    <lastmod>2020-04-29T23:39:12+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://erbazz.github.io/tags/htb/</loc>
-    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
+    <lastmod>2020-04-29T23:39:12+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://erbazz.github.io/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/tags/openadmin/</loc>
+    <lastmod>2020-04-29T23:39:12+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -108,13 +119,13 @@
   
   <url>
     <loc>https://erbazz.github.io/tags/writeup/</loc>
-    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
+    <lastmod>2020-04-29T23:39:12+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://erbazz.github.io/categories/writeup/</loc>
-    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
+    <lastmod>2020-04-29T23:39:12+07:00</lastmod>
     <priority>0</priority>
   </url>
   

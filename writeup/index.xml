@@ -5,20 +5,31 @@
     <link>https://erbazz.github.io/writeup/</link>
     <description>Recent content on ErbaZZ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 17 Mar 2020 22:03:11 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 23:39:12 +0700</lastBuildDate>
     
 	<atom:link href="https://erbazz.github.io/writeup/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Post Encryption Testinggit </title>
-      <link>https://erbazz.github.io/writeup/encrypted/</link>
-      <pubDate>Tue, 17 Mar 2020 22:03:11 +0700</pubDate>
+      <title>[Writeup] Hack The Box :: OpenAdmin</title>
+      <link>https://erbazz.github.io/writeup/htb_openadmin/</link>
+      <pubDate>Wed, 29 Apr 2020 23:39:12 +0700</pubDate>
       
-      <guid>https://erbazz.github.io/writeup/encrypted/</guid>
-      <description>&lt;p&gt;Post Encryption Testing&lt;/p&gt;
+      <guid>https://erbazz.github.io/writeup/htb_openadmin/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s pwn OpenAdmin from Hack The Box. This box is quite easy, as there are multiple ways to get the user flag. One part of the solution I used below is too easy in my opinion, as it could be caused by the overlook of the box creator.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/htb_craft/craft.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/htb_openadmin/infocard.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Writeup] Hack The Box :: OpenAdmin (Thai Version)</title>
+      <link>https://erbazz.github.io/writeup/htb_openadmin_th/</link>
+      <pubDate>Wed, 29 Apr 2020 23:39:11 +0700</pubDate>
+      
+      <guid>https://erbazz.github.io/writeup/htb_openadmin_th/</guid>
+      <description>&lt;p&gt;สำหรับวันนี้ เรามาลองดูเครื่องที่ชื่อว่า OpenAdmin ใน Hack The Box กันนะครับ เครื่องนี้เป็นเครื่องระดับง่าย ที่มือใหม่ก็น่าจะพอเล่นกันผ่านได้โดยไม่ยากครับ&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/htb_openadmin/infocard.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

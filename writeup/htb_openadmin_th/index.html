@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"/>
+<title>[Writeup] Hack The Box :: OpenAdmin (Thai Version) - ErbaZZ's Blog</title>
+<meta content="[Writeup] Hack The Box :: OpenAdmin (Thai Version)" property="og:title"/>
+<meta content="[Writeup] Hack The Box :: OpenAdmin (Thai Version)" name="twitter:title"/>
+<meta content="สำหรับวันนี้ เรามาลองดูเครื่องที่ชื่อว่า OpenAdmin ใน Hack The Box กันนะครับ เครื่องนี้เป็นเครื่องระดับง่าย ที่มือใหม่ก็น่าจะพอเล่นกันผ่านได้โดยไม่ยากครับ
+
+" name="description"/>
+<meta content="สำหรับวันนี้ เรามาลองดูเครื่องที่ชื่อว่า OpenAdmin ใน Hack The Box กันนะครับ เครื่องนี้เป็นเครื่องระดับง่าย ที่มือใหม่ก็น่าจะพอเล่นกันผ่านได้โดยไม่ยากครับ
+
+" property="og:description"/>
+<meta content="สำหรับวันนี้ เรามาลองดูเครื่องที่ชื่อว่า OpenAdmin ใน Hack The Box กันนะครับ เครื่องนี้เป็นเครื่องระดับง่าย ที่มือใหม่ก็น่าจะพอเล่นกันผ่านได้โดยไม่ยากครับ
+
+" name="twitter:description"/>
+<meta content="ErbaZZ" name="author"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "ErbaZZ&#39;s Blog",
+    
+    "url": "https://erbazz.github.io"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https://erbazz.github.io"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://erbazz.github.io",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://erbazz.github.io/writeup/htb_openadmin_th/",
+          "name": "[ writeup] hack the box open admin ( thai version)"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "ErbaZZ"
+  },
+  "headline": "[Writeup] Hack The Box :: OpenAdmin (Thai Version)",
+  "description" : "สำหรับวันนี้ เรามาลองดูเครื่องที่ชื่อว่า OpenAdmin ใน Hack The Box กันนะครับ เครื่องนี้เป็นเครื่องระดับง่าย ที่มือใหม่ก็น่าจะพอเล่นกันผ่านได้โดยไม่ยากครับ
+",
+  "inLanguage" : "en",
+  "wordCount": 712,
+  "datePublished" : "2020-04-20T23:50:11",
+  "dateModified" : "2020-04-20T23:50:11",
+  "image" : "https://erbazz.github.io",
+  "keywords" : [ "writeup, htb, hackthebox, openadmin" ],
+  "mainEntityOfPage" : "https://erbazz.github.io/writeup/htb_openadmin_th/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://erbazz.github.io",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://erbazz.github.io",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+<meta content="[Writeup] Hack The Box :: OpenAdmin (Thai Version)" property="og:title"/>
+<meta content="สำหรับวันนี้ เรามาลองดูเครื่องที่ชื่อว่า OpenAdmin ใน Hack The Box กันนะครับ เครื่องนี้เป็นเครื่องระดับง่าย ที่มือใหม่ก็น่าจะพอเล่นกันผ่านได้โดยไม่ยากครับ
+
+" property="og:description"/>
+<meta content="https://erbazz.github.io/writeup/htb_openadmin_th/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="ErbaZZ's Blog" property="og:site_name"/>
+<meta content="[Writeup] Hack The Box :: OpenAdmin (Thai Version)" name="twitter:title"/>
+<meta content="สำหรับวันนี้ เรามาลองดูเครื่องที่ชื่อว่า OpenAdmin ใน Hack The Box กันนะครับ เครื่องนี้เป็นเครื่องระดับง่าย ที่มือใหม่ก็น่าจะพอเล่นกันผ่านได้โดยไม่ยากครับ
+
+" name="twitter:description"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="https://erbazz.github.io/writeup/htb_openadmin_th/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="ErbaZZ's Blog" property="og:site_name"/>
+<meta content="Hugo 0.52" name="generator"/>
+<link href="https://erbazz.github.io/index.xml" rel="alternate" title="ErbaZZ's Blog" type="application/rss+xml"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet"/>
+<link href="https://erbazz.github.io/css/main.css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet"/>
+<link href="https://erbazz.github.io/css/highlight.min.css" rel="stylesheet"/><link href="https://erbazz.github.io/css/codeblock.css" rel="stylesheet"/><link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" rel="stylesheet"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-131117344-1"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131117344-1');
+    </script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131117344-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+<div class="container-fluid">
+<div class="navbar-header">
+<button class="navbar-toggle" data-target="#main-navbar" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="https://erbazz.github.io">ErbaZZ's Blog</a>
+</div>
+<div class="collapse navbar-collapse" id="main-navbar">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="/" title="Home">Home</a>
+</li>
+<li>
+<a href="/writeup/" title="Writeup">Writeup</a>
+</li>
+<li>
+<a href="/about/" title="About">About</a>
+</li>
+<li>
+<a data-target="#modalSearch" data-toggle="modal" href="#modalSearch" style="outline: none;">
+<span class="hidden-sm hidden-md hidden-lg">Search</span> <span class="glyphicon glyphicon-search" id="searchGlyph"></span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="modal fade" id="modalSearch" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h4 class="modal-title">Search ErbaZZ's Blog</h4>
+</div>
+<div class="modal-body">
+<gcse:search></gcse:search>
+</div>
+<div class="modal-footer">
+<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+<div class="pswp__bg"></div>
+<div class="pswp__scroll-wrap">
+<div class="pswp__container">
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+</div>
+<div class="pswp__ui pswp__ui--hidden">
+<div class="pswp__top-bar">
+<div class="pswp__counter"></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title="Share"></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+<div class="pswp__preloader">
+<div class="pswp__preloader__icn">
+<div class="pswp__preloader__cut">
+<div class="pswp__preloader__donut"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class="pswp__share-tooltip"></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+</button>
+<div class="pswp__caption">
+<div class="pswp__caption__center"></div>
+</div>
+</div>
+</div>
+</div>
+<header class="header-section">
+<div class="intro-header no-img">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="writeup-heading">
+<h1>[Writeup] Hack The Box :: OpenAdmin (Thai Version)</h1>
+<hr class="small"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="container" role="main">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<article class="blog-post" role="main">
+<p>สำหรับวันนี้ เรามาลองดูเครื่องที่ชื่อว่า OpenAdmin ใน Hack The Box กันนะครับ เครื่องนี้เป็นเครื่องระดับง่าย ที่มือใหม่ก็น่าจะพอเล่นกันผ่านได้โดยไม่ยากครับ</p>
+<p><img alt="" src="/images/htb_openadmin/infocard.png"/></p>
+<p><strong>OS:</strong> Linux<br/>
+<strong>Difficulty:</strong> Easy<br/>
+<strong>Points:</strong> 20<br/>
+<strong>Release:</strong> 04 Jan 2020<br/>
+<strong>IP:</strong> 10.10.10.171<br/>
+<strong>Date Cleared:</strong> 20 Apr 2020</p>
+<p><strong><a href="/writeup/htb_openadmin/">Click here to read the English version of this writeup</a></strong></p>
+<div class="hugo-encryptor-container">
+<div class="hugo-encryptor-prompt">
+<h3>This Writeup is Encrypted</h3>
+<p>Writeups for active machines are only accessible to people who have cleared them.</p>
+<h4>Unlocking</h4>
+<p><strong>Linux Machine:</strong> Use the <strong style="color: #c7254e">Root password hash</strong> from <code>/etc/shadow</code> (copy from <code>root</code> to <code>:::</code>)<br/>
+        For example: <strong><code>root:$6$BGk6CBPE$FoDCUgY.1p——redacted——cw/D/3ubU/:18222:0:99999:7:::</code></strong></p>
+<p><strong>Windows Machine:</strong> Use the <strong style="color: #c7254e">Administrator SAM hash</strong> (copy from <code>Administrator</code> to <code>:::</code>)<br/>
+        For example: <strong><code>Administrator:500:aad3b435b51404eeaa——redacted——80c4fd1448319a8c04f:::</code></strong></p><p></p>
+</div>
+<div class="hugo-encryptor-form">
+<input class="hugo-encryptor-input" id="hash-input" placeholder="Insert your hash here" type="password"/>
+<input class="hugo-encryptor-button" id="decrypt-button" onclick="_click_handler(this)" type="button" value="Unlock"/>
+</div>
+<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
+</div>
+<div class="blog-tags">
+<a href="https://erbazz.github.io/tags/writeup/">writeup</a> 
+            
+              <a href="https://erbazz.github.io/tags/htb/">htb</a> 
+            
+              <a href="https://erbazz.github.io/tags/hackthebox/">hackthebox</a> 
+            
+              <a href="https://erbazz.github.io/tags/openadmin/">openadmin</a> 
+            
+          </div>
+<hr/>
+<section id="social-share">
+<div class="list-inline footer-links">
+<div aria-hidden="true" class="share-box">
+<ul class="share">
+<li>
+<a href="//twitter.com/share?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_openadmin_th%2f&amp;text=%5bWriteup%5d%20Hack%20The%20Box%20%3a%3a%20OpenAdmin%20%28Thai%20Version%29&amp;via=" target="_blank" title="Share on Twitter">
+<i class="fab fa-twitter"></i>
+</a>
+</li>
+<li>
+<a href="//plus.google.com/share?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_openadmin_th%2f" target="_blank" title="Share on Google Plus">
+<i class="fab fa-google-plus"></i>
+</a>
+</li>
+<li>
+<a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_openadmin_th%2f" target="_blank" title="Share on Facebook">
+<i class="fab fa-facebook"></i>
+</a>
+</li>
+<li>
+<a href="//reddit.com/submit?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_openadmin_th%2f&amp;title=%5bWriteup%5d%20Hack%20The%20Box%20%3a%3a%20OpenAdmin%20%28Thai%20Version%29" target="_blank" title="Share on Reddit">
+<i class="fab fa-reddit"></i>
+</a>
+</li>
+<li>
+<a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_openadmin_th%2f&amp;title=%5bWriteup%5d%20Hack%20The%20Box%20%3a%3a%20OpenAdmin%20%28Thai%20Version%29" target="_blank" title="Share on LinkedIn">
+<i class="fab fa-linkedin"></i>
+</a>
+</li>
+<li>
+<a href="//www.stumbleupon.com/submit?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_openadmin_th%2f&amp;title=%5bWriteup%5d%20Hack%20The%20Box%20%3a%3a%20OpenAdmin%20%28Thai%20Version%29" target="_blank" title="Share on StumbleUpon">
+<i class="fab fa-stumbleupon"></i>
+</a>
+</li>
+<li>
+<a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_openadmin_th%2f&amp;description=%5bWriteup%5d%20Hack%20The%20Box%20%3a%3a%20OpenAdmin%20%28Thai%20Version%29" target="_blank" title="Share on Pinterest">
+<i class="fab fa-pinterest"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<h4 class="see-also">See also</h4>
+<ul>
+<li><a href="/writeup/htb_openadmin/">[Writeup] Hack The Box :: OpenAdmin</a></li>
+<li><a href="/writeup/htb_craft/">[Writeup] Hack The Box :: Craft</a></li>
+<li><a href="/writeup/rop_05_guessingword/">[Writeup] ROP: 05 - Guessing Word</a></li>
+</ul>
+</article>
+<ul class="pager blog-pager">
+<li class="previous">
+<a data-placement="top" data-toggle="tooltip" href="https://erbazz.github.io/writeup/htb_craft/" title="[Writeup] Hack The Box :: Craft">← Previous Post</a>
+</li>
+<li class="next">
+<a data-placement="top" data-toggle="tooltip" href="https://erbazz.github.io/writeup/htb_openadmin/" title="[Writeup] Hack The Box :: OpenAdmin">Next Post →</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<ul class="list-inline text-center footer-links">
+<li>
+<a href="https://github.com/ErbaZZ" title="GitHub">
+<span class="fa-stack fa-lg">
+<i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-github fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a href="https://gitlab.com/ErbaZZ" title="GitLab">
+<span class="fa-stack fa-lg">
+<i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a href="https://linkedin.com/in/weerawatp" title="LinkedIn">
+<span class="fa-stack fa-lg">
+<i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+</ul>
+<p class="credits copyright text-muted">
+          
+            
+              ErbaZZ
+            
+          
+
+           • ©
+          
+            2020
+          
+
+          
+             • 
+            <a href="https://erbazz.github.io">ErbaZZ's Blog</a>
+</p>
+<p class="credits theme-by text-muted">
+<a href="http://gohugo.io">Hugo v0.52</a> powered  •  Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+</p>
+</div>
+</div>
+</div>
+</footer>
+<script crossorigin="anonymous" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://erbazz.github.io/js/main.js"></script>
+<script src="https://erbazz.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script crossorigin="anonymous" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script>
+<script src="https://erbazz.github.io/js/load-photoswipe.js"></script>
+<script>
+  (function() {
+    var cx = '009837321390101256498:tbfrha9ha-g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script>
+const _do_decrypt = function(encrypted, password) {
+  let key = CryptoJS.enc.Utf8.parse(password);
+  let iv = CryptoJS.enc.Utf8.parse(password.substr(16));
+
+  let decrypted_data = CryptoJS.AES.decrypt(encrypted, key, {
+    iv: iv,
+    mode: CryptoJS.mode.CBC,
+    padding: CryptoJS.pad.Pkcs7
+  });
+  return decrypted_data.toString(CryptoJS.enc.Utf8);
+};
+
+const _click_handler = function(element) {
+  let parent = element.parentNode.parentNode;
+  let encrypted = parent.querySelector(
+    ".hugo-encryptor-cipher-text").innerText;
+  let password = parent.querySelector(
+    ".hugo-encryptor-input").value;
+  password = CryptoJS.MD5(password).toString();
+
+  let index = -1;
+  let elements = document.querySelectorAll(
+    ".hugo-encryptor-container");
+  for (index = 0; index < elements.length; ++index) {
+    if (elements[index].isSameNode(parent)) {
+      break;
+    }
+  }
+
+  let decrypted = "";
+  try {
+    decrypted = _do_decrypt(encrypted, password);
+  } catch (err) {
+    console.error(err);
+    alert("Failed to decrypt.");
+    return;
+  }
+
+  if (!decrypted.includes("--- DON'T MODIFY THIS LINE ---")) {
+    alert("Incorrect password.");
+    return;
+  }
+
+  let storage = localStorage;
+
+  let key = location.pathname + ".password." + index;
+  storage.setItem(key, password);
+  parent.innerHTML = decrypted;
+}
+
+var input = document.getElementById("hash-input");
+
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    document.getElementById("decrypt-button").click();
+  }
+});
+
+window.onload = () => {
+  let index = -1;
+  let elements = document.querySelectorAll(
+    ".hugo-encryptor-container");
+
+  while (1) {
+    ++index;
+
+    let key = location.pathname + ".password." + index;
+    let password = localStorage.getItem(key);
+
+    if (!password) {
+      break;
+
+    } else {
+      console.log("Found password for part " + index);
+
+      let parent = elements[index];
+      let encrypted = parent.querySelector(".hugo-encryptor-cipher-text").innerText;
+      let decrypted = _do_decrypt(encrypted, password);
+      elements[index].innerHTML = decrypted;
+    }
+  }
+};</script></body>
+</html>

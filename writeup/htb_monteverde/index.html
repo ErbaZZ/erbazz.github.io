@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"/>
+<title>[Writeup] Hack The Box :: Monteverde - ErbaZZ's Blog</title>
+<meta content="[Writeup] Hack The Box :: Monteverde" property="og:title"/>
+<meta content="[Writeup] Hack The Box :: Monteverde" name="twitter:title"/>
+<meta content="Monteverde is a Medium difficulty Windows box. You don’t need many fancy techniques to clear this box, as the process is quite clear and straightforward. The important point for this box is enumeration, as the saying goes, “Enumeration is the key”.
+
+" name="description"/>
+<meta content="Monteverde is a Medium difficulty Windows box. You don’t need many fancy techniques to clear this box, as the process is quite clear and straightforward. The important point for this box is enumeration, as the saying goes, “Enumeration is the key”.
+
+" property="og:description"/>
+<meta content="Monteverde is a Medium difficulty Windows box. You don’t need many fancy techniques to clear this box, as the process is quite clear and straightforward. The important point for this box is …" name="twitter:description"/>
+<meta content="ErbaZZ" name="author"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "ErbaZZ&#39;s Blog",
+    
+    "url": "https://erbazz.github.io"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https://erbazz.github.io"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://erbazz.github.io",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://erbazz.github.io/writeup/htb_monteverde/",
+          "name": "[ writeup] hack the box monteverde"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "ErbaZZ"
+  },
+  "headline": "[Writeup] Hack The Box :: Monteverde",
+  "description" : "Monteverde is a Medium difficulty Windows box. You don&amp;rsquo;t need many fancy techniques to clear this box, as the process is quite clear and straightforward. The important point for this box is enumeration, as the saying goes, &amp;ldquo;Enumeration is the key&amp;rdquo;.
+",
+  "inLanguage" : "en",
+  "wordCount": 532,
+  "datePublished" : "2020-05-05T23:28:11",
+  "dateModified" : "2020-05-05T23:28:11",
+  "image" : "https://erbazz.github.io",
+  "keywords" : [ "writeup, htb, hackthebox, monteverde" ],
+  "mainEntityOfPage" : "https://erbazz.github.io/writeup/htb_monteverde/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://erbazz.github.io",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://erbazz.github.io",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+<meta content="[Writeup] Hack The Box :: Monteverde" property="og:title"/>
+<meta content="Monteverde is a Medium difficulty Windows box. You don’t need many fancy techniques to clear this box, as the process is quite clear and straightforward. The important point for this box is enumeration, as the saying goes, “Enumeration is the key”.
+
+" property="og:description"/>
+<meta content="https://erbazz.github.io/writeup/htb_monteverde/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="ErbaZZ's Blog" property="og:site_name"/>
+<meta content="[Writeup] Hack The Box :: Monteverde" name="twitter:title"/>
+<meta content="Monteverde is a Medium difficulty Windows box. You don’t need many fancy techniques to clear this box, as the process is quite clear and straightforward. The important point for this box is …" name="twitter:description"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="https://erbazz.github.io/writeup/htb_monteverde/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="ErbaZZ's Blog" property="og:site_name"/>
+<meta content="Hugo 0.52" name="generator"/>
+<link href="https://erbazz.github.io/index.xml" rel="alternate" title="ErbaZZ's Blog" type="application/rss+xml"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet"/>
+<link href="https://erbazz.github.io/css/main.css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet"/>
+<link href="https://erbazz.github.io/css/highlight.min.css" rel="stylesheet"/><link href="https://erbazz.github.io/css/codeblock.css" rel="stylesheet"/><link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" rel="stylesheet"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-131117344-1"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131117344-1');
+    </script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131117344-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+<div class="container-fluid">
+<div class="navbar-header">
+<button class="navbar-toggle" data-target="#main-navbar" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="https://erbazz.github.io">ErbaZZ's Blog</a>
+</div>
+<div class="collapse navbar-collapse" id="main-navbar">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="/" title="Home">Home</a>
+</li>
+<li>
+<a href="/writeup/" title="Writeup">Writeup</a>
+</li>
+<li>
+<a href="/about/" title="About">About</a>
+</li>
+<li>
+<a data-target="#modalSearch" data-toggle="modal" href="#modalSearch" style="outline: none;">
+<span class="hidden-sm hidden-md hidden-lg">Search</span> <span class="glyphicon glyphicon-search" id="searchGlyph"></span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="modal fade" id="modalSearch" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h4 class="modal-title">Search ErbaZZ's Blog</h4>
+</div>
+<div class="modal-body">
+<gcse:search></gcse:search>
+</div>
+<div class="modal-footer">
+<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+<div class="pswp__bg"></div>
+<div class="pswp__scroll-wrap">
+<div class="pswp__container">
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+</div>
+<div class="pswp__ui pswp__ui--hidden">
+<div class="pswp__top-bar">
+<div class="pswp__counter"></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title="Share"></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+<div class="pswp__preloader">
+<div class="pswp__preloader__icn">
+<div class="pswp__preloader__cut">
+<div class="pswp__preloader__donut"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class="pswp__share-tooltip"></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+</button>
+<div class="pswp__caption">
+<div class="pswp__caption__center"></div>
+</div>
+</div>
+</div>
+</div>
+<header class="header-section">
+<div class="intro-header no-img">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="writeup-heading">
+<h1>[Writeup] Hack The Box :: Monteverde</h1>
+<hr class="small"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="container" role="main">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<article class="blog-post" role="main">
+<p>Monteverde is a Medium difficulty Windows box. You don’t need many fancy techniques to clear this box, as the process is quite clear and straightforward. The important point for this box is enumeration, as the saying goes, <em>“Enumeration is the key”</em>.</p>
+<p><img alt="" src="/images/htb_monteverde/infocard.png"/></p>
+<p><strong>OS:</strong> Windows<br/>
+<strong>Difficulty:</strong> Medium<br/>
+<strong>Points:</strong> 30<br/>
+<strong>Release:</strong> 11 Jan 2020<br/>
+<strong>IP:</strong> 10.10.10.172<br/>
+<strong>Date Cleared:</strong> 23 Apr 2020</p>
+<div class="hugo-encryptor-container">
+<div class="hugo-encryptor-prompt">
+<h3>This Writeup is Encrypted</h3>
+<p>Writeups for active machines are only accessible to people who have cleared them.</p>
+<h4>Unlocking</h4>
+<p><strong>Linux Machine:</strong> Use the <strong style="color: #c7254e">Root password hash</strong> from <code>/etc/shadow</code> (copy from <code>root</code> to <code>:::</code>)<br/>
+        For example: <strong><code>root:$6$BGk6CBPE$FoDCUgY.1p——redacted——cw/D/3ubU/:18222:0:99999:7:::</code></strong></p>
+<p><strong>Windows Machine:</strong> Use the <strong style="color: #c7254e">Administrator SAM hash</strong> (copy from <code>Administrator</code> to <code>:::</code>)<br/>
+        For example: <strong><code>Administrator:500:aad3b435b51404eeaa——redacted——80c4fd1448319a8c04f:::</code></strong></p><p></p>
+</div>
+<div class="hugo-encryptor-form">
+<input class="hugo-encryptor-input" id="hash-input" placeholder="Insert your hash here" type="password"/>
+<input class="hugo-encryptor-button" id="decrypt-button" onclick="_click_handler(this)" type="button" value="Unlock"/>
+</div>
+<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
+</div>
+<div class="blog-tags">
+<a href="https://erbazz.github.io/tags/writeup/">writeup</a> 
+            
+              <a href="https://erbazz.github.io/tags/htb/">htb</a> 
+            
+              <a href="https://erbazz.github.io/tags/hackthebox/">hackthebox</a> 
+            
+              <a href="https://erbazz.github.io/tags/monteverde/">monteverde</a> 
+            
+          </div>
+<hr/>
+<section id="social-share">
+<div class="list-inline footer-links">
+<div aria-hidden="true" class="share-box">
+<ul class="share">
+<li>
+<a href="//twitter.com/share?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_monteverde%2f&amp;text=%5bWriteup%5d%20Hack%20The%20Box%20%3a%3a%20Monteverde&amp;via=" target="_blank" title="Share on Twitter">
+<i class="fab fa-twitter"></i>
+</a>
+</li>
+<li>
+<a href="//plus.google.com/share?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_monteverde%2f" target="_blank" title="Share on Google Plus">
+<i class="fab fa-google-plus"></i>
+</a>
+</li>
+<li>
+<a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_monteverde%2f" target="_blank" title="Share on Facebook">
+<i class="fab fa-facebook"></i>
+</a>
+</li>
+<li>
+<a href="//reddit.com/submit?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_monteverde%2f&amp;title=%5bWriteup%5d%20Hack%20The%20Box%20%3a%3a%20Monteverde" target="_blank" title="Share on Reddit">
+<i class="fab fa-reddit"></i>
+</a>
+</li>
+<li>
+<a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_monteverde%2f&amp;title=%5bWriteup%5d%20Hack%20The%20Box%20%3a%3a%20Monteverde" target="_blank" title="Share on LinkedIn">
+<i class="fab fa-linkedin"></i>
+</a>
+</li>
+<li>
+<a href="//www.stumbleupon.com/submit?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_monteverde%2f&amp;title=%5bWriteup%5d%20Hack%20The%20Box%20%3a%3a%20Monteverde" target="_blank" title="Share on StumbleUpon">
+<i class="fab fa-stumbleupon"></i>
+</a>
+</li>
+<li>
+<a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_monteverde%2f&amp;description=%5bWriteup%5d%20Hack%20The%20Box%20%3a%3a%20Monteverde" target="_blank" title="Share on Pinterest">
+<i class="fab fa-pinterest"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<h4 class="see-also">See also</h4>
+<ul>
+<li><a href="/writeup/htb_openadmin/">[Writeup] Hack The Box :: OpenAdmin</a></li>
+<li><a href="/writeup/htb_openadmin_th/">[Writeup] Hack The Box :: OpenAdmin (Thai Version)</a></li>
+<li><a href="/writeup/htb_craft/">[Writeup] Hack The Box :: Craft</a></li>
+</ul>
+</article>
+<ul class="pager blog-pager">
+<li class="previous">
+<a data-placement="top" data-toggle="tooltip" href="https://erbazz.github.io/writeup/htb_openadmin/" title="[Writeup] Hack The Box :: OpenAdmin">← Previous Post</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<ul class="list-inline text-center footer-links">
+<li>
+<a href="https://github.com/ErbaZZ" title="GitHub">
+<span class="fa-stack fa-lg">
+<i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-github fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a href="https://gitlab.com/ErbaZZ" title="GitLab">
+<span class="fa-stack fa-lg">
+<i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a href="https://linkedin.com/in/weerawatp" title="LinkedIn">
+<span class="fa-stack fa-lg">
+<i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+</ul>
+<p class="credits copyright text-muted">
+          
+            
+              ErbaZZ
+            
+          
+
+           • ©
+          
+            2020
+          
+
+          
+             • 
+            <a href="https://erbazz.github.io">ErbaZZ's Blog</a>
+</p>
+<p class="credits theme-by text-muted">
+<a href="http://gohugo.io">Hugo v0.52</a> powered  •  Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+</p>
+</div>
+</div>
+</div>
+</footer>
+<script crossorigin="anonymous" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://erbazz.github.io/js/main.js"></script>
+<script src="https://erbazz.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script crossorigin="anonymous" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script>
+<script src="https://erbazz.github.io/js/load-photoswipe.js"></script>
+<script>
+  (function() {
+    var cx = '009837321390101256498:tbfrha9ha-g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script>
+const _do_decrypt = function(encrypted, password) {
+  let key = CryptoJS.enc.Utf8.parse(password);
+  let iv = CryptoJS.enc.Utf8.parse(password.substr(16));
+
+  let decrypted_data = CryptoJS.AES.decrypt(encrypted, key, {
+    iv: iv,
+    mode: CryptoJS.mode.CBC,
+    padding: CryptoJS.pad.Pkcs7
+  });
+  return decrypted_data.toString(CryptoJS.enc.Utf8);
+};
+
+const _click_handler = function(element) {
+  let parent = element.parentNode.parentNode;
+  let encrypted = parent.querySelector(
+    ".hugo-encryptor-cipher-text").innerText;
+  let password = parent.querySelector(
+    ".hugo-encryptor-input").value;
+  password = CryptoJS.MD5(password).toString();
+
+  let index = -1;
+  let elements = document.querySelectorAll(
+    ".hugo-encryptor-container");
+  for (index = 0; index < elements.length; ++index) {
+    if (elements[index].isSameNode(parent)) {
+      break;
+    }
+  }
+
+  let decrypted = "";
+  try {
+    decrypted = _do_decrypt(encrypted, password);
+  } catch (err) {
+    console.error(err);
+    alert("Failed to decrypt.");
+    return;
+  }
+
+  if (!decrypted.includes("--- DON'T MODIFY THIS LINE ---")) {
+    alert("Incorrect password.");
+    return;
+  }
+
+  let storage = localStorage;
+
+  let key = location.pathname + ".password." + index;
+  storage.setItem(key, password);
+  parent.innerHTML = decrypted;
+}
+
+var input = document.getElementById("hash-input");
+
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    document.getElementById("decrypt-button").click();
+  }
+});
+
+window.onload = () => {
+  let index = -1;
+  let elements = document.querySelectorAll(
+    ".hugo-encryptor-container");
+
+  while (1) {
+    ++index;
+
+    let key = location.pathname + ".password." + index;
+    let password = localStorage.getItem(key);
+
+    if (!password) {
+      break;
+
+    } else {
+      console.log("Found password for part " + index);
+
+      let parent = elements[index];
+      let encrypted = parent.querySelector(".hugo-encryptor-cipher-text").innerText;
+      let decrypted = _do_decrypt(encrypted, password);
+      elements[index].innerHTML = decrypted;
+    }
+  }
+};</script></body>
+</html>

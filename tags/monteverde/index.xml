@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Monteverde on ErbaZZ&#39;s Blog</title>
+    <link>https://erbazz.github.io/tags/monteverde/</link>
+    <description>Recent content in Monteverde on ErbaZZ&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 05 May 2020 23:28:11 +0700</lastBuildDate>
+    
+	<atom:link href="https://erbazz.github.io/tags/monteverde/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[Writeup] Hack The Box :: Monteverde</title>
+      <link>https://erbazz.github.io/writeup/htb_monteverde/</link>
+      <pubDate>Tue, 05 May 2020 23:28:11 +0700</pubDate>
+      
+      <guid>https://erbazz.github.io/writeup/htb_monteverde/</guid>
+      <description>&lt;p&gt;Monteverde is a Medium difficulty Windows box. You don&amp;rsquo;t need many fancy techniques to clear this box, as the process is quite clear and straightforward. The important point for this box is enumeration, as the saying goes, &lt;em&gt;&amp;ldquo;Enumeration is the key&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/htb_monteverde/infocard.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

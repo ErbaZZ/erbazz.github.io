@@ -5,10 +5,21 @@
     <link>https://erbazz.github.io/tags/writeup/</link>
     <description>Recent content in Writeup on ErbaZZ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 05 May 2020 23:28:11 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2020 13:40:00 +0700</lastBuildDate>
     
 	<atom:link href="https://erbazz.github.io/tags/writeup/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Writeup] Hack The Box :: Magic</title>
+      <link>https://erbazz.github.io/writeup/htb_magic/</link>
+      <pubDate>Wed, 06 May 2020 13:40:00 +0700</pubDate>
+      
+      <guid>https://erbazz.github.io/writeup/htb_magic/</guid>
+      <description>&lt;p&gt;Let me show you a Magic! The is a Medium difficulty Linux box that employs old but still relevant tricks. You need to know the &lt;strong&gt;&lt;em&gt;Magic&lt;/em&gt;&lt;/strong&gt; and how Linux operates with files to clear this box.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/htb_magic/infocard.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>[Writeup] Hack The Box :: Monteverde</title>

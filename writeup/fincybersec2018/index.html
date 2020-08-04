@@ -14,16 +14,16 @@
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
-    "name": "ErbaZZ&#39;s Blog",
+    "name": "ErbaZZ\u0027s Blog",
     
-    "url": "https://erbazz.github.io"
+    "url": "https:\/\/erbazz.github.io"
 }
 </script><script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
   "name": "",
-  "url": "https://erbazz.github.io"
+  "url": "https:\/\/erbazz.github.io"
   
   
   
@@ -38,14 +38,14 @@
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "https://erbazz.github.io",
+          "@id": "https:\/\/erbazz.github.io",
           "name": "home"
         }
     },{
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://erbazz.github.io/writeup/fincybersec2018/",
+          "@id": "https:\/\/erbazz.github.io\/writeup\/fincybersec2018\/",
           "name": "[ writeup] financial cybersecurity bootcamp 2018"
         }
     }]
@@ -58,21 +58,20 @@
     "name" : "ErbaZZ"
   },
   "headline": "[Writeup] Financial Cybersecurity Bootcamp 2018",
-  "description" : "In August, I had a chance to participate in an online CTF competition called Financial Cybersecurity Bootcamp 2018, which is a jeopardy style competition with the time limit of 24 hours. Together with my team, !IsCaptured, we solved 4 of the challenges and became eligible to participate in the final round.
-",
+  "description" : "In August, I had a chance to participate in an online CTF competition called Financial Cybersecurity Bootcamp 2018, which is a jeopardy style competition with the time limit of 24 hours. Together with my team, !IsCaptured, we solved 4 of the challenges and became eligible to participate in the final round.\n",
   "inLanguage" : "en",
-  "wordCount": 725,
+  "wordCount":  725 ,
   "datePublished" : "2018-11-11T02:35:49",
   "dateModified" : "2018-11-11T02:35:49",
-  "image" : "https://erbazz.github.io",
+  "image" : "https:\/\/erbazz.github.io",
   "keywords" : [ "fincybersec2018, ctf, writeup" ],
-  "mainEntityOfPage" : "https://erbazz.github.io/writeup/fincybersec2018/",
+  "mainEntityOfPage" : "https:\/\/erbazz.github.io\/writeup\/fincybersec2018\/",
   "publisher" : {
     "@type": "Organization",
-    "name" : "https://erbazz.github.io",
+    "name" : "https:\/\/erbazz.github.io",
     "logo" : {
         "@type" : "ImageObject",
-        "url" : "https://erbazz.github.io",
+        "url" : "https:\/\/erbazz.github.io",
         "height" :  60 ,
         "width" :  60
     }
@@ -91,7 +90,7 @@
 <meta content="https://erbazz.github.io/writeup/fincybersec2018/" property="og:url"/>
 <meta content="website" property="og:type"/>
 <meta content="ErbaZZ's Blog" property="og:site_name"/>
-<meta content="Hugo 0.52" name="generator"/>
+<meta content="Hugo 0.74.3" name="generator"/>
 <link href="https://erbazz.github.io/index.xml" rel="alternate" title="ErbaZZ's Blog" type="application/rss+xml"/>
 <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" rel="stylesheet"/>
 <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" rel="stylesheet"/>
@@ -129,7 +128,7 @@ if (!doNotTrack) {
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<a class="navbar-brand" href="https://erbazz.github.io">ErbaZZ's Blog</a>
+<a class="navbar-brand" href="https://erbazz.github.io"> <span style="color: #ff8080">#</span> ErbaZZ's Blog <span class="logo__cursor"></span></a>
 </div>
 <div class="collapse navbar-collapse" id="main-navbar">
 <ul class="nav navbar-nav navbar-right">
@@ -224,12 +223,12 @@ if (!doNotTrack) {
 <p>In August, I had a chance to participate in an online CTF competition called Financial Cybersecurity Bootcamp 2018, which is a jeopardy style competition with the time limit of 24 hours. Together with my team, !IsCaptured, we solved 4 of the challenges and became eligible to participate in the final round.</p>
 <p><img alt="Finalist Teams" src="/images/fincybersec2018/fincybersec2018_finalists.jpg"/></p><center><em>Finalist Teams Announcement</em></center>
 <p>The final round was held at the Bank of Thailand Learning Center at 27 October. The style of the competition is different from the first round, as the problems are sequential, such that you need to solve the first challenge in order to continue to the next and so on. The goal is to hack into the system of an imaginary bank called <strong>Cat Bank</strong>.</p>
-<p><img alt="!IsCaptured" src="/images/fincybersec2018/fincybersec2018_team.jpg"/></p><center><em>!IsCaptured Team</em></center>
+<p><img alt="!IsCaptured" src="/images/fincybersec2018/fincybersec2018_team.jpg"/></p><center>*!IsCaptured Team*</center>
 <p>There are a total of 5 challenges, the first one provides an NTLM hash of a bank officer with the last two characters missing. It is hinted that we should use Pass the Hash attack on the server using the given hash.</p>
 <p>Since there are only two characters missing, and the hash are in hexadecimal, there are only 16^2 or 256 combinations to try, in which we could easily bruteforce it. However, even though we knew bruteforcing it is a logical thing to do, we didn’t know how to do the Pass the Hash, or which tools to use. After an hour of trials and errors (and some publicly announced hints from the organizer), we successfully wrote a working Python script that bruteforces the hash and call smbclient of Impacket to connect to the address of the Windows Domain Controller given.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -240,14 +239,14 @@ if (!doNotTrack) {
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">call</span>
-
-<span class="n">h</span> <span class="o">=</span> <span class="s2">"2d3c0049f15843dd77a999a314b192"</span>
-<span class="n">charList</span> <span class="o">=</span> <span class="s2">"0123456789abcdef"</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">)):</span>
-    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">)):</span>
-        <span class="n">fullHash</span> <span class="o">=</span> <span class="n">h</span> <span class="o">+</span> <span class="n">charList</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">charList</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">fullHash</span><span class="p">)</span>
+<pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">call</span>
+
+<span class="n">h</span> <span class="o">=</span> <span class="s2">"2d3c0049f15843dd77a999a314b192"</span>
+<span class="n">charList</span> <span class="o">=</span> <span class="s2">"0123456789abcdef"</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">)):</span>
+        <span class="n">fullHash</span> <span class="o">=</span> <span class="n">h</span> <span class="o">+</span> <span class="n">charList</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">charList</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">fullHash</span><span class="p">)</span>
         <span class="n">call</span><span class="p">([</span><span class="s2">"./smbclient.py"</span><span class="p">,</span> <span class="s2">"ccbankad.p7z.pw/bankofficer2@13.251.114.118"</span><span class="p">,</span> <span class="s2">"-hashes"</span> <span class="p">,</span> <span class="s2">":"</span><span class="o">+</span><span class="n">fullHash</span><span class="p">])</span></code></pre></td></tr></table>
 </div>
 </div>
@@ -269,9 +268,9 @@ if (!doNotTrack) {
 <p><img alt="note.docx" src="/images/fincybersec2018/fincybersec2018_2_2.png"/></p><center><em>note.docx</em></center>
 <p>Yes, an empty Microsoft Word file… or is it?</p>
 <p><img alt="Highlighting the content" src="/images/fincybersec2018/fincybersec2018_2_3.png"/></p><center><em>Highlighting the content</em></center>
-<p><img alt="Flag :)" src="/images/fincybersec2018/fincybersec2018_2_flag.png"/></p><center><em>Flag :)</em></center>
+<p><img alt="Flag :)" src="/images/fincybersec2018/fincybersec2018_2_flag.png"/></p><center>*Flag :)*</center>
 <p>And this is the furthest we could go before the end of the competition. Surprisingly, even though most teams passed the second challenge, we were faster than most and won as the Second Runner-up.</p>
-<p><img alt="Second Runner-up" src="/images/fincybersec2018/fincybersec2018_3rdplace.jpg"/></p><center><em>!IsCaptured winning Second Runner-up</em></center>
+<p><img alt="Second Runner-up" src="/images/fincybersec2018/fincybersec2018_3rdplace.jpg"/></p><center>*!IsCaptured winning Second Runner-up*</center>
 <p>This is our first time participating in a on-site CTF competition, and the first time to work on a sequential CTF challenges. It was a fun and memorable experience. I have learned a lot, and there are still much more interesting things for me to learn!</p>
 <div class="blog-tags">
 <a href="https://erbazz.github.io/tags/fincybersec2018/">fincybersec2018</a> 
@@ -348,14 +347,6 @@ if (!doNotTrack) {
 </a>
 </li>
 <li>
-<a href="https://gitlab.com/ErbaZZ" title="GitLab">
-<span class="fa-stack fa-lg">
-<i class="fas fa-circle fa-stack-2x"></i>
-<i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
-<li>
 <a href="https://linkedin.com/in/weerawatp" title="LinkedIn">
 <span class="fa-stack fa-lg">
 <i class="fas fa-circle fa-stack-2x"></i>
@@ -381,7 +372,7 @@ if (!doNotTrack) {
             <a href="https://erbazz.github.io">ErbaZZ's Blog</a>
 </p>
 <p class="credits theme-by text-muted">
-<a href="http://gohugo.io">Hugo v0.52</a> powered  •  Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+<a href="http://gohugo.io">Hugo v0.74.3</a> powered  •  Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
 </p>
 </div>
 </div>

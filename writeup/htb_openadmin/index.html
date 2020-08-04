@@ -8,26 +8,24 @@
 <meta content="[Writeup] Hack The Box :: OpenAdmin" property="og:title"/>
 <meta content="[Writeup] Hack The Box :: OpenAdmin" name="twitter:title"/>
 <meta content="Let’s pwn OpenAdmin from Hack The Box. This box is quite easy, as there are multiple ways to get the user flag. One part of the solution I used below is too easy in my opinion, as it could be caused by the overlook of the box creator.
-
 " name="description"/>
 <meta content="Let’s pwn OpenAdmin from Hack The Box. This box is quite easy, as there are multiple ways to get the user flag. One part of the solution I used below is too easy in my opinion, as it could be caused by the overlook of the box creator.
-
 " property="og:description"/>
 <meta content="Let’s pwn OpenAdmin from Hack The Box. This box is quite easy, as there are multiple ways to get the user flag. One part of the solution I used below is too easy in my opinion, as it could be …" name="twitter:description"/>
 <meta content="ErbaZZ" name="author"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
-    "name": "ErbaZZ&#39;s Blog",
+    "name": "ErbaZZ\u0027s Blog",
     
-    "url": "https://erbazz.github.io"
+    "url": "https:\/\/erbazz.github.io"
 }
 </script><script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
   "name": "",
-  "url": "https://erbazz.github.io"
+  "url": "https:\/\/erbazz.github.io"
   
   
   
@@ -42,14 +40,14 @@
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "https://erbazz.github.io",
+          "@id": "https:\/\/erbazz.github.io",
           "name": "home"
         }
     },{
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://erbazz.github.io/writeup/htb_openadmin/",
+          "@id": "https:\/\/erbazz.github.io\/writeup\/htb_openadmin\/",
           "name": "[ writeup] hack the box open admin"
         }
     }]
@@ -62,21 +60,20 @@
     "name" : "ErbaZZ"
   },
   "headline": "[Writeup] Hack The Box :: OpenAdmin",
-  "description" : "Let&amp;rsquo;s pwn OpenAdmin from Hack The Box. This box is quite easy, as there are multiple ways to get the user flag. One part of the solution I used below is too easy in my opinion, as it could be caused by the overlook of the box creator.
-",
+  "description" : "Let\u0026rsquo;s pwn OpenAdmin from Hack The Box. This box is quite easy, as there are multiple ways to get the user flag. One part of the solution I used below is too easy in my opinion, as it could be caused by the overlook of the box creator.\n",
   "inLanguage" : "en",
-  "wordCount": 969,
+  "wordCount":  969 ,
   "datePublished" : "2020-04-29T23:39:12",
   "dateModified" : "2020-04-29T23:39:12",
-  "image" : "https://erbazz.github.io",
+  "image" : "https:\/\/erbazz.github.io",
   "keywords" : [ "writeup, htb, hackthebox, openadmin" ],
-  "mainEntityOfPage" : "https://erbazz.github.io/writeup/htb_openadmin/",
+  "mainEntityOfPage" : "https:\/\/erbazz.github.io\/writeup\/htb_openadmin\/",
   "publisher" : {
     "@type": "Organization",
-    "name" : "https://erbazz.github.io",
+    "name" : "https:\/\/erbazz.github.io",
     "logo" : {
         "@type" : "ImageObject",
-        "url" : "https://erbazz.github.io",
+        "url" : "https:\/\/erbazz.github.io",
         "height" :  60 ,
         "width" :  60
     }
@@ -85,7 +82,6 @@
 </script>
 <meta content="[Writeup] Hack The Box :: OpenAdmin" property="og:title"/>
 <meta content="Let’s pwn OpenAdmin from Hack The Box. This box is quite easy, as there are multiple ways to get the user flag. One part of the solution I used below is too easy in my opinion, as it could be caused by the overlook of the box creator.
-
 " property="og:description"/>
 <meta content="https://erbazz.github.io/writeup/htb_openadmin/" property="og:url"/>
 <meta content="website" property="og:type"/>
@@ -97,7 +93,7 @@
 <meta content="https://erbazz.github.io/writeup/htb_openadmin/" property="og:url"/>
 <meta content="website" property="og:type"/>
 <meta content="ErbaZZ's Blog" property="og:site_name"/>
-<meta content="Hugo 0.52" name="generator"/>
+<meta content="Hugo 0.74.3" name="generator"/>
 <link href="https://erbazz.github.io/index.xml" rel="alternate" title="ErbaZZ's Blog" type="application/rss+xml"/>
 <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" rel="stylesheet"/>
 <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" rel="stylesheet"/>
@@ -135,7 +131,7 @@ if (!doNotTrack) {
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<a class="navbar-brand" href="https://erbazz.github.io">ErbaZZ's Blog</a>
+<a class="navbar-brand" href="https://erbazz.github.io"> <span style="color: #ff8080">#</span> ErbaZZ's Blog <span class="logo__cursor"></span></a>
 </div>
 <div class="collapse navbar-collapse" id="main-navbar">
 <ul class="nav navbar-nav navbar-right">
@@ -238,10 +234,10 @@ if (!doNotTrack) {
 <p><strong><a href="/writeup/htb_openadmin_th/">สำหรับ Writeup ภาษาไทย กดที่ Link นี้ได้เลยครับ</a></strong></p>
 <h2 id="information-gathering">Information Gathering</h2>
 <p>Starting with <code>nmap</code> as usual, we can see that there are two open ports, <code>ssh</code> on 22, and <code>http</code> on <code>80</code>.</p>
-<pre><code>PORT   STATE SERVICE REASON         VERSION
-22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.29 ((Ubuntu))
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+<pre><code>PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.29 ((Ubuntu))
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 </code></pre>
 <h3 id="port-80">Port 80</h3>
 <p>On port <code>80</code>, there is an Apache2 Default Page on the home page.</p>
@@ -277,16 +273,16 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 <p><img alt="" src="/images/htb_openadmin/internal_apache.png"/></p>
 <p>Remember the <code>nmap</code> result? Yes, the port <code>52846</code> is not open from the outside, so we can only access it internally from the target machine using <code>curl</code>.</p>
 <p><strong>However, there’s a twist!</strong> Let’s look at the source code of <code>main.php</code> again.</p>
-<pre><code class="language-php">&lt;?php session_start(); if (!isset ($_SESSION['username'])) { header("Location: /index.php"); }; 
-# Open Admin Trusted
-# OpenAdmin
-$output = shell_exec('cat /home/joanna/.ssh/id_rsa');
-echo "&lt;pre&gt;$output&lt;/pre&gt;";
-?&gt;
-&lt;html&gt;
-&lt;h3&gt;Don't forget your "ninja" password&lt;/h3&gt;
-Click here to logout &lt;a href="logout.php" tite = "Logout"&gt;Session
-&lt;/html&gt;
+<pre><code class="language-php">&lt;?php session_start(); if (!isset ($_SESSION['username'])) { header("Location: /index.php"); }; 
+# Open Admin Trusted
+# OpenAdmin
+$output = shell_exec('cat /home/joanna/.ssh/id_rsa');
+echo "&lt;pre&gt;$output&lt;/pre&gt;";
+?&gt;
+&lt;html&gt;
+&lt;h3&gt;Don't forget your "ninja" password&lt;/h3&gt;
+Click here to logout &lt;a href="logout.php" tite = "Logout"&gt;Session
+&lt;/html&gt;
 </code></pre>
 <p>The private key would be printed whether we are logged in or not! We would just be redirected to <code>index.php</code> if we are not logged in. Therefore, we can just curl <code>main.php</code> to get the private key, no username or password needed.</p>
 <p><img alt="" src="/images/htb_openadmin/internal_curlpriv.png"/></p>
@@ -387,7 +383,7 @@ Click here to logout &lt;a href="logout.php" tite = "Logout"&gt;Session
 <ul>
 <li><a href="/writeup/htb_openadmin_th/">[Writeup] Hack The Box :: OpenAdmin (Thai Version)</a></li>
 <li><a href="/writeup/htb_craft/">[Writeup] Hack The Box :: Craft</a></li>
-<li><a href="/writeup/rop_05_guessingword/">[Writeup] ROP: 05 - Guessing Word</a></li>
+<li><a href="/writeup/rop_02_oraclesplan/">[Writeup] ROP: 02 - Oracle's Plan</a></li>
 </ul>
 </article>
 <ul class="pager blog-pager">
@@ -411,14 +407,6 @@ Click here to logout &lt;a href="logout.php" tite = "Logout"&gt;Session
 <span class="fa-stack fa-lg">
 <i class="fas fa-circle fa-stack-2x"></i>
 <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
-<li>
-<a href="https://gitlab.com/ErbaZZ" title="GitLab">
-<span class="fa-stack fa-lg">
-<i class="fas fa-circle fa-stack-2x"></i>
-<i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
 </span>
 </a>
 </li>
@@ -448,7 +436,7 @@ Click here to logout &lt;a href="logout.php" tite = "Logout"&gt;Session
             <a href="https://erbazz.github.io">ErbaZZ's Blog</a>
 </p>
 <p class="credits theme-by text-muted">
-<a href="http://gohugo.io">Hugo v0.52</a> powered  •  Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+<a href="http://gohugo.io">Hugo v0.74.3</a> powered  •  Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
 </p>
 </div>
 </div>

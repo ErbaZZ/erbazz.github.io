@@ -819,3 +819,15 @@ img[src*='#center'] {
 img[src*='#50w'] {
   width: 50%;
 }
+.logo__cursor {
+  display: inline-block;
+  width: 10px;
+  height: 18px;
+  background: #ff8080;
+  margin-left: 5px;
+  border-radius: 1px;
+  -webkit-animation: cursor 1s infinite;
+  animation: cursor 1s infinite;
+}
+@-webkit-keyframes cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}
+@keyframes cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}

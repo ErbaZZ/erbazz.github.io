@@ -12,9 +12,8 @@
 <link>https://erbazz.github.io/writeup/htb_magic/</link>
 <pubDate>Wed, 06 May 2020 13:40:00 +0700</pubDate>
 <guid>https://erbazz.github.io/writeup/htb_magic/</guid>
-<description>&lt;p&gt;Let me show you a Magic! The is a Medium difficulty Linux box that employs old but still relevant tricks. You need to know the &lt;strong&gt;&lt;em&gt;Magic&lt;/em&gt;&lt;/strong&gt; and how Linux operates with files to clear this box.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://erbazz.github.io/images/htb_magic/infocard.png" alt="" /&gt;&lt;/p&gt;</description>
+<description>&lt;p&gt;Let me show you a Magic! The is a Medium difficulty Linux box that employs old but still relevant tricks. You need to know the &lt;em&gt;&lt;strong&gt;Magic&lt;/strong&gt;&lt;/em&gt; and how Linux operates with files to clear this box.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://erbazz.github.io/images/htb_magic/infocard.png" alt=""&gt;&lt;/p&gt;</description>
 </item>
 <item>
 <title>[Writeup] Hack The Box :: Monteverde</title>
@@ -22,8 +21,7 @@
 <pubDate>Tue, 05 May 2020 23:28:11 +0700</pubDate>
 <guid>https://erbazz.github.io/writeup/htb_monteverde/</guid>
 <description>&lt;p&gt;Monteverde is a Medium difficulty Windows box. You don&amp;rsquo;t need many fancy techniques to clear this box, as the process is quite clear and straightforward. The important point for this box is enumeration, as the saying goes, &lt;em&gt;&amp;ldquo;Enumeration is the key&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://erbazz.github.io/images/htb_monteverde/infocard.png" alt="" /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src="https://erbazz.github.io/images/htb_monteverde/infocard.png" alt=""&gt;&lt;/p&gt;</description>
 </item>
 <item>
 <title>[Writeup] Hack The Box :: OpenAdmin</title>
@@ -31,8 +29,7 @@
 <pubDate>Wed, 29 Apr 2020 23:39:12 +0700</pubDate>
 <guid>https://erbazz.github.io/writeup/htb_openadmin/</guid>
 <description>&lt;p&gt;Let&amp;rsquo;s pwn OpenAdmin from Hack The Box. This box is quite easy, as there are multiple ways to get the user flag. One part of the solution I used below is too easy in my opinion, as it could be caused by the overlook of the box creator.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://erbazz.github.io/images/htb_openadmin/infocard.png" alt="" /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src="https://erbazz.github.io/images/htb_openadmin/infocard.png" alt=""&gt;&lt;/p&gt;</description>
 </item>
 <item>
 <title>[Writeup] Hack The Box :: OpenAdmin (Thai Version)</title>
@@ -40,8 +37,7 @@
 <pubDate>Wed, 29 Apr 2020 23:39:11 +0700</pubDate>
 <guid>https://erbazz.github.io/writeup/htb_openadmin_th/</guid>
 <description>&lt;p&gt;สำหรับวันนี้ เรามาลองดูเครื่องที่ชื่อว่า OpenAdmin ใน Hack The Box กันนะครับ เครื่องนี้เป็นเครื่องระดับง่าย ที่มือใหม่ก็น่าจะพอเล่นกันผ่านได้โดยไม่ยากครับ&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://erbazz.github.io/images/htb_openadmin/infocard.png" alt="" /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src="https://erbazz.github.io/images/htb_openadmin/infocard.png" alt=""&gt;&lt;/p&gt;</description>
 </item>
 <item>
 <title>[Writeup] Hack The Box :: Craft</title>
@@ -49,8 +45,7 @@
 <pubDate>Tue, 17 Mar 2020 22:03:11 +0700</pubDate>
 <guid>https://erbazz.github.io/writeup/htb_craft/</guid>
 <description>&lt;p&gt;Hello! It&amp;rsquo;s been ages since I&amp;rsquo;ve updated this blog. This is a writeup for &amp;ldquo;Craft&amp;rdquo; on HTB that I have written since last November, when it was still up and running. I have totally forgotten about it until today, which I have just found out that it has been retired. It&amp;rsquo;s a few months late, and there are writeups on this box everywhere, but here it is.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://erbazz.github.io/images/htb_craft/craft.png" alt="" /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src="https://erbazz.github.io/images/htb_craft/craft.png" alt=""&gt;&lt;/p&gt;</description>
 </item>
 <item>
 <title>[Writeup] ROP: 02 - Oracle's Plan</title>
@@ -58,13 +53,11 @@
 <pubDate>Tue, 17 Mar 2020 22:00:00 +0700</pubDate>
 <guid>https://erbazz.github.io/writeup/rop_02_oraclesplan/</guid>
 <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER: game.rop.sh was discontinued and is no longer available.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Challenge Name:&lt;/strong&gt; Oracle&amp;rsquo;s Plan&lt;br /&gt;
-&lt;strong&gt;Type:&lt;/strong&gt; Web&lt;br /&gt;
-&lt;strong&gt;Score:&lt;/strong&gt; 100 pts&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;Challenge Name:&lt;/strong&gt; Oracle&amp;rsquo;s Plan&lt;br&gt;
+&lt;strong&gt;Type:&lt;/strong&gt; Web&lt;br&gt;
+&lt;strong&gt;Score:&lt;/strong&gt; 100 pts&lt;br&gt;
 &lt;strong&gt;Link:&lt;/strong&gt; &lt;a href="https://game.rop.sh/task"&gt;https://game.rop.sh&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://erbazz.github.io/images/rop/02/rop_02_challenge.png" alt="Challenge Description" /&gt;&lt;center&gt;&lt;em&gt;Oracle&amp;rsquo;s Plan challenge description&lt;/em&gt;&lt;/center&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src="https://erbazz.github.io/images/rop/02/rop_02_challenge.png" alt="Challenge Description"&gt;&lt;center&gt;&lt;em&gt;Oracle&amp;rsquo;s Plan challenge description&lt;/em&gt;&lt;/center&gt;&lt;/p&gt;</description>
 </item>
 <item>
 <title>[Writeup] ROP: 05 - Guessing Word</title>
@@ -72,13 +65,11 @@
 <pubDate>Tue, 17 Mar 2020 22:00:00 +0700</pubDate>
 <guid>https://erbazz.github.io/writeup/rop_05_guessingword/</guid>
 <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER: game.rop.sh was discontinued and is no longer available.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Challenge Name:&lt;/strong&gt; Guessing Word&lt;br /&gt;
-&lt;strong&gt;Type:&lt;/strong&gt; Web&lt;br /&gt;
-&lt;strong&gt;Score:&lt;/strong&gt; 200 pts&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;Challenge Name:&lt;/strong&gt; Guessing Word&lt;br&gt;
+&lt;strong&gt;Type:&lt;/strong&gt; Web&lt;br&gt;
+&lt;strong&gt;Score:&lt;/strong&gt; 200 pts&lt;br&gt;
 &lt;strong&gt;Link:&lt;/strong&gt; &lt;a href="https://game.rop.sh/task"&gt;https://game.rop.sh&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://erbazz.github.io/images/rop/05/rop_05_challenge.png" alt="Challenge Description" /&gt;&lt;center&gt;&lt;em&gt;Guessing Word challenge description&lt;/em&gt;&lt;/center&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src="https://erbazz.github.io/images/rop/05/rop_05_challenge.png" alt="Challenge Description"&gt;&lt;center&gt;&lt;em&gt;Guessing Word challenge description&lt;/em&gt;&lt;/center&gt;&lt;/p&gt;</description>
 </item>
 <item>
 <title>[Writeup] Hacking Contest 2019 (Qualification Round)</title>
@@ -86,7 +77,7 @@
 <pubDate>Sun, 03 Mar 2019 22:36:00 +0700</pubDate>
 <guid>https://erbazz.github.io/writeup/hackingcontest2019/</guid>
 <description>Yesterday, I got a chance to participate in the qualification round of competition called &amp;ldquo;Hacking Contest 2019&amp;rdquo; held by SOSECURE and MFEC. It is claimed to be a hacking competition with the largest prize pool in Thailand.
-Posters
+*Posters*
 Once again, I was participating with my team &amp;ldquo;!IsCaptured&amp;rdquo; (Dawit Chusetthagarn, Patipon Suwanbon, and I), the same one from the previous competition. (Financial Cybersecurity Bootcamp 2018)
 Qualification Round The qualification round is an 18-hour long competition, from 18.</description>
 </item>
@@ -102,7 +93,7 @@ Qualification Round The qualification round is an 18-hour long competition, from
 <link>https://erbazz.github.io/about/</link>
 <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 <guid>https://erbazz.github.io/about/</guid>
-<description>ErbaZZ (Weerawat P.) Cybersecurity enthusiast enjoying life as a Penetration Tester.</description>
+<description>ErbaZZ (Weerawat P.)  Cybersecurity enthusiast enjoying life as a Penetration Tester.</description>
 </item>
 </channel>
 </rss>

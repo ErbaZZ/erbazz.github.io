@@ -1,53 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ErbaZZ&#39;s Blog</title>
     <link>https://erbazz.github.io/tags/</link>
     <description>Recent content in Tags on ErbaZZ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 17 Mar 2020 22:03:11 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2020 13:40:00 +0700</lastBuildDate>
     
 	<atom:link href="https://erbazz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Craft</title>
-      <link>https://erbazz.github.io/tags/craft/</link>
-      <pubDate>Tue, 17 Mar 2020 22:03:11 +0700</pubDate>
-      
-      <guid>https://erbazz.github.io/tags/craft/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ctf</title>
-      <link>https://erbazz.github.io/tags/ctf/</link>
-      <pubDate>Tue, 17 Mar 2020 22:00:00 +0700</pubDate>
-      
-      <guid>https://erbazz.github.io/tags/ctf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fincybersec2018</title>
-      <link>https://erbazz.github.io/tags/fincybersec2018/</link>
-      <pubDate>Sun, 11 Nov 2018 02:35:49 +0700</pubDate>
-      
-      <guid>https://erbazz.github.io/tags/fincybersec2018/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hackingcontest2019</title>
-      <link>https://erbazz.github.io/tags/hackingcontest2019/</link>
-      <pubDate>Sun, 03 Mar 2019 22:36:00 +0700</pubDate>
-      
-      <guid>https://erbazz.github.io/tags/hackingcontest2019/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hackthebox</title>
+      <title>hackthebox</title>
       <link>https://erbazz.github.io/tags/hackthebox/</link>
       <pubDate>Wed, 06 May 2020 13:40:00 +0700</pubDate>
       
@@ -56,7 +20,7 @@
     </item>
     
     <item>
-      <title>Htb</title>
+      <title>htb</title>
       <link>https://erbazz.github.io/tags/htb/</link>
       <pubDate>Wed, 06 May 2020 13:40:00 +0700</pubDate>
       
@@ -65,7 +29,7 @@
     </item>
     
     <item>
-      <title>Magic</title>
+      <title>magic</title>
       <link>https://erbazz.github.io/tags/magic/</link>
       <pubDate>Wed, 06 May 2020 13:40:00 +0700</pubDate>
       
@@ -74,7 +38,16 @@
     </item>
     
     <item>
-      <title>Monteverde</title>
+      <title>writeup</title>
+      <link>https://erbazz.github.io/tags/writeup/</link>
+      <pubDate>Wed, 06 May 2020 13:40:00 +0700</pubDate>
+      
+      <guid>https://erbazz.github.io/tags/writeup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>monteverde</title>
       <link>https://erbazz.github.io/tags/monteverde/</link>
       <pubDate>Tue, 05 May 2020 23:28:11 +0700</pubDate>
       
@@ -83,7 +56,7 @@
     </item>
     
     <item>
-      <title>Openadmin</title>
+      <title>openadmin</title>
       <link>https://erbazz.github.io/tags/openadmin/</link>
       <pubDate>Wed, 29 Apr 2020 23:39:12 +0700</pubDate>
       
@@ -92,7 +65,25 @@
     </item>
     
     <item>
-      <title>Rop</title>
+      <title>craft</title>
+      <link>https://erbazz.github.io/tags/craft/</link>
+      <pubDate>Tue, 17 Mar 2020 22:03:11 +0700</pubDate>
+      
+      <guid>https://erbazz.github.io/tags/craft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ctf</title>
+      <link>https://erbazz.github.io/tags/ctf/</link>
+      <pubDate>Tue, 17 Mar 2020 22:00:00 +0700</pubDate>
+      
+      <guid>https://erbazz.github.io/tags/ctf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rop</title>
       <link>https://erbazz.github.io/tags/rop/</link>
       <pubDate>Tue, 17 Mar 2020 22:00:00 +0700</pubDate>
       
@@ -101,7 +92,7 @@
     </item>
     
     <item>
-      <title>Web</title>
+      <title>web</title>
       <link>https://erbazz.github.io/tags/web/</link>
       <pubDate>Tue, 17 Mar 2020 22:00:00 +0700</pubDate>
       
@@ -110,11 +101,20 @@
     </item>
     
     <item>
-      <title>Writeup</title>
-      <link>https://erbazz.github.io/tags/writeup/</link>
-      <pubDate>Wed, 06 May 2020 13:40:00 +0700</pubDate>
+      <title>hackingcontest2019</title>
+      <link>https://erbazz.github.io/tags/hackingcontest2019/</link>
+      <pubDate>Sun, 03 Mar 2019 22:36:00 +0700</pubDate>
       
-      <guid>https://erbazz.github.io/tags/writeup/</guid>
+      <guid>https://erbazz.github.io/tags/hackingcontest2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fincybersec2018</title>
+      <link>https://erbazz.github.io/tags/fincybersec2018/</link>
+      <pubDate>Sun, 11 Nov 2018 02:35:49 +0700</pubDate>
+      
+      <guid>https://erbazz.github.io/tags/fincybersec2018/</guid>
       <description></description>
     </item>
     

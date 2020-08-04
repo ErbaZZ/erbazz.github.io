@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Web on ErbaZZ&#39;s Blog</title>
+    <title>web on ErbaZZ&#39;s Blog</title>
     <link>https://erbazz.github.io/tags/web/</link>
-    <description>Recent content in Web on ErbaZZ&#39;s Blog</description>
+    <description>Recent content in web on ErbaZZ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 17 Mar 2020 22:00:00 +0700</lastBuildDate>
     
@@ -17,13 +17,11 @@
       
       <guid>https://erbazz.github.io/writeup/rop_02_oraclesplan/</guid>
       <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER: game.rop.sh was discontinued and is no longer available.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Challenge Name:&lt;/strong&gt; Oracle&amp;rsquo;s Plan&lt;br /&gt;
-&lt;strong&gt;Type:&lt;/strong&gt; Web&lt;br /&gt;
-&lt;strong&gt;Score:&lt;/strong&gt; 100 pts&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;Challenge Name:&lt;/strong&gt; Oracle&amp;rsquo;s Plan&lt;br&gt;
+&lt;strong&gt;Type:&lt;/strong&gt; Web&lt;br&gt;
+&lt;strong&gt;Score:&lt;/strong&gt; 100 pts&lt;br&gt;
 &lt;strong&gt;Link:&lt;/strong&gt; &lt;a href=&#34;https://game.rop.sh/task&#34;&gt;https://game.rop.sh&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/rop/02/rop_02_challenge.png&#34; alt=&#34;Challenge Description&#34; /&gt;&lt;center&gt;&lt;em&gt;Oracle&amp;rsquo;s Plan challenge description&lt;/em&gt;&lt;/center&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/rop/02/rop_02_challenge.png&#34; alt=&#34;Challenge Description&#34;&gt;&lt;center&gt;&lt;em&gt;Oracle&amp;rsquo;s Plan challenge description&lt;/em&gt;&lt;/center&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -33,13 +31,11 @@
       
       <guid>https://erbazz.github.io/writeup/rop_05_guessingword/</guid>
       <description>&lt;p&gt;&lt;strong&gt;DISCLAIMER: game.rop.sh was discontinued and is no longer available.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Challenge Name:&lt;/strong&gt; Guessing Word&lt;br /&gt;
-&lt;strong&gt;Type:&lt;/strong&gt; Web&lt;br /&gt;
-&lt;strong&gt;Score:&lt;/strong&gt; 200 pts&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;Challenge Name:&lt;/strong&gt; Guessing Word&lt;br&gt;
+&lt;strong&gt;Type:&lt;/strong&gt; Web&lt;br&gt;
+&lt;strong&gt;Score:&lt;/strong&gt; 200 pts&lt;br&gt;
 &lt;strong&gt;Link:&lt;/strong&gt; &lt;a href=&#34;https://game.rop.sh/task&#34;&gt;https://game.rop.sh&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/rop/05/rop_05_challenge.png&#34; alt=&#34;Challenge Description&#34; /&gt;&lt;center&gt;&lt;em&gt;Guessing Word challenge description&lt;/em&gt;&lt;/center&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/rop/05/rop_05_challenge.png&#34; alt=&#34;Challenge Description&#34;&gt;&lt;center&gt;&lt;em&gt;Guessing Word challenge description&lt;/em&gt;&lt;/center&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

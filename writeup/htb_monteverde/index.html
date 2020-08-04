@@ -8,26 +8,24 @@
 <meta content="[Writeup] Hack The Box :: Monteverde" property="og:title"/>
 <meta content="[Writeup] Hack The Box :: Monteverde" name="twitter:title"/>
 <meta content="Monteverde is a Medium difficulty Windows box. You don’t need many fancy techniques to clear this box, as the process is quite clear and straightforward. The important point for this box is enumeration, as the saying goes, “Enumeration is the key”.
-
 " name="description"/>
 <meta content="Monteverde is a Medium difficulty Windows box. You don’t need many fancy techniques to clear this box, as the process is quite clear and straightforward. The important point for this box is enumeration, as the saying goes, “Enumeration is the key”.
-
 " property="og:description"/>
 <meta content="Monteverde is a Medium difficulty Windows box. You don’t need many fancy techniques to clear this box, as the process is quite clear and straightforward. The important point for this box is …" name="twitter:description"/>
 <meta content="ErbaZZ" name="author"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
-    "name": "ErbaZZ&#39;s Blog",
+    "name": "ErbaZZ\u0027s Blog",
     
-    "url": "https://erbazz.github.io"
+    "url": "https:\/\/erbazz.github.io"
 }
 </script><script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
   "name": "",
-  "url": "https://erbazz.github.io"
+  "url": "https:\/\/erbazz.github.io"
   
   
   
@@ -42,14 +40,14 @@
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "https://erbazz.github.io",
+          "@id": "https:\/\/erbazz.github.io",
           "name": "home"
         }
     },{
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://erbazz.github.io/writeup/htb_monteverde/",
+          "@id": "https:\/\/erbazz.github.io\/writeup\/htb_monteverde\/",
           "name": "[ writeup] hack the box monteverde"
         }
     }]
@@ -62,21 +60,20 @@
     "name" : "ErbaZZ"
   },
   "headline": "[Writeup] Hack The Box :: Monteverde",
-  "description" : "Monteverde is a Medium difficulty Windows box. You don&amp;rsquo;t need many fancy techniques to clear this box, as the process is quite clear and straightforward. The important point for this box is enumeration, as the saying goes, &amp;ldquo;Enumeration is the key&amp;rdquo;.
-",
+  "description" : "Monteverde is a Medium difficulty Windows box. You don\u0026rsquo;t need many fancy techniques to clear this box, as the process is quite clear and straightforward. The important point for this box is enumeration, as the saying goes, \u0026ldquo;Enumeration is the key\u0026rdquo;.\n",
   "inLanguage" : "en",
-  "wordCount": 479,
+  "wordCount":  479 ,
   "datePublished" : "2020-05-05T23:28:11",
   "dateModified" : "2020-05-05T23:28:11",
-  "image" : "https://erbazz.github.io",
+  "image" : "https:\/\/erbazz.github.io",
   "keywords" : [ "writeup, htb, hackthebox, monteverde" ],
-  "mainEntityOfPage" : "https://erbazz.github.io/writeup/htb_monteverde/",
+  "mainEntityOfPage" : "https:\/\/erbazz.github.io\/writeup\/htb_monteverde\/",
   "publisher" : {
     "@type": "Organization",
-    "name" : "https://erbazz.github.io",
+    "name" : "https:\/\/erbazz.github.io",
     "logo" : {
         "@type" : "ImageObject",
-        "url" : "https://erbazz.github.io",
+        "url" : "https:\/\/erbazz.github.io",
         "height" :  60 ,
         "width" :  60
     }
@@ -85,7 +82,6 @@
 </script>
 <meta content="[Writeup] Hack The Box :: Monteverde" property="og:title"/>
 <meta content="Monteverde is a Medium difficulty Windows box. You don’t need many fancy techniques to clear this box, as the process is quite clear and straightforward. The important point for this box is enumeration, as the saying goes, “Enumeration is the key”.
-
 " property="og:description"/>
 <meta content="https://erbazz.github.io/writeup/htb_monteverde/" property="og:url"/>
 <meta content="website" property="og:type"/>
@@ -97,7 +93,7 @@
 <meta content="https://erbazz.github.io/writeup/htb_monteverde/" property="og:url"/>
 <meta content="website" property="og:type"/>
 <meta content="ErbaZZ's Blog" property="og:site_name"/>
-<meta content="Hugo 0.52" name="generator"/>
+<meta content="Hugo 0.74.3" name="generator"/>
 <link href="https://erbazz.github.io/index.xml" rel="alternate" title="ErbaZZ's Blog" type="application/rss+xml"/>
 <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" rel="stylesheet"/>
 <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" rel="stylesheet"/>
@@ -135,7 +131,7 @@ if (!doNotTrack) {
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<a class="navbar-brand" href="https://erbazz.github.io">ErbaZZ's Blog</a>
+<a class="navbar-brand" href="https://erbazz.github.io"> <span style="color: #ff8080">#</span> ErbaZZ's Blog <span class="logo__cursor"></span></a>
 </div>
 <div class="collapse navbar-collapse" id="main-navbar">
 <ul class="nav navbar-nav navbar-right">
@@ -238,28 +234,28 @@ if (!doNotTrack) {
 <strong>Date Cleared:</strong> 23 Apr 2020</p>
 <h2 id="information-gathering">Information Gathering</h2>
 <p>Starting with <code>nmap</code> as usual.</p>
-<pre><code>PORT      STATE SERVICE       VERSION
-53/tcp    open  domain?
-88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2020-05-05 13:30:53Z)
-135/tcp   open  msrpc         Microsoft Windows RPC
-139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
-389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: MEGABANK.LOCAL0., Site: Default-First-Site-Name)
-445/tcp   open  microsoft-ds?
-464/tcp   open  kpasswd5?
-636/tcp   open  tcpwrapped
-3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: MEGABANK.LOCAL0., Site: Default-First-Site-Name)
-3269/tcp  open  tcpwrapped
-5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
-9389/tcp  open  mc-nmf        .NET Message Framing
-49667/tcp open  msrpc         Microsoft Windows RPC
-49673/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
-49675/tcp open  msrpc         Microsoft Windows RPC
-49706/tcp open  msrpc         Microsoft Windows RPC
-1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-SF-Port53-TCP:V=7.80%I=7%D=5/5%Time=5EB1759D%P=x86_64-pc-linux-gnu%r(DNSVe
-SF:rsionBindReqTCP,20,"\0\x1e\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07version\x
-SF:04bind\0\0\x10\0\x03");
-Service Info: Host: MONTEVERDE; OS: Windows; CPE: cpe:/o:microsoft:windows
+<pre><code>PORT      STATE SERVICE       VERSION
+53/tcp    open  domain?
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2020-05-05 13:30:53Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: MEGABANK.LOCAL0., Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+636/tcp   open  tcpwrapped
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: MEGABANK.LOCAL0., Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+9389/tcp  open  mc-nmf        .NET Message Framing
+49667/tcp open  msrpc         Microsoft Windows RPC
+49673/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49675/tcp open  msrpc         Microsoft Windows RPC
+49706/tcp open  msrpc         Microsoft Windows RPC
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.80%I=7%D=5/5%Time=5EB1759D%P=x86_64-pc-linux-gnu%r(DNSVe
+SF:rsionBindReqTCP,20,"\0\x1e\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07version\x
+SF:04bind\0\0\x10\0\x03");
+Service Info: Host: MONTEVERDE; OS: Windows; CPE: cpe:/o:microsoft:windows
 </code></pre>
 <p>I used <code>enum4linux</code> and found a list of users on the target.</p>
 <p><img alt="" src="/images/htb_monteverde/enum4linux.png"/></p>
@@ -384,14 +380,6 @@ Service Info: Host: MONTEVERDE; OS: Windows; CPE: cpe:/o:microsoft:windows
 </a>
 </li>
 <li>
-<a href="https://gitlab.com/ErbaZZ" title="GitLab">
-<span class="fa-stack fa-lg">
-<i class="fas fa-circle fa-stack-2x"></i>
-<i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
-<li>
 <a href="https://linkedin.com/in/weerawatp" title="LinkedIn">
 <span class="fa-stack fa-lg">
 <i class="fas fa-circle fa-stack-2x"></i>
@@ -417,7 +405,7 @@ Service Info: Host: MONTEVERDE; OS: Windows; CPE: cpe:/o:microsoft:windows
             <a href="https://erbazz.github.io">ErbaZZ's Blog</a>
 </p>
 <p class="credits theme-by text-muted">
-<a href="http://gohugo.io">Hugo v0.52</a> powered  •  Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+<a href="http://gohugo.io">Hugo v0.74.3</a> powered  •  Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
 </p>
 </div>
 </div>

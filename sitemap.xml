@@ -3,12 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://erbazz.github.io/writeup/</loc>
-    <lastmod>2020-05-06T13:40:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://erbazz.github.io/writeup/htb_magic/</loc>
     <lastmod>2020-05-06T13:40:00+07:00</lastmod>
   </url>
@@ -40,6 +34,11 @@
   
   <url>
     <loc>https://erbazz.github.io/tags/</loc>
+    <lastmod>2020-05-06T13:40:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/writeup/</loc>
     <lastmod>2020-05-06T13:40:00+07:00</lastmod>
   </url>
   

@@ -831,3 +831,42 @@ img[src*='#50w'] {
 }
 @-webkit-keyframes cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}
 @keyframes cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}
+
+.hugo-encryptor-button {
+  padding: 10px 25px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background: #FFF;
+  border-radius: 0;
+  display: inline-block;
+  border: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 6px 0 24px 0;
+}
+
+.hugo-encryptor-button:hover {
+  color: white;
+  text-shadow: none;
+  background: #0085a1;
+}
+
+.hugo-encryptor-input {
+  padding: 10px 25px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background: #FFF;
+  border-radius: 0;
+  display: inline-block;
+  border: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 6px 10px 24px 0;
+}

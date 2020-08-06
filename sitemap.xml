@@ -28,17 +28,12 @@
   </url>
   
   <url>
-    <loc>https://erbazz.github.io/tags/magic/</loc>
-    <lastmod>2020-05-06T13:40:00+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://erbazz.github.io/tags/</loc>
     <lastmod>2020-05-06T13:40:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://erbazz.github.io/writeup/</loc>
+    <loc>https://erbazz.github.io/tags/walkthrough/</loc>
     <lastmod>2020-05-06T13:40:00+07:00</lastmod>
   </url>
   
@@ -53,12 +48,12 @@
   </url>
   
   <url>
-    <loc>https://erbazz.github.io/writeup/htb_monteverde/</loc>
-    <lastmod>2020-05-05T23:28:11+07:00</lastmod>
+    <loc>https://erbazz.github.io/writeup/</loc>
+    <lastmod>2020-05-06T13:40:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://erbazz.github.io/tags/monteverde/</loc>
+    <loc>https://erbazz.github.io/writeup/htb_monteverde/</loc>
     <lastmod>2020-05-05T23:28:11+07:00</lastmod>
   </url>
   
@@ -68,22 +63,22 @@
   </url>
   
   <url>
-    <loc>https://erbazz.github.io/tags/openadmin/</loc>
-    <lastmod>2020-04-29T23:39:12+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://erbazz.github.io/writeup/htb_openadmin_th/</loc>
     <lastmod>2020-04-29T23:39:11+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://erbazz.github.io/writeup/htb_craft/</loc>
-    <lastmod>2020-03-17T22:03:11+07:00</lastmod>
+    <loc>https://erbazz.github.io/tags/th/</loc>
+    <lastmod>2020-04-29T23:39:11+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://erbazz.github.io/tags/craft/</loc>
+    <loc>https://erbazz.github.io/tags/%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%E0%B9%84%E0%B8%97%E0%B8%A2/</loc>
+    <lastmod>2020-04-29T23:39:11+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://erbazz.github.io/writeup/htb_craft/</loc>
     <lastmod>2020-03-17T22:03:11+07:00</lastmod>
   </url>
   
@@ -118,17 +113,12 @@
   </url>
   
   <url>
-    <loc>https://erbazz.github.io/tags/hackingcontest2019/</loc>
+    <loc>https://erbazz.github.io/tags/competition/</loc>
     <lastmod>2019-03-03T22:36:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://erbazz.github.io/writeup/fincybersec2018/</loc>
-    <lastmod>2018-11-11T02:35:49+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://erbazz.github.io/tags/fincybersec2018/</loc>
     <lastmod>2018-11-11T02:35:49+07:00</lastmod>
   </url>
   

@@ -13,7 +13,7 @@ body {
 }
 
 .post-title {
-  text-align: left;
+  text-align: center;
 }
 .writeup-heading {
   text-align: center;
@@ -384,6 +384,8 @@ footer .theme-by {
   font-size: 18px;
   font-style: italic;
   margin: 0 0 10px;
+  display: block;
+  text-align: center;
 }
 .post-preview .post-meta a,
 .post-heading .post-meta a {

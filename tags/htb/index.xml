@@ -16,7 +16,7 @@
       <pubDate>Sat, 08 Aug 2020 23:53:00 +0700</pubDate>
       
       <guid>https://erbazz.github.io/writeup/htb_tabby/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s my writeup for &lt;strong&gt;Tabby&lt;/strong&gt;, a Linux box on Hack The Box. This one is created by &lt;strong&gt;egre55&lt;/strong&gt; and it is rated as &lt;em&gt;Easy&lt;/em&gt;. The techniques involed to clear &lt;strong&gt;Tabby&lt;/strong&gt; are not complicated, but you need to connect the dots, using information/vulnerabilities from one component to gain access to other components.&lt;/p&gt;
+      <description>&lt;p&gt;Here&amp;rsquo;s my writeup for &lt;strong&gt;Tabby&lt;/strong&gt;, a Linux box on Hack The Box. This one is created by &lt;strong&gt;egre55&lt;/strong&gt; and it is rated as &lt;em&gt;Easy&lt;/em&gt;. The techniques required to clear &lt;strong&gt;Tabby&lt;/strong&gt; are not complicated, but you need to connect the dots, using information/vulnerabilities from one component to gain access to other components.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/htb_tabby/info.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     

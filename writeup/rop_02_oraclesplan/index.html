@@ -12,19 +12,25 @@ Challenge Name: Oracle’s Plan
 Type: Web
 Score: 100 pts
 Link: https://game.rop.sh
-Oracle’s Plan challenge description" name="description"/>
+
+Oracle’s Plan challenge description
+" name="description"/>
 <meta content="DISCLAIMER: game.rop.sh was discontinued and is no longer available.
 Challenge Name: Oracle’s Plan
 Type: Web
 Score: 100 pts
 Link: https://game.rop.sh
-Oracle’s Plan challenge description" property="og:description"/>
+
+Oracle’s Plan challenge description
+" property="og:description"/>
 <meta content="DISCLAIMER: game.rop.sh was discontinued and is no longer available.
 Challenge Name: Oracle’s Plan
 Type: Web
 Score: 100 pts
 Link: https://game.rop.sh
-Oracle’s Plan challenge description" name="twitter:description"/>
+
+Oracle’s Plan challenge description
+" name="twitter:description"/>
 <meta content="ErbaZZ" name="author"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -75,7 +81,7 @@ Oracle’s Plan challenge description" name="twitter:description"/>
   "headline": "[Writeup] ROP: 02 - Oracle\u0027s Plan",
   "description" : "DISCLAIMER: game.rop.sh was discontinued and is no longer available.\nChallenge Name: Oracle\u0026rsquo;s Plan\nType: Web\nScore: 100 pts\nLink: https:\/\/game.rop.sh\nOracle\u0026rsquo;s Plan challenge description\n",
   "inLanguage" : "en",
-  "wordCount":  262 ,
+  "wordCount":  231 ,
   "datePublished" : "2020-03-17T22:00:00",
   "dateModified" : "2020-03-17T22:00:00",
   "image" : "https:\/\/erbazz.github.io",
@@ -99,7 +105,9 @@ Challenge Name: Oracle’s Plan
 Type: Web
 Score: 100 pts
 Link: https://game.rop.sh
-Oracle’s Plan challenge description" property="og:description"/>
+
+Oracle’s Plan challenge description
+" property="og:description"/>
 <meta content="https://erbazz.github.io/writeup/rop_02_oraclesplan/" property="og:url"/>
 <meta content="website" property="og:type"/>
 <meta content="ErbaZZ's Blog" property="og:site_name"/>
@@ -109,7 +117,9 @@ Challenge Name: Oracle’s Plan
 Type: Web
 Score: 100 pts
 Link: https://game.rop.sh
-Oracle’s Plan challenge description" name="twitter:description"/>
+
+Oracle’s Plan challenge description
+" name="twitter:description"/>
 <meta content="summary" name="twitter:card"/>
 <meta content="summary" name="twitter:card"/>
 <meta content="https://erbazz.github.io/writeup/rop_02_oraclesplan/" property="og:url"/>
@@ -251,82 +261,54 @@ if (!doNotTrack) {
 <strong>Type:</strong> Web<br/>
 <strong>Score:</strong> 100 pts<br/>
 <strong>Link:</strong> <a href="https://game.rop.sh/task">https://game.rop.sh</a></p>
-<p><img alt="Challenge Description" src="/images/rop/02/rop_02_challenge.png"/></p><center><em>Oracle’s Plan challenge description</em></center>
+<p><img alt="Challenge Description" src="/images/rop/02/rop_02_challenge.png"/></p><div style="text-align: center;">
+<em>Oracle’s Plan challenge description</em>
+</div>
 <p>The challenge provides us a link to a website, which looks like this:</p>
-<p><img alt="Challenge Webpage" src="/images/rop/02/rop_02_webpage.png"/></p><center><em>Webpage of the challenge</em></center>
+<p><img alt="Challenge Webpage" src="/images/rop/02/rop_02_webpage.png"/></p><div style="text-align: center;">
+<em>Webpage of the challenge</em>
+</div>
 <p>It is a simple page with an image and a line of text. The first thing to do, of course, is to view the page source.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span> Anti-Robotics <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content</span><span class="o">=</span><span class="s">"IE=edge"</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"viewport"</span> <span class="na">content</span><span class="o">=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"description"</span> <span class="na">content</span><span class="o">=</span><span class="s">"ที่ประลองวิชาสำหรับคนอยากลองแฮก"</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"author"</span> <span class="na">content</span><span class="o">=</span><span class="s">"Xelenonz"</span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-	<span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
-<span class="nt">font-family</span><span class="o">:</span> <span class="nt">Aldrich</span><span class="o">;</span>
-<span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">'../../css/aldrich.woff'</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">'woff'</span><span class="o">);</span>
-<span class="p">}</span>
-<span class="nt">body</span><span class="p">{</span>
-	<span class="k">font-family</span><span class="p">:</span> <span class="n">Aldrich</span><span class="p">;</span>
-	<span class="k">font-size</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nt">img</span> <span class="p">{</span>
-    <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
-    <span class="k">margin-left</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
-    <span class="k">margin-right</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
-<span class="p">}</span>
-	<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">img</span>  <span class="na">src</span><span class="o">=</span><span class="s">"header.png"</span> <span class="p">/&gt;</span>
-	<span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">"text-align:center"</span><span class="p">&gt;</span>Get Away from my place ROBOT!!!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-	<span class="c">&lt;!-- Robots can't find my plan, I put in my safe place!! if you are human you will know--&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;title&gt; Anti-Robotics &lt;/title&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta name="description" content="ที่ประลองวิชาสำหรับคนอยากลองแฮก"&gt;
+    &lt;meta name="author" content="Xelenonz"&gt;
+	&lt;style&gt;
+	@font-face {
+font-family: Aldrich;
+src: url('../../css/aldrich.woff') format('woff');
+}
+body{
+	font-family: Aldrich;
+	font-size: 25px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;img  src="header.png" /&gt;
+	&lt;p style="text-align:center"&gt;Get Away from my place ROBOT!!!&lt;/p&gt;
+	&lt;!-- Robots can't find my plan, I put in my safe place!! if you are human you will know--&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 <p>The comment on line 29 hints us that the robots would not know about the page. The bots (or the crawlers) would not access the pages specified within “robots.txt”, so that is where we would have a look.</p>
-<p><img alt="robots.txt" src="/images/rop/02/rop_02_robots.png"/></p><center><em>robots.txt</em></center>
+<p><img alt="robots.txt" src="/images/rop/02/rop_02_robots.png"/></p><div style="text-align: center;">
+<em>robots.txt</em>
+</div>
 <p>Surprisingly(?), there’s a suspicious file name inside, and the flag can be found in that file.</p>
-<p><img alt="robots.txt" src="/images/rop/02/rop_02_flag.png"/></p><center><em>Flag</em></center>
+<p><img alt="robots.txt" src="/images/rop/02/rop_02_flag.png"/></p><div style="text-align: center;">
+<em>Flag</em>
+</div>
 <p>This is an easy challenge. Anyone would be able to solve it if the person knows about robots.txt file. However, if not, it would be surprisingly hard.</p>
 <div class="blog-tags">
 <a href="https://erbazz.github.io/tags/rop/">rop</a> 
@@ -386,7 +368,6 @@ if (!doNotTrack) {
 <ul>
 <li><a href="/writeup/rop_05_guessingword/">[Writeup] ROP: 05 - Guessing Word</a></li>
 <li><a href="/writeup/hackingcontest2019/">[Writeup] Hacking Contest 2019 (Qualification Round)</a></li>
-<li><a href="/writeup/fincybersec2018/">[Writeup] Financial Cybersecurity Bootcamp 2018</a></li>
 </ul>
 </article>
 <ul class="pager blog-pager">

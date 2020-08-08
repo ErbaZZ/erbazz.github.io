@@ -21,7 +21,9 @@
 &lt;strong&gt;Type:&lt;/strong&gt; Web&lt;br&gt;
 &lt;strong&gt;Score:&lt;/strong&gt; 100 pts&lt;br&gt;
 &lt;strong&gt;Link:&lt;/strong&gt; &lt;a href=&#34;https://game.rop.sh/task&#34;&gt;https://game.rop.sh&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/rop/02/rop_02_challenge.png&#34; alt=&#34;Challenge Description&#34;&gt;&lt;center&gt;&lt;em&gt;Oracle&amp;rsquo;s Plan challenge description&lt;/em&gt;&lt;/center&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/rop/02/rop_02_challenge.png&#34; alt=&#34;Challenge Description&#34;&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;em&gt;Oracle&amp;rsquo;s Plan challenge description&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -35,7 +37,9 @@
 &lt;strong&gt;Type:&lt;/strong&gt; Web&lt;br&gt;
 &lt;strong&gt;Score:&lt;/strong&gt; 200 pts&lt;br&gt;
 &lt;strong&gt;Link:&lt;/strong&gt; &lt;a href=&#34;https://game.rop.sh/task&#34;&gt;https://game.rop.sh&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/rop/05/rop_05_challenge.png&#34; alt=&#34;Challenge Description&#34;&gt;&lt;center&gt;&lt;em&gt;Guessing Word challenge description&lt;/em&gt;&lt;/center&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://erbazz.github.io/images/rop/05/rop_05_challenge.png&#34; alt=&#34;Challenge Description&#34;&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;em&gt;Guessing Word challenge description&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -45,17 +49,8 @@
       
       <guid>https://erbazz.github.io/writeup/hackingcontest2019/</guid>
       <description>Yesterday, I got a chance to participate in the qualification round of competition called &amp;ldquo;Hacking Contest 2019&amp;rdquo; held by SOSECURE and MFEC. It is claimed to be a hacking competition with the largest prize pool in Thailand.
-*Posters*Once again, I was participating with my team &amp;ldquo;!IsCaptured&amp;rdquo; (Dawit Chusetthagarn, Patipon Suwanbon, and I), the same one from the previous competition. (Financial Cybersecurity Bootcamp 2018)
+*Posters*Once again, I was participating with my team &amp;ldquo;!IsCaptured&amp;rdquo; (Dawit Chusetthagarn, Patipon Suwanbon, and I), the same one from the previous competition. (Financial Cybersecurity Bootcamp 2018)
 Qualification Round The qualification round is an 18-hour long competition, from 18.</description>
-    </item>
-    
-    <item>
-      <title>[Writeup] Financial Cybersecurity Bootcamp 2018</title>
-      <link>https://erbazz.github.io/writeup/fincybersec2018/</link>
-      <pubDate>Sun, 11 Nov 2018 02:35:49 +0700</pubDate>
-      
-      <guid>https://erbazz.github.io/writeup/fincybersec2018/</guid>
-      <description>&lt;p&gt;In August, I had a chance to participate in an online CTF competition called Financial Cybersecurity Bootcamp 2018, which is a jeopardy style competition with the time limit of 24 hours. Together with my team, !IsCaptured, we solved 4 of the challenges and became eligible to participate in the final round.&lt;/p&gt;</description>
     </item>
     
   </channel>

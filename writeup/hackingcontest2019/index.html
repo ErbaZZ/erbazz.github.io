@@ -222,100 +222,151 @@ if (!doNotTrack) {
 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <article class="blog-post" role="main">
 <p>Yesterday, I got a chance to participate in the qualification round of competition called “Hacking Contest 2019” held by SOSECURE and MFEC. It is claimed to be a hacking competition with the largest prize pool in Thailand.</p>
-<p><img alt="Poster1" src="/images/hackingcontest2019/hc2019_poster.jpg#center"/> <img alt="Poster2" src="/images/hackingcontest2019/hc2019_poster2.jpg#center"/></p>
-<center>*Posters*</center>
+<p><img alt="Poster1" src="/images/hackingcontest2019/hc2019_poster.jpg#center"/></p>
+<p><img alt="Poster2" src="/images/hackingcontest2019/hc2019_poster2.jpg#center"/></p>
+<div style="text-align: center;">
+    *Posters*
+</div>
 <p>Once again, I was participating with my team “!IsCaptured” (Dawit Chusetthagarn, Patipon Suwanbon, and I), the same one from the previous competition. (<a href="/writeup/fincybersec2018">Financial Cybersecurity Bootcamp 2018</a>)</p>
 <h1 id="qualification-round">Qualification Round</h1>
 <p>The qualification round is an 18-hour long competition, from 18.00 of 1 March 2019 until 12.00 of 2 March 2019. The challenge is given as a VM image and the goal is getting the root access. The answer we needed to submit is a report describing the steps we have done in order to gain the root access.</p>
 <h2 id="port-scanning">Port Scanning</h2>
 <p>After setting up the VM and the network, we started by scanning the ports for services with Nmap.
 <img alt="Nmap" src="/images/hackingcontest2019/hc2019_nmap.png"/></p>
-<center>*Nmap Scanning Result*</center>
+<div style="text-align: center;">
+    *Nmap Scanning Result*
+</div>
 <p>The result is pretty interesting, as we found multiple services running, FTP on 21, SSH on 22, Samba, Apache web server on 27777 (and another one possibly on 80). And so we started looking at each service.</p>
 <h2 id="ftp">FTP</h2>
 <p>With further investigation, we found out that the FTP server allows Anonymous login, and there are 4 subdirectories inside: dressrosa, enieslobby, marineford, and punk-hazard (The challenge creator must be a One Piece fan for sure).</p>
 <p><img alt="FTP" src="/images/hackingcontest2019/hc2019_ftp.png"/></p>
-<center>*FTP Scanning*</center>
+<div style="text-align: center;">
+    *FTP Scanning*
+</div>
 <p>We got inside by logging in as Anonymous, searched through the directories, and found a file called “.onepiece.zip” hidden inside “enieslobby”.</p>
 <p><img alt="FTP" src="/images/hackingcontest2019/hc2019_ftp2.png"/>
 <img alt="FTP" src="/images/hackingcontest2019/hc2019_ftp3.png"/>
 <img alt="FTP" src="/images/hackingcontest2019/hc2019_ftp4.png"/></p>
-<center>*Digging Through FTP Server*</center>
+<div style="text-align: center;">
+    *Digging Through FTP Server*
+</div>
 <p>We downloaded it; however, it is a password protected zip, so we started the password cracker to brute force it and left it running. Dictionary brute force yielded no result.</p>
 <h2 id="samba">Samba</h2>
 <p>For the Samba services, we listed the shares using smbclient and found an available share called “sambashare”. We connected to it and found 4 subdirectories: y, 2, 3, and d. (Must be the <del>3d</del>2y reference from One Piece)</p>
 <p><img alt="FTP" src="/images/hackingcontest2019/hc2019_samba.png"/></p>
-<center>*Searching the Samba Share*</center>
+<div style="text-align: center;">
+    *Searching the Samba Share*
+</div>
 <p>We found a file named “qr code naja” inside “2” directory. It is an image file of a QR code.</p>
 <p><img alt="QR" src="/images/hackingcontest2019/hc2019_qr.png"/></p>
-<center>*qr code naja*</center>
+<div style="text-align: center;">
+    *qr code naja*
+</div>
 <p>When scanned, we got the text “KEY3 = 478”</p>
 <h2 id="ssh">SSH</h2>
 <p>Using enum4linux we tried to enumerate the users of the system and found 4 users, tester, john, loki, and franky.</p>
 <p><img alt="enum4linux" src="/images/hackingcontest2019/hc2019_enum4linux.jpg"/></p>
-<center>*List of Users*</center>
+<div style="text-align: center;">
+    *List of Users*
+</div>
 <p>We tried using hydra to bruteforce the password for all 4 users found, but none was found.</p>
 <h2 id="web-server">Web Server</h2>
 <p>Initially, we couldn’t access the web server on port 80, so we started by going into the web server on port 27777.</p>
 <p><img alt="Homepage" src="/images/hackingcontest2019/hc2019_webhome.png"/></p>
-<center>*Homepage on Port 27777*</center>
+<div style="text-align: center;">
+    *Homepage on Port 27777*
+</div>
 <p>We used gobuster to list the possible directories and pages, and found the following:</p>
 <p><img alt="gobuster" src="/images/hackingcontest2019/hc2019_gobuster.png"/></p>
-<center>*gobuster Result*</center>
+<div style="text-align: center;">
+    *gobuster Result*
+</div>
 <p>Nothing interesting in /images or robots.txt. ziggy.php however, is a directory with a file named “decode.txt” inside.</p>
 <p><img alt="ziggy" src="/images/hackingcontest2019/hc2019_ziggy.png"/></p>
-<center>*ziggy.php*</center>
+<div style="text-align: center;">
+    *ziggy.php*
+</div>
 <p>The “decode.txt file contains Brainfuck code which can be decoded as “grandline.htb”.</p>
 <p><img alt="decode.txt" src="/images/hackingcontest2019/hc2019_decode.png"/></p>
-<center>*decode.txt*</center>
+<div style="text-align: center;">
+    *decode.txt*
+</div>
 <p><img alt="brainfuck" src="/images/hackingcontest2019/hc2019_brainfuck.png"/></p>
-<center>*Decoding Brainfuck code*</center>
+<div style="text-align: center;">
+    *Decoding Brainfuck code*
+</div>
 <p>After investigating for a while, we found out that “grandline.htb” is the domain name that we can use to access the web server on port 80, so we put it in the “X-Forwarded-Host” header using Burp Suite and accessed the site on 80.</p>
 <p><img alt="Burp" src="/images/hackingcontest2019/hc2019_burp.png"/></p>
-<center>*Editing the HTTP Header*</center>
+<div style="text-align: center;">
+    *Editing the HTTP Header*
+</div>
 <p>With that, we found a jQuery File Upload Demo page, which we can easily upload a web shell and access the machine.</p>
 <p><img alt="Upload" src="/images/hackingcontest2019/hc2019_upload.png"/></p>
-<center>*Uploading the Web Shell*</center>
+<div style="text-align: center;">
+    *Uploading the Web Shell*
+</div>
 <p><img alt="Web Shell" src="/images/hackingcontest2019/hc2019_shell.png"/></p>
-<center>*Accessing the Web Shell*</center>
+<div style="text-align: center;">
+    *Accessing the Web Shell*
+</div>
 <p>We used <a href="https://github.com/flozz/p0wny-shell">p0wny-shell</a> since it is interactive and easy to use (It can upload and download file through the browser dialog too!).</p>
 <p>We dug through the directories and found a hidden directory on the web server on port 27777 with another webpage.</p>
 <p><em>There should be another method to find this page, but we got the shell, so we could access and see everything.</em></p>
 <p><img alt="Directory" src="/images/hackingcontest2019/hc2019_directory.png"/></p>
-<center>*Finding the Hidden Directory*</center>
+<div style="text-align: center;">
+    *Finding the Hidden Directory*
+</div>
 <p><img alt="Webpage" src="/images/hackingcontest2019/hc2019_page2.png"/></p>
-<center>*Webpage in the Directory*</center>
+<div style="text-align: center;">
+    *Webpage in the Directory*
+</div>
 <p>With the shell, we could see the source, so we know that the page would like us to type in the creator’s favorite One Piece character, which is “Foxy”, then it would tell us that there’s the file called “bookie1223sa.txt” inside the directory (which we have already known).</p>
 <p><img alt="bookie" src="/images/hackingcontest2019/hc2019_bookie.png"/></p>
-<center>*bookie1223sa.txt*</center>
+<div style="text-align: center;">
+    *bookie1223sa.txt*
+</div>
 <p>There are 0s and 1s in “bookie1223sa.txt”, so we changed them to black and white characters and resize the window to show 48 characters per line and got the key “KEY IS 193”.</p>
 <p><img alt="bookie" src="/images/hackingcontest2019/hc2019_bookie2.png"/></p>
-<center>*Replacing the Characters and Resizing the Window*</center>
+<div style="text-align: center;">
+    *Replacing the Characters and Resizing the Window*
+</div>
 <p>After digging a bit further into /home/franky, we found the .bash_history with the password “3d2yhijinbe” of the user “franky”.
 <img alt="franky" src="/images/hackingcontest2019/hc2019_franky.png"/></p>
-<center>*franky's Password*</center>
+<div style="text-align: center;">
+    *franky's Password*
+</div>
 <h2 id="privilege-escalation">Privilege Escalation</h2>
 <p>Our goal is to get the root access, so we tried to get more information of the system.</p>
 <p><img alt="System Information" src="/images/hackingcontest2019/hc2019_uname.png"/></p>
-<center>*Linux Version*</center>
+<div style="text-align: center;">
+    *Linux Version*
+</div>
 <p>It’s Linux Ubuntu 4.4.0-31, and there are LOTS of exploits available. We downloaded the C source of one, uploaded it, and tried to compile it. Unfortunately, gcc is not installed on the system, so we couldn’t get root the easy way. We thought we could download the same version of the OS and compile the exploit, so that we could send the precompiled binary to the system and run, but we found an <strong>EASIER WAY</strong>!</p>
 <p><img alt="passwd" src="/images/hackingcontest2019/hc2019_passwd.png"/></p>
-<center>*Permission Setting on /etc/passwd*</center>
+<div style="text-align: center;">
+    *Permission Setting on /etc/passwd*
+</div>
 <p>Yes, the passwd is <strong>WRITABLE BY ANYONE!</strong></p>
 <p>We used the following command to add a new suid user with the password “foo”:</p>
 <pre><code>echo "IsCaptured:aaKNIEDOaueR6:0:0:IsCaptured:/root:/bin/bash" &gt;&gt; /etc/passwd
 </code></pre>
 <p><img alt="root" src="/images/hackingcontest2019/hc2019_root.png"/></p>
-<center>*Rooted*</center>
+<div style="text-align: center;">
+    *Rooted*
+</div>
 <p>And thus, we got the root access and the flag “KEY:alabasta” inside the /root directory.</p>
 <p>Going back to the zip we got from the FTP server, we used “alabasta” and the password successfully extracted the files.</p>
 <p>Inside, we found 5 images of Ace (One Piece character). And that’s all we have done and submitted in the report.</p>
 <p><img alt="Ace" src="/images/hackingcontest2019/hc2019_ace.png"/></p>
-<center>*Pictures of Ace*</center>
+<div style="text-align: center;">
+    *Pictures of Ace*
+</div>
 <p><em>We didn’t know that there’s another key in one of the images and only found that out later from the <a href="https://sth.sh/assets/files/STH_SOSECURE_CTF_Writeup_v1.0.pdf">writeup by STH</a> after the competition.</em></p>
 <p>And guess what, we got through to the final round!
 <img alt="Finalists" src="/images/hackingcontest2019/hc2019_final.png"/></p>
-<center>*Finalists*</center>
+<div style="text-align: center;">
+    *Finalists*
+</div>
 <p>The final round is going to be held on 16 March 2019. Wish us luck!</p>
 <div class="blog-tags">
 <a href="https://erbazz.github.io/tags/ctf/">ctf</a> 
@@ -369,15 +420,8 @@ if (!doNotTrack) {
 </div>
 </div>
 </section>
-<h4 class="see-also">See also</h4>
-<ul>
-<li><a href="/writeup/fincybersec2018/">[Writeup] Financial Cybersecurity Bootcamp 2018</a></li>
-</ul>
 </article>
 <ul class="pager blog-pager">
-<li class="previous">
-<a data-placement="top" data-toggle="tooltip" href="https://erbazz.github.io/writeup/fincybersec2018/" title="[Writeup] Financial Cybersecurity Bootcamp 2018">← Previous Post</a>
-</li>
 <li class="next">
 <a data-placement="top" data-toggle="tooltip" href="https://erbazz.github.io/writeup/rop_05_guessingword/" title="[Writeup] ROP: 05 - Guessing Word">Next Post →</a>
 </li>

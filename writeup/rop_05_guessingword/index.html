@@ -12,19 +12,25 @@ Challenge Name: Guessing Word
 Type: Web
 Score: 200 pts
 Link: https://game.rop.sh
-Guessing Word challenge description" name="description"/>
+
+Guessing Word challenge description
+" name="description"/>
 <meta content="DISCLAIMER: game.rop.sh was discontinued and is no longer available.
 Challenge Name: Guessing Word
 Type: Web
 Score: 200 pts
 Link: https://game.rop.sh
-Guessing Word challenge description" property="og:description"/>
+
+Guessing Word challenge description
+" property="og:description"/>
 <meta content="DISCLAIMER: game.rop.sh was discontinued and is no longer available.
 Challenge Name: Guessing Word
 Type: Web
 Score: 200 pts
 Link: https://game.rop.sh
-Guessing Word challenge description" name="twitter:description"/>
+
+Guessing Word challenge description
+" name="twitter:description"/>
 <meta content="ErbaZZ" name="author"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -99,7 +105,9 @@ Challenge Name: Guessing Word
 Type: Web
 Score: 200 pts
 Link: https://game.rop.sh
-Guessing Word challenge description" property="og:description"/>
+
+Guessing Word challenge description
+" property="og:description"/>
 <meta content="https://erbazz.github.io/writeup/rop_05_guessingword/" property="og:url"/>
 <meta content="website" property="og:type"/>
 <meta content="ErbaZZ's Blog" property="og:site_name"/>
@@ -109,7 +117,9 @@ Challenge Name: Guessing Word
 Type: Web
 Score: 200 pts
 Link: https://game.rop.sh
-Guessing Word challenge description" name="twitter:description"/>
+
+Guessing Word challenge description
+" name="twitter:description"/>
 <meta content="summary" name="twitter:card"/>
 <meta content="summary" name="twitter:card"/>
 <meta content="https://erbazz.github.io/writeup/rop_05_guessingword/" property="og:url"/>
@@ -251,9 +261,13 @@ if (!doNotTrack) {
 <strong>Type:</strong> Web<br/>
 <strong>Score:</strong> 200 pts<br/>
 <strong>Link:</strong> <a href="https://game.rop.sh/task">https://game.rop.sh</a></p>
-<p><img alt="Challenge Description" src="/images/rop/05/rop_05_challenge.png"/></p><center><em>Guessing Word challenge description</em></center>
+<p><img alt="Challenge Description" src="/images/rop/05/rop_05_challenge.png"/></p><div style="text-align: center;">
+<em>Guessing Word challenge description</em>
+</div>
 <p>As usual, the challenge provides us with a link to the website. On the website, there’s a text box and a button to submit the password that we need to “GUESS”.</p>
-<p><img alt="Challenge Webpage" src="/images/rop/05/rop_05_webpage.png"/></p><center><em>Webpage of the challenge</em></center>
+<p><img alt="Challenge Webpage" src="/images/rop/05/rop_05_webpage.png"/></p><div style="text-align: center;">
+<em>Webpage of the challenge</em>
+</div>
 <p>Looking at the page source, we would see this:</p>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -303,7 +317,9 @@ if (!doNotTrack) {
 </code></pre>
 <p>We can see that the form would send a POST request with the password in the textbox to <strong>index.php</strong>.
 So let’s try inputting <em>test</em> into the form and press <em>Enter</em>.</p>
-<p><img alt="Result" src="/images/rop/05/rop_05_wrong.png"/></p><center><em>Result</em></center>
+<p><img alt="Result" src="/images/rop/05/rop_05_wrong.png"/></p><div style="text-align: center;">
+<em>Result</em>
+</div>
 <p>Apparently, we guessed wrong. Let’s see the source.</p>
 <pre><code class="language-html">Wrong Password&lt;br&gt;
 </code></pre>
@@ -316,7 +332,9 @@ We need to do something with the input of the form, one of the possibilities wou
 ...
 </code></pre>
 <p>Hmmm…? <strong>?debug for DEBUGGING</strong>? Let’s try it then, changing the target of the POST request to <strong>index.php?debug</strong> and submit again.</p>
-<p><img alt="Debug Result" src="/images/rop/05/rop_05_wrong.png"/></p><center><em>Result with ?debug</em></center>
+<p><img alt="Debug Result" src="/images/rop/05/rop_05_wrong.png"/></p><div style="text-align: center;">
+<em>Result with ?debug</em>
+</div>
 <p>The page looks the same; however, something interesting appears in the source.</p>
 <pre><code>Wrong Password&lt;br&gt;&lt;br&gt;&lt;!-- Process Time: 0 --&gt;
 </code></pre>
@@ -381,9 +399,13 @@ print("Key = " + password)
 </code></pre>
 <p>The script would rotate the characters from the list to send as an input, after that, it would save the one with the longest process time and pick the further characters.</p>
 <p>After waiting for a while, we got our password.</p>
-<p><img alt="Script Output" src="/images/rop/05/rop_05_output.png"/></p><center><em>Script Output</em></center>
+<p><img alt="Script Output" src="/images/rop/05/rop_05_output.png"/></p><div style="text-align: center;">
+<em>Script Output</em>
+</div>
 <p>Inputting this key manually on the website yields this result:</p>
-<p><img alt="Result" src="/images/rop/05/rop_05_key.png"/></p><center><em>Result</em></center>
+<p><img alt="Result" src="/images/rop/05/rop_05_key.png"/></p><div style="text-align: center;">
+<em>Result</em>
+</div>
 <p>Success!</p>
 <div class="blog-tags">
 <a href="https://erbazz.github.io/tags/rop/">rop</a> 
@@ -443,7 +465,6 @@ print("Key = " + password)
 <ul>
 <li><a href="/writeup/rop_02_oraclesplan/">[Writeup] ROP: 02 - Oracle's Plan</a></li>
 <li><a href="/writeup/hackingcontest2019/">[Writeup] Hacking Contest 2019 (Qualification Round)</a></li>
-<li><a href="/writeup/fincybersec2018/">[Writeup] Financial Cybersecurity Bootcamp 2018</a></li>
 </ul>
 </article>
 <ul class="pager blog-pager">

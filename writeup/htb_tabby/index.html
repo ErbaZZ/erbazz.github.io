@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"/>
+<title>[Writeup] Hack The Box :: Tabby - ErbaZZ's Blog</title>
+<meta content="[Writeup] Hack The Box :: Tabby" property="og:title"/>
+<meta content="[Writeup] Hack The Box :: Tabby" name="twitter:title"/>
+<meta content="Here's my writeup for Tabby, a Linux box on Hack The Box. This one is created by egre55 and it is rated as Easy. The techniques involed to clear Tabby are not complicated, but you need to connect the dots, using information/vulnerabilities from one component to gain access to other components." name="description"/>
+<meta content="Here's my writeup for Tabby, a Linux box on Hack The Box. This one is created by egre55 and it is rated as Easy. The techniques involed to clear Tabby are not complicated, but you need to connect the dots, using information/vulnerabilities from one component to gain access to other components." property="og:description"/>
+<meta content="Here's my writeup for Tabby, a Linux box on Hack The Box. This one is created by egre55 and it is rated as Easy. The techniques involed to clear Tabby are not complicated, but you need to connect the …" name="twitter:description"/>
+<meta content="ErbaZZ" name="author"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "ErbaZZ\u0027s Blog",
+    
+    "url": "https:\/\/erbazz.github.io"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/erbazz.github.io"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/erbazz.github.io",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/erbazz.github.io\/writeup\/htb_tabby\/",
+          "name": "[ writeup] hack the box tabby"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "ErbaZZ"
+  },
+  "headline": "[Writeup] Hack The Box :: Tabby",
+  "description" : "Here\u0027s my writeup for Tabby, a Linux box on Hack The Box. This one is created by egre55 and it is rated as Easy. The techniques involed to clear Tabby are not complicated, but you need to connect the dots, using information\/vulnerabilities from one component to gain access to other components.",
+  "inLanguage" : "en",
+  "wordCount":  1044 ,
+  "datePublished" : "2020-08-08T23:53:00",
+  "dateModified" : "2020-08-08T23:53:00",
+  "image" : "https:\/\/erbazz.github.io",
+  "keywords" : [ "writeup, walkthrough, htb, hackthebox" ],
+  "mainEntityOfPage" : "https:\/\/erbazz.github.io\/writeup\/htb_tabby\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/erbazz.github.io",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/erbazz.github.io",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+<meta content="[Writeup] Hack The Box :: Tabby" property="og:title"/>
+<meta content="Here's my writeup for Tabby, a Linux box on Hack The Box. This one is created by egre55 and it is rated as Easy. The techniques involed to clear Tabby are not complicated, but you need to connect the dots, using information/vulnerabilities from one component to gain access to other components." property="og:description"/>
+<meta content="https://erbazz.github.io/writeup/htb_tabby/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="ErbaZZ's Blog" property="og:site_name"/>
+<meta content="[Writeup] Hack The Box :: Tabby" name="twitter:title"/>
+<meta content="Here's my writeup for Tabby, a Linux box on Hack The Box. This one is created by egre55 and it is rated as Easy. The techniques involed to clear Tabby are not complicated, but you need to connect the …" name="twitter:description"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="https://erbazz.github.io/writeup/htb_tabby/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="ErbaZZ's Blog" property="og:site_name"/>
+<meta content="Hugo 0.74.3" name="generator"/>
+<link href="https://erbazz.github.io/index.xml" rel="alternate" title="ErbaZZ's Blog" type="application/rss+xml"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet"/>
+<link href="https://erbazz.github.io/css/main.css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Mulish:400,700,400italic,700italic" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Kanit:300italic,600italic,700italic,300,600,700" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet"/>
+<link href="https://erbazz.github.io/css/highlight.min.css" rel="stylesheet"/><link href="https://erbazz.github.io/css/codeblock.css" rel="stylesheet"/><link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" rel="stylesheet"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-131117344-1"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131117344-1');
+    </script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131117344-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+<div class="container-fluid">
+<div class="navbar-header">
+<button class="navbar-toggle" data-target="#main-navbar" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="https://erbazz.github.io"> <span style="color: #ff8080">#</span> ErbaZZ's Blog <span class="logo__cursor"></span></a>
+</div>
+<div class="collapse navbar-collapse" id="main-navbar">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="/" title="Home">Home</a>
+</li>
+<li>
+<a href="/writeup/" title="Writeup">Writeup</a>
+</li>
+<li>
+<a href="/about/" title="About">About</a>
+</li>
+<li>
+<a data-target="#modalSearch" data-toggle="modal" href="#modalSearch" style="outline: none;">
+<span class="hidden-sm hidden-md hidden-lg">Search</span> <span class="glyphicon glyphicon-search" id="searchGlyph"></span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="modal fade" id="modalSearch" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h4 class="modal-title">Search ErbaZZ's Blog</h4>
+</div>
+<div class="modal-body">
+<gcse:search></gcse:search>
+</div>
+<div class="modal-footer">
+<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+<div class="pswp__bg"></div>
+<div class="pswp__scroll-wrap">
+<div class="pswp__container">
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+</div>
+<div class="pswp__ui pswp__ui--hidden">
+<div class="pswp__top-bar">
+<div class="pswp__counter"></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title="Share"></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+<div class="pswp__preloader">
+<div class="pswp__preloader__icn">
+<div class="pswp__preloader__cut">
+<div class="pswp__preloader__donut"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class="pswp__share-tooltip"></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+</button>
+<div class="pswp__caption">
+<div class="pswp__caption__center"></div>
+</div>
+</div>
+</div>
+</div>
+<header class="header-section">
+<div class="intro-header no-img">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="writeup-heading">
+<h1>[Writeup] Hack The Box :: Tabby</h1>
+<hr class="small"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="container" role="main">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<article class="blog-post" role="main">
+<p>Here’s my writeup for Tabby, a Linux box on Hack The Box. This one is created by <strong>egre55</strong> and it is rated as <em>Easy</em>. The techniques involed to clear Tabby are not complicated, but you need to connect the dots, using information/vulnerabilities from one component to gain access to other components.</p>
+<p><img alt="" src="images/htb_tabby/info.png"/></p>
+<p><strong>OS:</strong> Linux<br/>
+<strong>Difficulty:</strong> Easy<br/>
+<strong>Points:</strong> 20<br/>
+<strong>Release:</strong> 20 Jun 2020<br/>
+<strong>IP:</strong> 10.10.10.194<br/>
+<strong>Box Creator:</strong> egre55<br/>
+<strong>Date Cleared:</strong> 5 Aug 2020</p>
+<div class="hugo-encryptor-container">
+<div class="hugo-encryptor-prompt">
+<h3>This Writeup is Encrypted</h3>
+<p>Writeups for active machines are only accessible to people who have cleared them.</p>
+<h4>Unlocking</h4>
+<p><strong>Linux Machine:</strong> Use the <strong style="color: #c7254e">Root password hash</strong> from <code>/etc/shadow</code> (copy from <code>root</code> to <code>:::</code>)<br/>
+        For example: <strong><code>root:$6$BGk6CBPE$FoDCUgY.1p——redacted——cw/D/3ubU/:18222:0:99999:7:::</code></strong></p>
+<p><strong>Windows Machine:</strong> Use the <strong style="color: #c7254e">Administrator SAM hash</strong> (copy from <code>Administrator</code> to <code>:::</code>)<br/>
+        For example: <strong><code>Administrator:500:aad3b435b51404eeaa——redacted——80c4fd1448319a8c04f:::</code></strong></p><p></p>
+</div>
+<div class="hugo-encryptor-form">
+<input class="hugo-encryptor-input" id="hash-input" placeholder="Insert your hash here" type="password"/>
+<input class="hugo-encryptor-button" id="decrypt-button" onclick="_click_handler(this)" type="button" value="Unlock"/>
+</div>
+<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
+</div>
+<div class="blog-tags">
+<a href="https://erbazz.github.io/tags/writeup/">writeup</a> 
+            
+              <a href="https://erbazz.github.io/tags/walkthrough/">walkthrough</a> 
+            
+              <a href="https://erbazz.github.io/tags/htb/">htb</a> 
+            
+              <a href="https://erbazz.github.io/tags/hackthebox/">hackthebox</a> 
+            
+          </div>
+<hr/>
+<section id="social-share">
+<div class="list-inline footer-links">
+<div aria-hidden="true" class="share-box">
+<ul class="share">
+<li>
+<a href="//twitter.com/share?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_tabby%2f&amp;text=%5bWriteup%5d%20Hack%20The%20Box%20%3a%3a%20Tabby&amp;via=" target="_blank" title="Share on Twitter">
+<i class="fab fa-twitter"></i>
+</a>
+</li>
+<li>
+<a href="//plus.google.com/share?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_tabby%2f" target="_blank" title="Share on Google Plus">
+<i class="fab fa-google-plus"></i>
+</a>
+</li>
+<li>
+<a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_tabby%2f" target="_blank" title="Share on Facebook">
+<i class="fab fa-facebook"></i>
+</a>
+</li>
+<li>
+<a href="//reddit.com/submit?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_tabby%2f&amp;title=%5bWriteup%5d%20Hack%20The%20Box%20%3a%3a%20Tabby" target="_blank" title="Share on Reddit">
+<i class="fab fa-reddit"></i>
+</a>
+</li>
+<li>
+<a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_tabby%2f&amp;title=%5bWriteup%5d%20Hack%20The%20Box%20%3a%3a%20Tabby" target="_blank" title="Share on LinkedIn">
+<i class="fab fa-linkedin"></i>
+</a>
+</li>
+<li>
+<a href="//www.stumbleupon.com/submit?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_tabby%2f&amp;title=%5bWriteup%5d%20Hack%20The%20Box%20%3a%3a%20Tabby" target="_blank" title="Share on StumbleUpon">
+<i class="fab fa-stumbleupon"></i>
+</a>
+</li>
+<li>
+<a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2ferbazz.github.io%2fwriteup%2fhtb_tabby%2f&amp;description=%5bWriteup%5d%20Hack%20The%20Box%20%3a%3a%20Tabby" target="_blank" title="Share on Pinterest">
+<i class="fab fa-pinterest"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<h4 class="see-also">See also</h4>
+<ul>
+<li><a href="/writeup/htb_magic/">[Writeup] Hack The Box :: Magic</a></li>
+<li><a href="/writeup/htb_monteverde/">[Writeup] Hack The Box :: Monteverde</a></li>
+<li><a href="/writeup/htb_openadmin/">[Writeup] Hack The Box :: OpenAdmin</a></li>
+</ul>
+</article>
+<ul class="pager blog-pager">
+<li class="previous">
+<a data-placement="top" data-toggle="tooltip" href="https://erbazz.github.io/writeup/htb_magic/" title="[Writeup] Hack The Box :: Magic">← Previous Post</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<ul class="list-inline text-center footer-links">
+<li>
+<a href="https://github.com/ErbaZZ" title="GitHub">
+<span class="fa-stack fa-lg">
+<i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-github fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a href="https://linkedin.com/in/weerawatp" title="LinkedIn">
+<span class="fa-stack fa-lg">
+<i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+</ul>
+<p class="credits copyright text-muted">
+          
+            
+              ErbaZZ
+            
+          
+
+           • ©
+          
+            2020
+          
+
+          
+             • 
+            <a href="https://erbazz.github.io">ErbaZZ's Blog</a>
+</p>
+<p class="credits theme-by text-muted">
+<a href="http://gohugo.io">Hugo v0.74.3</a> powered  •  Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+</p>
+</div>
+</div>
+</div>
+</footer>
+<script crossorigin="anonymous" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://erbazz.github.io/js/main.js"></script>
+<script src="https://erbazz.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script crossorigin="anonymous" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script>
+<script src="https://erbazz.github.io/js/load-photoswipe.js"></script>
+<script>
+  (function() {
+    var cx = '009837321390101256498:tbfrha9ha-g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script>
+const _do_decrypt = function(encrypted, password) {
+  let key = CryptoJS.enc.Utf8.parse(password);
+  let iv = CryptoJS.enc.Utf8.parse(password.substr(16));
+
+  let decrypted_data = CryptoJS.AES.decrypt(encrypted, key, {
+    iv: iv,
+    mode: CryptoJS.mode.CBC,
+    padding: CryptoJS.pad.Pkcs7
+  });
+  return decrypted_data.toString(CryptoJS.enc.Utf8);
+};
+
+const _click_handler = function(element) {
+  let parent = element.parentNode.parentNode;
+  let encrypted = parent.querySelector(
+    ".hugo-encryptor-cipher-text").innerText;
+  let password = parent.querySelector(
+    ".hugo-encryptor-input").value;
+  password = CryptoJS.MD5(password).toString();
+
+  let index = -1;
+  let elements = document.querySelectorAll(
+    ".hugo-encryptor-container");
+  for (index = 0; index < elements.length; ++index) {
+    if (elements[index].isSameNode(parent)) {
+      break;
+    }
+  }
+
+  let decrypted = "";
+  try {
+    decrypted = _do_decrypt(encrypted, password);
+  } catch (err) {
+    console.error(err);
+    alert("Failed to decrypt.");
+    return;
+  }
+
+  if (!decrypted.includes("--- DON'T MODIFY THIS LINE ---")) {
+    alert("Incorrect password.");
+    return;
+  }
+
+  let storage = localStorage;
+
+  let key = location.pathname + ".password." + index;
+  storage.setItem(key, password);
+  parent.innerHTML = decrypted;
+}
+
+var input = document.getElementById("hash-input");
+
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    document.getElementById("decrypt-button").click();
+  }
+});
+
+window.onload = () => {
+  let index = -1;
+  let elements = document.querySelectorAll(
+    ".hugo-encryptor-container");
+
+  while (1) {
+    ++index;
+
+    let key = location.pathname + ".password." + index;
+    let password = localStorage.getItem(key);
+
+    if (!password) {
+      break;
+
+    } else {
+      console.log("Found password for part " + index);
+
+      let parent = elements[index];
+      let encrypted = parent.querySelector(".hugo-encryptor-cipher-text").innerText;
+      let decrypted = _do_decrypt(encrypted, password);
+      elements[index].innerHTML = decrypted;
+    }
+  }
+};</script></body>
+</html>

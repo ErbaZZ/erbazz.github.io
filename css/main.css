@@ -784,7 +784,6 @@ h4.see-also {
 
 /* Sharing */
  ul.share {
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
@@ -799,7 +798,6 @@ h4.see-also {
   margin-right: 0;
 }
  ul.share li .fab {
-  display: block;
   width: 30px;
   height: 30px;
   line-height: 30px;

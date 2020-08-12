@@ -1,5 +1,9 @@
 /* --- General --- */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Mulish', 'Kanit', sans-serif;
   font-size: 18px;
@@ -881,4 +885,58 @@ img[src*='#50w'] {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 6px 10px 24px 0;
+}
+
+.tableOfContentContainer {
+	position: sticky;
+	top: 10rem;
+  align-self: start;
+  grid-template-columns: 100% 15em;
+  margin-left: 1rem;
+  border-style: solid;
+  border-width: 0px;
+  border-left-width: 4px;
+  border-color: #eaeaea;
+  overflow: auto;
+}
+
+.tableOfContentContainer ul {
+  list-style-type: none;
+}
+
+.tableOfContentContainer a {
+  color: #ccc;
+}
+
+.tableOfContentContainer li.active>a {
+  color: #0085a1;
+  font-weight: 700;
+}
+
+.tableOfContentContainer li.active:before {
+  color: #0085a1;
+  content: "•";
+  display: inline-block;
+  margin-left: -20px;
+  width: 20px;
+}
+
+.hidden-md-sm-xs {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+.hidden-md-sm-xs {
+    display: block;
+  }
+}
+
+article > h2::before,
+article > h3::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -70px; 
+  height: 70px; 
+  visibility: hidden; 
+  pointer-events: none;
 }

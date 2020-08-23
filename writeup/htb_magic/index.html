@@ -60,7 +60,7 @@
   "headline": "[Writeup] Hack The Box :: Magic",
   "description" : "Let me show you a Magic! This is a Medium difficulty Linux box that employs old but still relevant tricks. You need to know the Magic and how Linux operates with files to clear this box.",
   "inLanguage" : "en",
-  "wordCount":  851 ,
+  "wordCount":  847 ,
   "datePublished" : "2020-05-06T13:40:00",
   "dateModified" : "2020-05-06T13:40:00",
   "image" : "https:\/\/erbazz.github.io",
@@ -233,7 +233,7 @@ if (!doNotTrack) {
 <h2 id="tldr">TL;DR</h2>
 <ul>
 <li>Use SQL injection to bypass the login page</li>
-<li>Upload a PHP reverse shell with the <code>png</code> magic bytes and <code>.php;.png</code> extension</li>
+<li>Upload a PHP reverse shell with the <code>png</code> magic bytes and double extension (<code>.php.png</code>)</li>
 <li>Get a user credential from the database</li>
 <li>Use path hijacking to get a reverse shell with suid binary</li>
 </ul>
@@ -265,7 +265,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 <p><img alt="" src="/images/htb_magic/nano_phpreverseshell.png"/></p>
 <p>However, the error message shows that only image file extensions are allowed.</p>
 <p><img alt="" src="/images/htb_magic/upload_php.png"/></p>
-<p>I renamed the reverse shell file to end with the <code>.php;.png</code> extension to bypass the restriction. This way, the upload checker would see that the file is a <code>png</code> file, but the web server could process the semicolon <code>;</code> and terminates the string, so it sees the file as <code>php-reverse-shell.php</code> and execute the PHP script inside.</p>
+<p>I renamed the reverse shell file to end with the <code>.php;.png</code> extension (or just <code>.php.png</code> is fine) to bypass the restriction. This way, the upload checker would see that the file is a <code>png</code> file, but the web server could process the file as <code>php</code> and execute the PHP script inside.</p>
 <p><img alt="" src="/images/htb_magic/phppng.png"/></p>
 <p>Unfortunately, I got a new error message when I tried to upload that. This could mean that the upload function checks further than just the filename, and very likely checks the file content.</p>
 <p><img alt="" src="/images/htb_magic/upload_phppng.png"/></p>
